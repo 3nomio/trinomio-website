@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.DS_Store
+
+05_outputs/
+06_reports/
+*.csv
+*.zip
+*.xlsx
+*.xls
+*.pptx
+*.pdf

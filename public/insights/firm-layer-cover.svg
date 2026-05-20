@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Firm layer orbital cover</title>
+  <desc id="desc">Institutional navy field with orbital energy, firm, and capital motifs.</desc>
+  <defs>
+    <radialGradient id="field" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#071f3b"/>
+      <stop offset="55%" stop-color="#041427"/>
+      <stop offset="100%" stop-color="#020b17"/>
+    </radialGradient>
+    <linearGradient id="flow" x1="160" x2="1440" y1="450" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17d7ff" stop-opacity="0"/>
+      <stop offset="0.34" stop-color="#17d7ff"/>
+      <stop offset="0.68" stop-color="#1468ff"/>
+      <stop offset="1" stop-color="#3fe083" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#field)"/>
+  <g opacity="0.18" stroke="#17d7ff" stroke-width="1">
+    <path d="M0 160h1600M0 300h1600M0 440h1600M0 580h1600M0 720h1600"/>
+    <path d="M220 0v900M440 0v900M660 0v900M880 0v900M1100 0v900M1320 0v900"/>
+  </g>
+  <g fill="none" stroke-width="2">
+    <ellipse cx="800" cy="450" rx="455" ry="185" stroke="#17d7ff" opacity="0.42"/>
+    <ellipse cx="800" cy="450" rx="330" ry="330" stroke="#1468ff" opacity="0.26"/>
+    <ellipse cx="800" cy="450" rx="570" ry="260" stroke="#3fe083" opacity="0.16" transform="rotate(-11 800 450)"/>
+  </g>
+  <path d="M180 450h1240" stroke="url(#flow)" stroke-width="4"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="8" text-anchor="middle">
+    <text x="430" y="462" fill="#8eefff" font-size="28">ENERGIA</text>
+    <text x="800" y="462" fill="#ffffff" font-size="42">EMPRESA</text>
+    <text x="1170" y="462" fill="#3fe083" font-size="28">CAPITAL</text>
+  </g>
+  <circle cx="800" cy="450" r="88" fill="#071f3b" stroke="#17d7ff" stroke-width="2" opacity="0.92"/>
+  <circle cx="800" cy="450" r="9" fill="#3fe083"/>
+</svg>

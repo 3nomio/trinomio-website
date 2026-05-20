@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Underwriting cover</title>
+  <desc id="desc">Institutional underwriting grid with kWh and capital flow markers.</desc>
+  <rect width="1600" height="900" fill="#041427"/>
+  <radialGradient id="pulse" cx="48%" cy="48%" r="56%">
+    <stop offset="0%" stop-color="#17d7ff" stop-opacity="0.24"/>
+    <stop offset="100%" stop-color="#17d7ff" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1600" height="900" fill="url(#pulse)"/>
+  <g stroke="#8eefff" stroke-width="1" opacity="0.2">
+    <path d="M180 150h1240M180 250h1240M180 350h1240M180 450h1240M180 550h1240M180 650h1240M180 750h1240"/>
+    <path d="M260 120v660M420 120v660M580 120v660M740 120v660M900 120v660M1060 120v660M1220 120v660M1380 120v660"/>
+  </g>
+  <path d="M220 650c150-190 250-80 360-200s230-250 360-150 230 80 430-120" fill="none" stroke="#3fe083" stroke-width="5"/>
+  <path d="M220 650c150-190 250-80 360-200s230-250 360-150 230 80 430-120" fill="none" stroke="#17d7ff" stroke-width="14" opacity="0.12"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="6">
+    <text x="250" y="190" fill="#8eefff" font-size="28">kWh</text>
+    <text x="695" y="455" fill="#ffffff" font-size="48">DSCR</text>
+    <text x="1110" y="250" fill="#3fe083" font-size="28">CAFDS</text>
+  </g>
+  <g fill="#071f3b" stroke="#17d7ff" stroke-width="2">
+    <circle cx="580" cy="450" r="28"/>
+    <circle cx="940" cy="300" r="28"/>
+    <circle cx="1370" cy="180" r="28"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Resilience under structural transition</title>
+  <desc id="desc">Institutional navy field with connected structures adapting under pressure.</desc>
+  <defs>
+    <radialGradient id="field" cx="48%" cy="42%" r="74%">
+      <stop offset="0%" stop-color="#082449"/>
+      <stop offset="56%" stop-color="#041427"/>
+      <stop offset="100%" stop-color="#020b17"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="180" x2="1420" y1="450" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17d7ff" stop-opacity="0"/>
+      <stop offset="0.28" stop-color="#17d7ff"/>
+      <stop offset="0.64" stop-color="#1468ff"/>
+      <stop offset="1" stop-color="#3fe083" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#field)"/>
+  <g opacity="0.16" stroke="#17d7ff" stroke-width="1">
+    <path d="M0 180h1600M0 330h1600M0 480h1600M0 630h1600M0 780h1600"/>
+    <path d="M200 0v900M400 0v900M600 0v900M800 0v900M1000 0v900M1200 0v900M1400 0v900"/>
+  </g>
+  <g fill="none" stroke-width="2">
+    <path d="M255 560c145-180 290-245 435-195s260 44 345-18 190-88 310-78" stroke="#17d7ff" opacity="0.42"/>
+    <path d="M250 620c145-90 280-117 405-80s240 33 345-10 220-50 360-20" stroke="#3fe083" opacity="0.32"/>
+    <path d="M260 420c120 75 252 84 395 28s260-61 350-14 198 48 326 2" stroke="#1468ff" opacity="0.34"/>
+  </g>
+  <path d="M190 450h1220" stroke="url(#signal)" stroke-width="4"/>
+  <g fill="#071f3b" stroke-width="2">
+    <circle cx="340" cy="450" r="52" stroke="#17d7ff"/>
+    <circle cx="610" cy="450" r="52" stroke="#1468ff"/>
+    <circle cx="880" cy="450" r="52" stroke="#17d7ff"/>
+    <circle cx="1150" cy="450" r="52" stroke="#3fe083"/>
+  </g>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="7" text-anchor="middle">
+    <text x="800" y="252" font-size="34" opacity="0.86">RESILIENCIA</text>
+    <text x="800" y="690" font-size="20" opacity="0.52">ADAPTACION BAJO ESTRES ESTRUCTURAL</text>
+  </g>
+  <g fill="#3fe083">
+    <circle cx="340" cy="450" r="8"/>
+    <circle cx="610" cy="450" r="8"/>
+    <circle cx="880" cy="450" r="8"/>
+    <circle cx="1150" cy="450" r="8"/>
+  </g>
+</svg>
