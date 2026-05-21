@@ -80,7 +80,7 @@ export function Hero() {
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div className="border-l border-trinomio-cyan/40 pl-5">
             <p className="max-w-xl text-base leading-7 text-[#E2E6E9]/86">
-              Trinomio organiza energía física, Capa Empresa y capital
+              Trinomio organiza energía física, Capa Empresa y capital institucional en un solo sistema para convertir activos distribuidos en vehículos financiables.
               institucional en un solo sistema para convertir activos
               distribuidos en vehículos financiables.
             </p>
