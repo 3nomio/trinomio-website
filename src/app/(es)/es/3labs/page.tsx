@@ -69,12 +69,6 @@ const efiLevels = [
   },
 ] as const;
 
-const labPositions = [
-  "left-1/2 top-[8%]",
-  "left-[18%] top-[70%]",
-  "left-[82%] top-[70%]",
-] as const;
-
 function OrbitalLabs() {
   return (
     <div className="mt-14">
@@ -114,35 +108,54 @@ function OrbitalLabs() {
         </div>
       </div>
 
-      <div className="diagram-stage relative mx-auto hidden max-w-5xl overflow-hidden p-8 md:block">
+      <div className="diagram-stage relative mx-auto hidden max-w-5xl overflow-hidden p-8 md:block lg:p-10">
         <div className="adaptive-grid absolute inset-0 opacity-30" />
-        <div className="orbit-map orbital-drift relative mx-auto max-w-3xl" />
-        <div className="absolute inset-8">
-          <div className="accent-callout absolute left-1/2 top-1/2 z-10 w-48 -translate-x-1/2 -translate-y-1/2 border p-5 text-center backdrop-blur">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
-              Capa Empresa
-            </p>
-            <p className="mt-3 text-2xl font-semibold leading-tight text-white">
-              capacidad institucional
-            </p>
+        <div className="orbit-map orbital-drift pointer-events-none absolute left-1/2 top-1/2 hidden w-[min(62vw,42rem)] -translate-x-1/2 -translate-y-1/2 opacity-86 lg:block" />
+        <div className="relative grid gap-6">
+          <LabOrbitNode lab={labs[0]} index={0} className="mx-auto max-w-xs" />
+
+          <div className="grid gap-6 lg:grid-cols-[minmax(13rem,14rem)_minmax(16rem,1fr)_minmax(13rem,14rem)] lg:items-center">
+            <LabOrbitNode lab={labs[1]} index={1} />
+
+            <div className="accent-callout relative z-10 mx-auto w-full max-w-sm border p-5 text-center backdrop-blur lg:max-w-[17rem]">
+              <div className="orbital-field absolute left-1/2 top-1/2 size-56 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-16" />
+              <div className="relative">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
+                  Capa Empresa
+                </p>
+                <p className="mt-3 text-2xl font-semibold leading-tight text-white">
+                  capacidad institucional
+                </p>
+              </div>
+            </div>
+
+            <LabOrbitNode lab={labs[2]} index={2} />
           </div>
-          {labs.map((lab, index) => (
-            <article
-              className={`orbit-node diagram-card absolute z-20 w-56 p-5 text-center ${labPositions[index]}`}
-              key={lab.title}
-            >
-              <p className="text-xs text-trinomio-cyan">0{index + 1}</p>
-              <h2 className="mt-4 text-2xl font-semibold text-white">
-                {lab.title}
-              </h2>
-              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/78">
-                {lab.subtitle}
-              </p>
-            </article>
-          ))}
         </div>
       </div>
     </div>
+  );
+}
+
+function LabOrbitNode({
+  className = "",
+  index,
+  lab,
+}: {
+  className?: string;
+  index: number;
+  lab: (typeof labs)[number];
+}) {
+  return (
+    <article
+      className={`diagram-card relative z-20 min-h-44 p-5 text-center ${className}`}
+    >
+      <p className="text-xs text-trinomio-cyan">0{index + 1}</p>
+      <h2 className="mt-4 text-2xl font-semibold text-white">{lab.title}</h2>
+      <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/78">
+        {lab.subtitle}
+      </p>
+    </article>
   );
 }
 
