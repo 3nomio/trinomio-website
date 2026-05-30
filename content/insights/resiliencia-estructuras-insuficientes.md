@@ -4,7 +4,7 @@ excerpt: "La aceleración tecnológica, energética y financiera está desplazan
 category: "Estrategia"
 date: "2026-05-17"
 author: "Trinomio"
-coverImage: "/images/insights/ChatGPT Image May 15, 2026, 10_25_16 AM.png"
+coverImage: "/images/insights/energy-capital-resilience.png"
 slug: "resiliencia-estructuras-insuficientes"
 ---
 
