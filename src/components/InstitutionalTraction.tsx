@@ -8,7 +8,7 @@ export function InstitutionalTraction() {
         <div className="adaptive-grid absolute inset-0 opacity-35" />
         <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-80 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-22" />
         <div className="relative grid min-h-80 content-center gap-4">
-          {["Oportunidad energética", "Capa Empresa", "Capa Capital"].map(
+          {["Función energética", "Capa Empresa", "Disciplina de capital"].map(
             (item, index) => (
               <div
                 className="flow-card border border-white/12 bg-white/[0.045] p-5"

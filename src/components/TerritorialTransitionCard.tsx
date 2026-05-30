@@ -1,18 +1,18 @@
 const pathways = [
   {
     title: "Propietarios de tierra",
-    signal: "recurso → activo",
-    text: "Suelo con vocación energética que necesita estructura, socios y gobierno.",
+    signal: "recurso → función",
+    text: "Suelo con vocación energética que necesita estructura, socios, gobierno y disciplina de capital.",
   },
   {
     title: "Grandes consumidores",
     signal: "carga → resiliencia",
-    text: "Demanda energética que puede convertirse en productividad y control de riesgo.",
+    text: "Demanda energética que puede convertirse en productividad, excedente operativo y control de riesgo.",
   },
   {
     title: "Infraestructura distribuida",
-    signal: "nodos → portafolio",
-    text: "Activos dispersos que requieren lectura común, contratos y Capa Empresa.",
+    signal: "nodos → flujos",
+    text: "Activos dispersos que requieren lectura común, contratos, Capa Empresa y bankability.",
   },
 ] as const;
 
@@ -40,7 +40,7 @@ export function TerritorialTransitionCard() {
             </div>
             <p className="max-w-md text-sm leading-6 text-[#E2E6E9]/84">
               La oportunidad no está solo en el activo. Está en conectar tierra,
-              carga, red y contratos en una arquitectura gobernable.
+              carga, red, contratos y capital en una arquitectura gobernable.
             </p>
           </div>
         </div>

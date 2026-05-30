@@ -2,6 +2,7 @@ import { Footer } from "@/components/Footer";
 import { FlowDoctrine } from "@/components/FlowDoctrine";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HomepagePathway } from "@/components/HomepagePathway";
 import { InstitutionalTraction } from "@/components/InstitutionalTraction";
 import { EcosystemArchitectureMap } from "@/components/EcosystemArchitectureMap";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
@@ -9,7 +10,6 @@ import { PillarCard } from "@/components/PillarCard";
 import { ProjectContinuitySection } from "@/components/ProjectContinuitySection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { AudienceSection } from "@/components/AudienceSection";
-import { AudienceRouteCluster } from "@/components/AudienceRouteCluster";
 import { CollaborationAreas } from "@/components/CollaborationAreas";
 import { TerritorialTransitionCard } from "@/components/TerritorialTransitionCard";
 import { labs, pillars } from "@/lib/content";
@@ -18,9 +18,9 @@ import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trinomio | Energía -> Empresa -> Capital",
+  title: "Trinomio | Energía → Empresa ← Capital",
   description:
-    "Trinomio incuba la Capa Empresa que conecta sistemas de energía distribuida con estructuras de capital institucional.",
+    "Trinomio convierte potencial energético estratégico en activos bancables mediante Energía → Empresa ← Capital, estructura contractual y disciplina de capital.",
 };
 
 export default function SpanishHome() {
@@ -32,7 +32,7 @@ export default function SpanishHome() {
           <Hero />
         </div>
 
-        <AudienceRouteCluster />
+        <HomepagePathway />
 
         <section
           className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32"
@@ -43,9 +43,9 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Doctrina"
               title="La nueva economía energética requiere una Capa Empresa institucional."
-              description="Los activos distribuidos no se convierten por sí solos en productos de mercado de capitales. Trinomio organiza la Capa Empresa que vuelve legibles los flujos energéticos para el capital institucional."
+              description="Los activos distribuidos no se convierten por sí solos en productos de inversión. Trinomio mueve potencial energético estratégico hacia activos tecno-económicos bancables mediante Capa Empresa, contratos, bancabilidad y disciplina de capital."
             />
-            <FlowDoctrine />
+            <FlowDoctrine simplified />
             <DiagramNavigation links={frameworkLinks.doctrine} />
             <div className="mt-16 grid gap-4 md:grid-cols-3">
               {pillars.map((pillar, index) => (
@@ -72,16 +72,16 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Capa Empresa"
-              title="De producción física a estructura de flujo financiable."
-              description="El sistema se entiende mejor como arquitectura: proyecto, Empresa Estructurada, gobierno y Capa Capital operando como un ecosistema."
+              title="De potencial energético estratégico a activo energético bancable."
+              description="El sistema se entiende mejor como arquitectura: función energética, estructura de ejecución, vehículo de proyecto, bancabilidad y disciplina de mercado de capitales operando como un ecosistema."
             />
-            <EcosystemArchitectureMap />
+            <EcosystemArchitectureMap simplified />
             <DiagramNavigation links={frameworkLinks.doctrine} />
             <div className="mt-6 grid gap-5 md:grid-cols-3">
               {[
-                "El activo produce energía y datos operativos.",
-                "La Empresa Estructurada agrega gobierno, contratos y reporting.",
-                "La Capa Capital lee portafolio, riesgo y escala institucional.",
+                "El potencial estratégico revela recurso, demanda, resiliencia o energía excedente.",
+                "La Empresa Estructurada traduce excedente operativo en contratos, vehículo de proyecto y reporting.",
+                "La bancabilidad disciplina el activo individual; los mercados de capital crean escala.",
               ].map((item, index) => (
                 <p
                   className="flow-card border p-5 text-sm leading-6 text-[#E2E6E9]/88"
@@ -103,10 +103,10 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Para desarrolladores, generadores y propietarios"
-              title="Su proyecto no desaparece dentro de la EE."
-              description="La Empresa Estructurada es una capa institucional aditiva: conserva el proyecto y le suma gobierno, capital y escala."
+              title="Su oportunidad no desaparece dentro de la estructura."
+              description="La Empresa Estructurada es una capa institucional aditiva: conserva el proyecto y le suma gobierno, financiamiento, intermediación de mercado y escala."
             />
-            <ProjectContinuitySection />
+            <ProjectContinuitySection simplified />
             <RelatedFrameworks links={frameworkLinks.proof} />
           </div>
         </section>
@@ -121,8 +121,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Tracción institucional"
-              title="El marco Energía → Empresa → Capital ya se aplica en estructuras reales."
-              description="Trinomio trabaja en la conversión de oportunidades energéticas en Empresa Estructurada, Capa Empresa y Capa Capital bajo criterios institucionales."
+              title="El marco Energía → Empresa ← Capital ya se aplica en estructuras reales."
+              description="Trinomio trabaja en la conversión de oportunidades energéticas en Empresa Estructurada, Capa Empresa y Capa Capital bajo criterios institucionales de bancabilidad."
             />
             <InstitutionalTraction />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -138,8 +138,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Transición territorial"
-              title="Tierra, carga e infraestructura distribuida como sistema de oportunidad."
-              description="La lectura territorial conecta propietarios, grandes consumidores y activos distribuidos con Capa Empresa y Capa Capital."
+              title="Tierra, carga e infraestructura distribuida como origen de activos bancables."
+              description="La lectura territorial conecta propietarios, grandes consumidores, Solar-UPS, BESS, small hydro, eficiencia y activos distribuidos con Capa Empresa, financiamiento y vehículos de inversión."
             />
             <TerritorialTransitionCard />
             <RelatedFrameworks links={frameworkLinks.transition} />

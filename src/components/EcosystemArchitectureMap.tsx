@@ -24,7 +24,42 @@ const flowTypes = [
   { label: "Flujos de energía", className: "bg-[#F5F0F0]" },
 ] as const;
 
-export function EcosystemArchitectureMap() {
+const homepageStructuredCompanies = [
+  {
+    label: "Estructura 1",
+    annotation:
+      "Plataforma orientada a cooperativas y distribuidoras eléctricas para estructurar energía distribuida, resiliencia y modernización de red.",
+  },
+  {
+    label: "Estructura 2",
+    annotation:
+      "Plataforma enfocada en clientes comerciales e industriales mediante servicios energéticos, eficiencia y activos behind-the-meter.",
+  },
+  {
+    label: "Estructura 3",
+    annotation:
+      "Plataforma especializada en generación firme y activos hidroeléctricos de pequeña escala integrados a arquitecturas híbridas.",
+  },
+] as const;
+
+const homepageProjectVehicles = [
+  "Vehículo de activo",
+  "Vehículo operativo",
+  "Vehículo territorial",
+] as const;
+
+type EcosystemArchitectureMapProps = {
+  simplified?: boolean;
+};
+
+export function EcosystemArchitectureMap({
+  simplified = false,
+}: EcosystemArchitectureMapProps) {
+  const companies = simplified
+    ? homepageStructuredCompanies
+    : structuredCompanies;
+  const vehicles = simplified ? homepageProjectVehicles : projectSpvs;
+
   return (
     <div className="diagram-stage relative mt-14 overflow-hidden p-5 sm:p-8 lg:p-10">
       <div className="adaptive-grid absolute inset-0 opacity-30" />
@@ -49,7 +84,7 @@ export function EcosystemArchitectureMap() {
         </a>
 
         <div className="grid items-center gap-5 lg:grid-cols-3">
-          {structuredCompanies.map((company, index) => (
+          {companies.map((company, index) => (
             <a
               className="diagram-card accent-callout relative min-h-52 overflow-hidden p-6"
               href="/es/energia-empresa-capital#empresa"
@@ -68,7 +103,7 @@ export function EcosystemArchitectureMap() {
         </div>
 
         <div className="grid gap-4 lg:grid-cols-3">
-          {projectSpvs.map((spv) => (
+          {vehicles.map((spv) => (
             <div
               className="flow-card border p-5"
               key={spv}
@@ -78,7 +113,7 @@ export function EcosystemArchitectureMap() {
               </p>
               <GlossaryTermLink
                 className="mt-3 block text-xl font-semibold text-[#F5F0F0]"
-                glossaryLabel="SPV"
+                glossaryLabel={simplified ? undefined : "SPV"}
               >
                 {spv}
               </GlossaryTermLink>
@@ -94,7 +129,7 @@ export function EcosystemArchitectureMap() {
             <GlossaryTermLink
               className="text-xs font-semibold uppercase tracking-[0.16em] text-[#E2E6E9]/78"
               glossaryLabel={
-                flow.label === "Flujos de capital"
+                !simplified && flow.label === "Flujos de capital"
                   ? "FICR"
                   : flow.label === "Flujos de gobierno"
                     ? "gobierno"

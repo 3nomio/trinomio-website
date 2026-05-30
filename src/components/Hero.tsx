@@ -1,7 +1,6 @@
 import { doctrine, metrics } from "@/lib/content";
-import { ContextualNodeGrid } from "@/components/ContextualNavigation";
+import { ButtonLink } from "@/components/ButtonLink";
 import { TRINOMIO_LOGO_SRC } from "@/components/Logo";
-import { primaryLoopLinks } from "@/lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,32 +11,35 @@ export function Hero() {
       <div className="hero-motion-field pointer-events-none absolute inset-0 z-0 opacity-80" />
       <div className="orbital-field orbital-drift pointer-events-none absolute right-[-18rem] top-16 z-0 size-[52rem] rounded-full opacity-25" />
       <div className="orbital-field pointer-events-none absolute bottom-[-20rem] left-[-18rem] z-0 size-[40rem] rounded-full opacity-16" />
-      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-73px)] max-w-7xl content-between px-5 py-16 sm:px-8 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-[1.04fr_0.96fr] lg:items-center">
-          <div className="hero-copy-field relative z-10 max-w-3xl pt-4 lg:pt-10">
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.24em] text-trinomio-green">
-              Finanzas institucionales de energía
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="grid min-h-[calc(100svh-73px)] gap-8 py-10 sm:py-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:py-12">
+          <div className="hero-copy-field relative z-10 max-w-[46rem]">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-trinomio-green sm:text-sm">
+              Energía → Empresa ← Capital
             </p>
-            <h1 className="text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] text-white sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              Energía <span className="text-trinomio-cyan">-&gt;</span> Empresa{" "}
-              <span className="text-trinomio-cyan">-&gt;</span> Capital
+            <h1 className="text-[clamp(2.35rem,8.5vw,3.5rem)] font-semibold leading-[1.04] text-white sm:text-[clamp(3.25rem,6vw,4.75rem)] sm:leading-[1.02] lg:text-[clamp(3.7rem,5.1vw,5.35rem)]">
+              <span className="block">
+                Convertimos potencial energético estratégico
+              </span>
+              <span className="block">en activos bancables.</span>
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#E2E6E9]/92">
-              Trinomio incuba la Capa Empresa que conecta sistemas energéticos
-              distribuidos con Arquitecturas de Inversión financiables.
-              El capital no migra hacia la energía. Migra hacia las Empresas
-              Estructuradas.
+            <p className="mt-6 max-w-2xl text-base leading-7 text-[#E2E6E9]/92 sm:text-lg sm:leading-8">
+              Trinomio traduce funciones energéticas y disciplina de capital en
+              arquitectura gobernada, financiable y escalable.
             </p>
-            <ContextualNodeGrid
-              className="mt-9 max-w-3xl"
-              eyebrow="Rutas institucionales"
-              links={primaryLoopLinks.slice(1, 4)}
-            />
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <ButtonLink href="/es/contacto#escribanos">
+                Estructure su oportunidad energética
+              </ButtonLink>
+              <ButtonLink href="/es/energia-empresa-capital" variant="secondary">
+                Explore el modelo 3-Syst
+              </ButtonLink>
+            </div>
           </div>
 
           <div
-            className="hero-logo-system relative mx-auto flex w-full max-w-[35rem] items-center justify-center py-10 sm:py-14 lg:py-16"
-            aria-label="Sistema visual Trinomio: Energía hacia Empresa hacia Capital"
+            className="hero-logo-system relative mx-auto flex w-full max-w-[31rem] items-center justify-center py-8 sm:py-10 lg:py-12"
+            aria-label="Sistema visual Trinomio: Energía y Capital traducidos por Empresa"
           >
             <div className="hero-orbit hero-orbit-outer" />
             <div className="hero-orbit hero-orbit-middle" />
@@ -77,12 +79,12 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+        <div className="grid gap-6 pb-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:pb-16">
           <div className="border-l border-trinomio-cyan/40 pl-5">
             <p className="max-w-xl text-base leading-7 text-[#E2E6E9]/86">
-              Trinomio organiza energía física, Capa Empresa y capital institucional en un solo sistema para convertir activos distribuidos en vehículos financiables.
-              institucional en un solo sistema para convertir activos
-              distribuidos en vehículos financiables.
+              Trinomio organiza energía física, Capa Empresa y disciplina de
+              capital para mover oportunidades desde potencial energético hacia
+              activos estructurados, financiables y escalables.
             </p>
           </div>
           <div className="diagram-card grid overflow-hidden backdrop-blur md:grid-cols-3">
@@ -116,13 +118,15 @@ export function Hero() {
 
         <div
           className="mt-10 flex flex-wrap items-center gap-3 text-sm text-[#E2E6E9]/72"
-          aria-label="Secuencia doctrinal de Trinomio"
+          aria-label="Arquitectura doctrinal de Trinomio: Energía hacia Empresa y Capital hacia Empresa"
         >
           {doctrine.map((item, index) => (
             <span className="flex items-center gap-3" key={item}>
               <span>{item}</span>
               {index < doctrine.length - 1 ? (
-                <span className="text-trinomio-cyan">-&gt;</span>
+                <span className="text-trinomio-cyan">
+                  {index === 0 ? "→" : "←"}
+                </span>
               ) : null}
             </span>
           ))}

@@ -19,13 +19,34 @@ const continuitySteps = [
   },
 ] as const;
 
-export function ProjectContinuitySection() {
+const homepageContinuitySteps = [
+  {
+    title: "Vehículo de proyecto",
+    text: "El proyecto mantiene su identidad legal, operativa y contractual.",
+  },
+  {
+    title: "Estructura aditiva",
+    text: "La capa institucional no reemplaza el proyecto; le suma gobierno y lenguaje de capital.",
+  },
+  continuitySteps[2],
+  continuitySteps[3],
+] as const;
+
+type ProjectContinuitySectionProps = {
+  simplified?: boolean;
+};
+
+export function ProjectContinuitySection({
+  simplified = false,
+}: ProjectContinuitySectionProps) {
+  const steps = simplified ? homepageContinuitySteps : continuitySteps;
+
   return (
     <div className="mt-14 grid gap-8 lg:grid-cols-[0.72fr_1fr] lg:items-stretch">
       <div className="diagram-stage relative overflow-hidden p-6 sm:p-8">
         <div className="adaptive-grid absolute inset-0 opacity-32" />
         <div className="relative grid min-h-[34rem] content-center gap-4">
-          {continuitySteps.map((step, index) => (
+          {steps.map((step, index) => (
             <article
               className="flow-card border p-5"
               key={step.title}
@@ -56,7 +77,7 @@ export function ProjectContinuitySection() {
               Proyecto original
             </p>
             <GlossaryTermLink className="mt-4 block text-4xl font-semibold text-[#F5F0F0]">
-              SPV
+              {simplified ? "Vehículo de proyecto" : "SPV"}
             </GlossaryTermLink>
           </div>
           <div className="mx-auto h-12 w-px bg-[linear-gradient(180deg,#609DFF,#E2E6E9)]" />
@@ -79,8 +100,8 @@ export function ProjectContinuitySection() {
             ))}
           </div>
           <p className="text-center text-sm leading-6 text-[#E2E6E9]/82">
-            El proyecto conserva su base. La EE agrega lenguaje institucional,
-            control y capacidad de conexión con capital.
+            El proyecto conserva su base. La estructura agrega lenguaje
+            institucional, control y capacidad de conexión con capital.
           </p>
         </div>
       </div>
