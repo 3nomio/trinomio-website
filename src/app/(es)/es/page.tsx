@@ -14,7 +14,9 @@ import { CollaborationAreas } from "@/components/CollaborationAreas";
 import { TerritorialTransitionCard } from "@/components/TerritorialTransitionCard";
 import { labs, pillars } from "@/lib/content";
 import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNavigation";
+import { getAllInsights } from "@/lib/insights";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,6 +26,8 @@ export const metadata: Metadata = {
 };
 
 export default function SpanishHome() {
+  const recentInsights = getAllInsights().slice(0, 3);
+
   return (
     <>
       <Header navItems={spanishNav} />
@@ -294,6 +298,48 @@ export default function SpanishHome() {
               title="Lecturas institucionales sobre energía, empresa y capital."
               description="Análisis sobre potencial energético estratégico, activos tecno-económicos bancables, Solar-UPS, small hydro, BESS, DERs, financiamiento y formación de capital para el Régimen de Transición."
             />
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {recentInsights.map((insight, index) => (
+                <Link
+                  className="diagram-card group relative flex min-h-[28rem] overflow-hidden border border-white/12 bg-white/[0.04] p-6 text-white transition hover:-translate-y-1 hover:border-trinomio-green/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trinomio-cyan"
+                  href={`/es/insights/${insight.slug}`}
+                  key={insight.slug}
+                >
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-0 h-36 border-b border-white/10 bg-cover bg-center opacity-70 mix-blend-screen transition duration-300 group-hover:scale-[1.02] group-hover:opacity-90"
+                    style={{ backgroundImage: `url(${insight.coverImage})` }}
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,17,38,0.08),rgba(3,17,38,0.92)_38%,rgba(4,25,56,0.98))]" />
+                  <div className="relative flex min-h-full flex-col justify-between">
+                    <div>
+                      <div className="mb-24 flex items-start justify-between gap-5">
+                        <div>
+                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
+                            {insight.category}
+                          </p>
+                          <p className="mt-2 text-xs uppercase tracking-[0.14em] text-[#E2E6E9]/62">
+                            {insight.readingTime} min
+                          </p>
+                        </div>
+                        <span className="text-sm text-[#E2E6E9]/56">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <h3 className="text-2xl font-semibold leading-tight">
+                        {insight.title}
+                      </h3>
+                      <p className="mt-5 line-clamp-3 text-sm leading-6 text-[#E2E6E9]/78">
+                        {insight.excerpt}
+                      </p>
+                    </div>
+                    <span className="mt-10 text-sm font-semibold text-trinomio-green transition group-hover:text-white">
+                      Leer insight
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

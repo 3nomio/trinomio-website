@@ -154,7 +154,10 @@ export default function ContactPage() {
 
         <OrbitalDivider />
 
-        <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
+        <section
+          className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32"
+          id="propietarios-de-tierra"
+        >
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Para quién trabajamos"

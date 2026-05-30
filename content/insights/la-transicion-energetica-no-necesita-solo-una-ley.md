@@ -5,7 +5,7 @@ date: "2026-05-20"
 excerpt: "Costa Rica enfrenta un desafío más profundo que una reforma eléctrica: construir la arquitectura institucional, financiera y contractual capaz de coordinar innovación, estabilidad y capital."
 category: "Energy Transition"
 author: "Oscar Luis Chaves"
-coverImage: "/images/insights/ChatGPT Image May 28, 2026, 09_21_06 AM.png"
+coverImage: "/images/insights/energy-transition-capital-architecture.png"
 tags:
 - Costa Rica
 - DER
