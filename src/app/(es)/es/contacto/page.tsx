@@ -34,6 +34,11 @@ const contactRoutes = [
       "Para evaluar eficiencia, energía firme, contratos EaaS / PPA / TaaS, resiliencia y excedente operativo.",
   },
   {
+    audience: "Propietarios de tierra",
+    purpose:
+      "Evalúe si su terreno puede convertirse en una oportunidad energética estructurable.",
+  },
+  {
     audience: "Aliados técnicos, legales o estratégicos",
     purpose:
       "Para colaborar en empresas estructuradas, SPVs, contratos, seguridad jurídica y plataformas de transición energética.",
@@ -97,6 +102,23 @@ export default function ContactPage() {
                 >
                   oscar@3nomio.com
                 </a>
+                <p className="mt-6 text-sm leading-6 text-[#E2E6E9]/86">
+                  Cuéntenos brevemente su oportunidad: tipo de activo,
+                  contexto y lo que busca lograr.
+                </p>
+                <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/72">
+                  Después de recibir su mensaje, revisamos el contexto inicial y
+                  coordinamos una primera conversación para entender el activo,
+                  la necesidad energética, la contraparte y la posible ruta de
+                  estructuración.
+                </p>
+                <div className="mt-6 border-t border-white/12 pt-6">
+                  <p className="text-sm leading-6 text-trinomio-cyan/90">
+                    Trinomio trabaja sobre oportunidades donde energía,
+                    gobernanza y capital deben organizarse como una arquitectura
+                    bancable.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -192,8 +214,8 @@ export default function ContactPage() {
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              Structure your energy opportunity. Move from project bankability
-              to transition scalability.
+              Estructure su oportunidad energética. Convierta una posibilidad
+              técnica en una arquitectura bancable y escalable.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>
