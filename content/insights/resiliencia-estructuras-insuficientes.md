@@ -84,7 +84,7 @@ Se está convirtiendo en una discusión sobre reorganización institucional y ad
 
 Los sistemas energéticos, monetarios y financieros están cada vez más interconectados. La volatilidad energética afecta inflación. La inflación condiciona política monetaria. La política monetaria redefine valuaciones y costo de capital. Y esas valuaciones determinan qué tecnologías, Empresas Estructuradas e infraestructuras logran escalar.
 
-El capital no migra hacia la energía. Migra hacia las Empresas Estructuradas.
+El capital no financia energía simplemente porque sea renovable o técnicamente viable. Exige estructuras donde el excedente operativo pueda sostener WACC, DSCR, tenor, contratos y bankability. Por eso migra hacia Empresas Estructuradas.
 
 La próxima etapa de creación de valor probablemente no pertenecerá solo a quienes posean más recursos.
 

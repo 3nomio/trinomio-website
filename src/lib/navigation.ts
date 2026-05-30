@@ -1,8 +1,8 @@
 export const spanishNav = [
   { label: "Transición", href: "/es/transicion" },
   {
-    label: "Energía → Empresa → Capital",
-    mobileLabel: "E→E→C",
+    label: "Energía → Empresa ← Capital",
+    mobileLabel: "E→E←C",
     href: "/es/energia-empresa-capital",
   },
   { label: "3Labs", href: "/es/3labs" },
@@ -25,14 +25,14 @@ export const primaryLoopLinks = [
     meta: "Régimen, señales y repricing",
   },
   {
-    label: "Entender la Capa Empresa",
+    label: "Estructurar oportunidad energética",
     href: "/es/energia-empresa-capital#empresa",
-    meta: "De activo energético a unidad financiable",
+    meta: "De greenfield a activo bancable",
   },
   {
     label: "Explorar EFI",
     href: "/es/3labs#efi",
-    meta: "Señal entre productividad energética y capital",
+    meta: "Identificar excedente operativo",
   },
   {
     label: "Ver ejecución SANSES",
@@ -42,17 +42,17 @@ export const primaryLoopLinks = [
   {
     label: "Leer Insight relacionado",
     href: "/es/insights/capa-empresa-energia-capital",
-    meta: "Marco escrito de Energía → Empresa → Capital",
+    meta: "Marco escrito de Energía → Empresa ← Capital",
   },
   {
-    label: "Consultar glosario",
+    label: "Assess your energy function",
     href: "/es/glosario",
-    meta: "Términos para energía, empresa, riesgo y capital",
+    meta: "Lenguaje para energía, empresa, riesgo y capital",
   },
   {
-    label: "Abrir conversación institucional",
+    label: "Turn energy surplus into assets",
     href: "/es/contacto",
-    meta: "Rutas para activos, estructura y capital",
+    meta: "Rutas para estructurar oportunidad y capital",
   },
 ] as const satisfies readonly ContextualLink[];
 
@@ -62,7 +62,7 @@ export const frameworkLinks = {
     {
       label: "Ver arquitectura EE",
       href: "/es/energia-empresa-capital#arquitectura-ee",
-      meta: "Capa Empresa, HoldCo y SPVs",
+      meta: "Project Finance, EE, HoldCo y SPVs",
     },
     {
       label: "Leer resiliencia estructural",
@@ -78,16 +78,16 @@ export const frameworkLinks = {
       meta: "Mapa de empresa, activos y capital",
     },
     {
-      label: "Cómo entra el capital",
+      label: "De Project Finance a FICR",
       href: "/es/insights/underwriting-activos-distribuidos",
-      meta: "Underwriting de flujos distribuidos",
+      meta: "Bankability de proyecto y escala de transición",
     },
   ],
   labs: [
     {
       label: "Explorar EFI",
       href: "/es/3labs#efi",
-      meta: "Umbral y señales de productividad",
+      meta: "Excedente operativo y señales de productividad",
     },
     primaryLoopLinks[1],
     {
@@ -99,9 +99,9 @@ export const frameworkLinks = {
   proof: [
     primaryLoopLinks[3],
     {
-      label: "Cómo entra el capital",
+      label: "De Project Finance a FICR",
       href: "/es/energia-empresa-capital#capa-capital",
-      meta: "De EE a arquitectura de inversión",
+      meta: "De EE a capital-market intermediation",
     },
     {
       label: "Contactar por estructura",

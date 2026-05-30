@@ -18,7 +18,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Glosario | Trinomio",
   description:
-    "Glosario institucional de Trinomio para transición energética, DERs, finanzas sostenibles, riesgo, regulación y estructuración de capital.",
+    "Glosario institucional de Trinomio para greenfield energético, activos bancables, DERs, Project Finance, FICR, riesgo y estructuración de capital.",
 };
 
 function TermCard({ term }: { term: GlossaryTerm }) {
@@ -87,7 +87,7 @@ export default function GlossaryPage() {
               Glosario institucional
             </p>
             <p className="mt-5 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Energía -&gt; Empresa -&gt; Capital.
+              Energía → Empresa ← Capital.
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
               Términos para navegar la transición como arquitectura
@@ -95,8 +95,8 @@ export default function GlossaryPage() {
             </h1>
             <p className="mt-8 max-w-3xl text-lg leading-8 text-[#E2E6E9]/90">
               Una capa de conocimiento para conectar DERs, regulación, riesgo,
-              empresas operativas, vehículos de capital y suscripción de flujos
-              distribuidos.
+              empresas operativas, Project Finance, FICR, disciplina de capital
+              y suscripción de activos energéticos bancables.
             </p>
           </div>
         </section>
@@ -173,7 +173,7 @@ export default function GlossaryPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Categorías"
-              title="Términos agrupados por función dentro de Energía → Empresa → Capital."
+              title="Términos agrupados por función dentro de Energía → Empresa ← Capital."
             />
             <div className="mt-14 space-y-14">
               {glossaryTermsByCategory.map(({ category, terms }) => (

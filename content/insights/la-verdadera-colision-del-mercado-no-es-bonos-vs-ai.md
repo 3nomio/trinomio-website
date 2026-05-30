@@ -47,16 +47,22 @@ En el contexto de la transición energética, esto también modifica cómo enten
 La transición desde [u-DER](/es/glosario#u-der) hacia [P-DER](/es/glosario#p-der)
 implica que el valor marginal de la energía comienza a desplazarse hacia arquitecturas programables.
 
-Desde la lógica de Trinomio, esto transforma la secuencia tradicional:
+Desde la lógica de Trinomio, esto exige una arquitectura distinta:
 
-[Energy → Firm → Capital](/es/glosario#energy-firm-capital)
+[Energy → Firm ← Capital](/es/glosario#energy-firm-capital)
 
 porque el activo energético deja de ser únicamente infraestructura física
-y comienza a comportarse como un flujo programable de caja y capacidad.
+y comienza a comportarse como una función programable que debe traducirse en
+flujo de caja bancable. La energía no se vuelve financiable automáticamente; el
+capital tampoco la financia solo porque sea renovable o técnicamente viable.
 
 Esto también redefine cómo interpretamos el [EFI](/es/glosario#efi),
 particularmente cuando el costo marginal de nueva tecnología continúa cayendo bajo
 la dinámica de Wright’s Law.
+
+EFI identifica dónde una función energética crea excedente operativo. La firma
+crea valor cuando estructura ese excedente en contratos, riesgo asignado,
+gobierno y flujos que puedan satisfacer disciplina de capital.
 
 AI y semiconductores probablemente sí impulsarán una enorme expansión de productividad global.
 
@@ -101,6 +107,11 @@ Eso transforma profundamente cómo se estructuran:
 - el riesgo,
 - la infraestructura,
 - y los vehículos financieros asociados a la transición.
+
+El SPV puede capturar flujos de proyecto, pero la firma crea valor adaptativo
+cuando aprende a identificar, financiar y refrescar funciones energéticas
+repetibles. Ahí aparece el PVGO: no como upside de un proyecto aislado, sino
+como capacidad de estructuración repetible bajo incertidumbre.
 
 La próxima década probablemente no estará definida únicamente por crecimiento económico.
 

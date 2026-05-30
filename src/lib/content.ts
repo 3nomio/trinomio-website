@@ -3,41 +3,41 @@ export const doctrine = ["Energía", "Empresa", "Capital"] as const;
 export const pillars = [
   {
     title: "Energía",
-    eyebrow: "Producción física",
+    eyebrow: "Función energética",
     description:
-      "Generación distribuida, almacenamiento, carga e interconexión definen la base productiva del nuevo sistema energético.",
+      "Generación distribuida, almacenamiento, carga, dispatch y flexibilidad definen dónde puede aparecer excedente operativo.",
   },
   {
     title: "Empresa",
-    eyebrow: "Capa institucional",
+    eyebrow: "Unidad de traducción",
     description:
-      "Empresas Estructuradas, Capa Activo, contratos, gobernanza y disciplina de flujos de caja convierten activos en estructuras financiables.",
+      "Empresas Estructuradas, Capa Activo, contratos, gobernanza y disciplina de flujos convierten excedente energético en estructuras financiables.",
   },
   {
     title: "Capital",
-    eyebrow: "Mecanismo de escala",
+    eyebrow: "Disciplina de escala",
     description:
-      "Originación crediticia, valoración, construcción de portafolios y bursatilización conectan flujos duraderos con capital institucional.",
+      "Capacidad de pago, plazo, riesgo, disciplina de crédito y construcción de portafolios definen qué flujos pueden sostener capital institucional.",
   },
 ] as const;
 
 export const metrics = [
   {
     value: "01",
-    label: "Sistemas de energía distribuida",
-    description: "De activos energéticos a oportunidades estructurables.",
+    label: "Potencial energético estratégico",
+    description: "Tierra, carga, BESS, Solar-UPS, small hydro o eficiencia con potencial estructurable.",
     href: "/es/transicion",
   },
   {
     value: "02",
-    label: "Formación de capa empresa",
-    description: "De proyectos aislados a unidades gobernables.",
+    label: "Estructuración 3-Syst",
+    description: "De excedente operativo a estructura financiable, contratos y flujos bancables.",
     href: "/es/energia-empresa-capital",
   },
   {
     value: "03",
-    label: "Arquitectura de inversión",
-    description: "De flujos gobernados a capital institucional.",
+    label: "Activos bancables",
+    description: "Bancabilidad, vehículos de inversión y disciplina de mercado.",
     href: "/es/energia-empresa-capital",
   },
 ] as const;
@@ -47,19 +47,19 @@ export const labs = [
     title: "Sentir",
     label: "Señal de Transición",
     description:
-      "Leer comportamiento energético, desempeño de activos, señales contractuales y Régimen de Transición como un campo operativo adaptativo.",
+      "Leer tierra, carga, red, resiliencia, energía excedente y señales regulatorias como potencial energético estratégico estructurable.",
   },
   {
     title: "Dimensionar",
-    label: "Umbral de Habilitación",
+    label: "Excedente Operativo",
     description:
-      "Traducir producción técnica y economía empresarial en Capa Activo, bandas de riesgo y lógica de dimensionamiento de capital.",
+      "Traducir productividad energética, EFI, riesgo y economía empresarial en una función techno-económica validable.",
   },
   {
     title: "Rebalancear",
     label: "Arquitectura de Inversión",
     description:
-      "Ajustar peso de portafolio, lógica de reservas, disciplina de flujos de caja y rutas de reinversión conforme evolucionan los sistemas.",
+      "Conectar bancabilidad, vehículos de inversión, portafolios, reservas e instrumentos financieros para pasar de proyecto financiable a escalabilidad.",
   },
 ] as const;
 
@@ -69,21 +69,21 @@ export const collaborationAreas = [
     forWhom:
       "Para instituciones que necesitan entender riesgos, oportunidades y posicionamiento bajo la transición energética.",
     outcome:
-      "Entrega una lectura clara de exposición, opciones estratégicas y prioridades de decisión.",
+      "Entrega una lectura clara de exposición, presión energética, potencial estratégico y prioridades de decisión.",
   },
   {
-    title: "Estructuración Energía → Empresa",
+    title: "Estructuración Energía → Empresa ← Capital",
     forWhom:
       "Para oportunidades energéticas que deben convertirse en Empresas Estructuradas.",
     outcome:
-      "Organiza activos, contratos, operación, gobierno y flujos para crear una base financiable.",
+      "Organiza activos, contratos, operación, gobierno, flujos y disciplina de capital para pasar de potencial energético estratégico a activo bancable.",
   },
   {
     title: "Arquitectura de Inversión",
     forWhom:
       "Para bancos, vehículos de inversión y capital privado que buscan exposición estructurada a la transición.",
     outcome:
-      "Define criterios, vehículos, riesgos y rutas de escala para participar con disciplina institucional.",
+      "Conecta bancabilidad, vehículos temáticos de inversión, portafolios, riesgos y rutas de escala para participar con disciplina institucional.",
   },
   {
     title: "Gobernanza, ERM y Doble Materialidad",
@@ -107,62 +107,62 @@ export const institutionalAudiences = [
     problem:
       "Enfrentan redes, usuarios y balances que cambian con generación distribuida, electrificación y nuevas formas de demanda.",
     help:
-      "Trinomio traduce esas señales en opciones de Capa Empresa, gobierno operativo y rutas de inversión.",
+      "Trinomio traduce señales de régimen en Capa Empresa, rutas de inversión y arquitectura bancable antes del cambio regulatorio.",
     outcome:
-      "Una lectura institucional para priorizar adaptación, activos y modelos financiables.",
+      "Protección del modelo solidario con más energía, flexibilidad e inversión estructurada.",
   },
   {
     title: "Instituciones Financieras",
     problem:
       "Necesitan entender cómo participar en la transición sin tomar exposición dispersa o difícil de gobernar.",
     help:
-      "Trinomio estructura tesis, criterios de underwriting, vehículos y lógica de portafolio.",
+      "Trinomio traduce apetito de riesgo, capacidad de pago, plazo y disciplina de crédito en criterios de underwriting, vehículos de inversión y lógica de portafolio.",
     outcome:
-      "Exposición más legible a flujos energéticos, riesgos asignados y oportunidades escalables.",
+      "Exposición más legible a flujos energéticos, riesgos comprimidos y vehículos repetibles.",
   },
   {
     title: "Utilities y operadores energéticos",
     problem:
       "Deben convertir operación, activos distribuidos y señales regulatorias en decisiones de largo plazo.",
     help:
-      "Trinomio ordena la relación entre activos, contratos, gobierno, riesgo y formación de capital.",
+      "Trinomio ordena rutas desde función energética hasta plataforma financiable, con contratos, gobierno, riesgo y capital.",
     outcome:
-      "Una ruta para pasar de operación energética a estructuras empresariales invertibles.",
+      "Estructuras de transición para pasar de operación energética a activos bancables escalables.",
   },
   {
     title: "Generadores privados",
     problem:
       "Tienen activos u oportunidades energéticas que no siempre son legibles para bancos o inversionistas.",
     help:
-      "Trinomio ayuda a convertir el recurso energético en Empresa Estructurada con disciplina de flujo.",
+      "Trinomio ayuda a convertir excedente operativo en estructura de ejecución, vehículo de proyecto y ruta de financiamiento.",
     outcome:
-      "Mayor claridad sobre propiedad, contratos, riesgo, operación y acceso a capital.",
+      "Mayor claridad sobre propiedad, contratos, riesgo, operación, bankability y acceso a capital.",
   },
   {
     title: "Grandes consumidores energéticos",
     problem:
       "La energía afecta costo, continuidad, resiliencia y competitividad, pero suele tratarse como gasto operativo.",
     help:
-      "Trinomio analiza carga, suministro, resiliencia y opciones de estructura empresarial o contractual.",
+      "Trinomio analiza carga, suministro, Solar-UPS, resiliencia, continuidad y opciones de estructura empresarial o contractual.",
     outcome:
-      "Decisiones energéticas conectadas con productividad, riesgo y estrategia de capital.",
+      "Demanda, confiabilidad y energía de calidad convertidas en lógica de flujo bancable.",
   },
   {
     title: "Propietarios de tierra",
     problem:
       "Cuentan con tierra o recurso potencial, pero necesitan convertirlo en una oportunidad institucionalmente financiable.",
     help:
-      "Trinomio evalúa vocación energética, estructura de activo, socios, contratos y lógica de empresa.",
+      "Trinomio evalúa vocación solar, BESS, small hydro, autoconsumo, exceso a red, socios, contratos y lógica de empresa.",
     outcome:
-      "Una ruta para transformar tierra con potencial en infraestructura productiva y gobernable.",
+      "Una ruta para transformar tierra con potencial en activo energético bancable y financiable.",
   },
 ] as const;
 
 export const institutionalTraction = [
   {
-    title: "SANSES — EE#1 en ejecución",
+    title: "SANSES - primera estructura en ejecución",
     text:
-      "SANSES demuestra cómo una oportunidad energética puede convertirse en una Empresa Estructurada: contratos EaaS, SPVs, gobernanza, bankability y relación con una Entidad Distribuidora.",
+      "SANSES demuestra cómo una oportunidad solar puede convertirse en una estructura gobernada: contratos de servicio energético, vehículos de proyecto, gobernanza, bancabilidad y relación con una Entidad Distribuidora. Solar es el primer caso incubado, no el límite del modelo.",
   },
   {
     title: "Arquitectura de inversión en curso",

@@ -4,35 +4,35 @@ const audienceRoutes = [
   {
     label: "Bancos y SAFIs",
     description:
-      "Trinomio convierte activos energéticos distribuidos en estructuras de flujo, riesgo y gobierno que pueden ser leídas por crédito e inversión.",
+      "Trinomio conecta Project Finance, FICR y portafolios para convertir activos energéticos en instrumentos legibles para crédito e inversión.",
     href: "/es/insights/underwriting-activos-distribuidos",
     cta: "Ver underwriting",
   },
   {
     label: "Cooperativas y distribuidoras eléctricas",
     description:
-      "La Capa Empresa organiza infraestructura, contratos y operación para sostener transición energética con disciplina institucional.",
+      "Bankable architecture antes del cambio regulatorio: más energía, más flexibilidad y protección del modelo solidario.",
     href: "/es/energia-empresa-capital#sanses-ee",
     cta: "Ver ejecución",
   },
   {
     label: "Inversionistas y capital privado",
     description:
-      "El marco Energía -> Empresa -> Capital prepara portafolios distribuibles para análisis de cash-flow, escala y propiedad.",
+      "El marco Energía → Empresa ← Capital prepara vehículos de flujo energético con riesgo comprimido, escala y propiedad clara.",
     href: "/es/energia-empresa-capital#capa-capital",
     cta: "Ver Capa Capital",
   },
   {
     label: "Empresas off-taker",
     description:
-      "Trinomio vincula carga, productividad energética y estructura empresarial para decisiones financiables de suministro y resiliencia.",
+      "Trinomio convierte demanda, resiliencia, continuidad y energía de calidad en lógica de cash-flow bancable.",
     href: "/es/3labs#efi",
     cta: "Explorar EFI",
   },
   {
     label: "Aliados técnicos y legales",
     description:
-      "La tesis requiere ingeniería, contratos, permisos y gobierno alineados con una empresa operativa capaz de formar capital.",
+      "La plataforma permite incubar modelos financeables más allá de deals aislados: solar, BESS, Solar-UPS, DERs, small hydro y eficiencia.",
     href: "/es/contacto#rutas",
     cta: "Abrir ruta",
   },
@@ -54,7 +54,7 @@ export function AudienceRouteCluster() {
             className="text-2xl font-semibold leading-tight text-white sm:text-3xl"
             id="audience-routes-title"
           >
-            Dónde encaja su institución en Energía -&gt; Empresa -&gt; Capital.
+            Dónde encaja su institución en la ruta de oportunidad a activo bancable.
           </h2>
         </div>
 

@@ -15,38 +15,38 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "De oportunidad energética a arquitectura de capital | Trinomio",
+  title: "Energía → Empresa ← Capital | Trinomio",
   description:
-    "Trinomio estructura activos, contratos y gobierno para convertir oportunidades de transición energética en vehículos invertibles.",
+    "Trinomio convierte oportunidades energéticas greenfield en activos brownfield bancables mediante 3-Syst, Project Finance y FICR.",
 };
 
 const valueArchitectureLayers = [
   {
-    title: "Oportunidad energética",
-    eyebrow: "Señal productiva",
-    text: "DER, BESS, eficiencia, resiliencia, demanda del off-taker y nuevas ventanas regulatorias.",
-    terms: ["DER", "BESS", "eficiencia", "off-taker", "resiliencia"],
+    title: "Greenfield opportunity",
+    eyebrow: "Potencial energético",
+    text: "Tierra, demanda, solar, BESS, Solar-UPS, small hydro, eficiencia, resiliencia y ventanas regulatorias.",
+    terms: ["DER", "BESS", "Solar-UPS", "small hydro", "eficiencia"],
     href: "#cadena-valor",
   },
   {
-    title: "Empresa estructurada",
+    title: "3-Syst structuring",
     eyebrow: "Capa Empresa",
-    text: "Gobierno, contratos, estrategia, medición, asignación de riesgos y disciplina operativa.",
+    text: "Gobierno, contratos, medición, asignación de riesgos, EE / SPV y disciplina operativa.",
     terms: ["gobierno", "contratos", "estrategia", "medición", "riesgo"],
     href: "#empresa",
   },
   {
-    title: "Flujo de caja gobernado",
+    title: "Brownfield asset",
     eyebrow: "Calidad de ingreso",
-    text: "PPA, EaaS, TaaS, disponibilidad, desempeño, reporting y trazabilidad financiera.",
+    text: "Función validada, excedente operativo, PPA, EaaS, TaaS, reporting y trazabilidad financiera.",
     terms: ["PPA", "EaaS", "TaaS", "desempeño", "trazabilidad"],
     href: "#empresa",
   },
   {
-    title: "Vehículo invertible",
-    eyebrow: "Arquitectura de capital",
-    text: "SPV, FICR, deuda estructurada, titularización, bonos o instrumentos programables futuros.",
-    terms: ["SPV", "FICR", "deuda estructurada", "titularización", "bonos"],
+    title: "Escala de capital",
+    eyebrow: "Bankability",
+    text: "Project Finance bankability, FICR, portafolio, deuda, titularización e instrumentos programables futuros.",
+    terms: ["Project Finance", "SPV", "FICR", "WACC", "DSCR"],
     href: "#capa-capital",
   },
 ] as const;
@@ -130,11 +130,11 @@ function ValueCreationArchitecture() {
 
       <div className="relative mt-8 border-t border-white/10 pt-6">
         <p className="max-w-5xl text-lg leading-8 text-[#E2E6E9]/90">
-          Trinomio no simplemente organiza proyectos. Convierte oportunidades
-          de transición energética en empresas estructuradas y vehículos de
-          flujo de caja que pueden ser evaluados, financiados y escalados por
-          contrapartes energéticas, bancos, SAFIs, inversionistas y socios
-          institucionales.
+          Trinomio no reemplaza Project Finance. Lo extiende hacia la
+          arquitectura de mercado de capitales que requiere la transición
+          energética: de bankability de proyecto a intermediación FICR,
+          portafolio, instrumentos financieros y activos energéticos bancables
+          a escala.
         </p>
       </div>
     </div>
@@ -160,20 +160,22 @@ export default function EnergyFirmCapitalPage() {
               priority
             />
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-trinomio-green">
-              Energía → Empresa → Capital
+              Energía → Empresa ← Capital
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              De oportunidad energética a arquitectura de capital
+              De oportunidad greenfield a activo energético bancable
             </h1>
             <p className="mt-8 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Trinomio estructura activos, contratos y gobierno para convertir
-              oportunidades de transición energética en vehículos invertibles.
+              Trinomio convierte excedente energético en activos bancables:
+              identifica funciones energéticas con excedente operativo y las
+              estructura como EE / SPV, Project Finance, FICR y plataformas de
+              capital.
             </p>
             <p className="mt-7 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
-              La transición energética no se financia únicamente con activos.
-              Se financia cuando esos activos se organizan en empresas capaces
-              de producir contratos, gobierno, información y flujos de caja
-              legibles para el capital.
+              La transición energética no se financia únicamente con activos ni
+              con kWh. Se financia cuando la Capa Empresa traduce funciones
+              energéticas y disciplina de capital en contratos, gobierno,
+              información, Project Finance y vehículos de mercado.
             </p>
           </div>
         </section>
@@ -188,17 +190,17 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1fr]">
             <SectionHeading
               eyebrow="Cadena de valor"
-              title="Oportunidad energética → Empresa estructurada → Flujo de caja gobernado → Vehículo invertible"
-              description="El valor comercial aparece cuando el activo deja de ser una oportunidad aislada y entra en una arquitectura con gobierno, contratos, información verificable y rutas de capital."
+              title="Greenfield Opportunity → 3-Syst Structuring → Brownfield Asset → Project Finance → FICR"
+              description="El valor comercial aparece cuando una función energética deja de ser una oportunidad aislada y entra en una arquitectura con gobierno, contratos, información verificable, Project Finance y disciplina de mercado de capitales."
             />
             <div className="diagram-stage relative overflow-hidden p-6">
               <div className="conversion-rail absolute left-[10%] right-[10%] top-1/2 hidden sm:block" />
               <div className="relative grid gap-4 md:grid-cols-2">
                 {[
-                  "Activos y demanda energética",
-                  "Contratos y gobierno",
-                  "Reporting y trazabilidad",
-                  "Underwriting y escala",
+                  "Tierra, carga o recurso energético",
+                  "EE / SPV, contratos y gobierno",
+                  "Brownfield techno-economic asset",
+                  "Project Finance, FICR y escala",
                 ].map((item, index) => (
                   <div
                     className="diagram-card min-h-44 p-5"
@@ -226,8 +228,8 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Arquitectura de Creación de Valor"
-              title="De oportunidad energética a arquitectura de capital"
-              description="Trinomio no parte del instrumento financiero. Parte de la oportunidad energética y construye la empresa, el flujo y el vehículo que permiten una conversación institucional de capital."
+              title="Solar es el primer caso incubado. La plataforma es más amplia."
+              description="Trinomio estructura funciones energéticas financiables: solar, BESS, DERs, Solar-UPS, small hydro, autoconsumo, exceso a red, eficiencia, demanda gestionable y futuras estructuras de mercado."
             />
             <ValueCreationArchitecture />
             <DiagramNavigation links={frameworkLinks.proof} />
@@ -245,7 +247,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Arquitectura operativa"
               title="La arquitectura operativa detrás del modelo"
-              description="HoldCo, Empresas Estructuradas y SPVs siguen siendo relevantes: son el sistema operativo que ordena propiedad, responsabilidades, gobierno, flujos y lectura de portafolio detrás del vehículo invertible."
+              description="Project Finance, HoldCo, Empresas Estructuradas y SPVs siguen siendo relevantes: son la primera capa de bankability que ordena propiedad, contratos, riesgo, DSCR, CAFDS, seguridad y captura de flujo antes de escalar hacia portafolio."
             />
             <EcosystemArchitectureMap />
             <DiagramNavigation links={frameworkLinks.proof} />
@@ -263,7 +265,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Para desarrolladores, generadores y propietarios"
               title="La oportunidad energética conserva su origen económico, pero gana forma institucional."
-              description="La EE agrega gobierno, contratos, reporting y rutas de capital sobre el proyecto; no sustituye el SPV ni borra su lógica técnica. La vuelve legible para bancos, SAFIs, inversionistas y aliados estratégicos."
+              description="La EE agrega gobierno, contratos, reporting y rutas de capital sobre el proyecto; no sustituye el SPV ni borra la lógica de Project Finance. La vuelve legible para bancos, SAFIs, FICR, inversionistas y aliados estratégicos."
             />
             <ProjectContinuitySection />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -281,7 +283,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Tracción institucional"
               title="La tesis ya opera en estructuras concretas."
-              description="La relación entre oportunidad energética, Empresa Estructurada, Capa Empresa y Capa Capital no es solo conceptual: se está aplicando en ejecución y estructuración institucional."
+              description="EE#1 comienza con solar porque es el primer caso incubado bajo la regulación actual BTM. BTM es el punto de acción actual, no la frontera permanente: la tesis está diseñada para DERs, BESS, VPPs, community energy, small hydro, Solar-UPS, eficiencia y futuras estructuras de mercado."
             />
             <InstitutionalTraction />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -336,9 +338,9 @@ export default function EnergyFirmCapitalPage() {
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              El resultado no es solo un proyecto energético. Es una unidad
-              económica preparada para dialogar con bancos, SAFIs,
-              inversionistas y mercados de capital.
+              Project Finance puede hacer bancable un activo. Trinomio ayuda a
+              convertir ese activo en parte de una clase financiable para
+              bancos, SAFIs, FICR, inversionistas y mercados de capital.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

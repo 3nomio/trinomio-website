@@ -44,7 +44,7 @@ export const glossaryTerms = [
     definition:
       "Marco de Trinomio para DER programables y orientados al prosumidor bajo Ley 10086: sistemas energéticos distribuidos integrados dentro de arquitecturas de empresa, riesgo y capital.",
     trinomioLens:
-      "Un P-DER es un DER interpretado desde Energía -> Empresa -> Capital. El activo se evalúa no solo por su rendimiento técnico, sino por su capacidad de sostener una empresa operativa invertible, capturar valor marginal programable y evolucionar hacia estructuras compatibles con mercados de capital.",
+      "Un P-DER es un DER interpretado desde Energía → Empresa ← Capital. El activo se evalúa no solo por su rendimiento técnico, sino por su capacidad de sostener una empresa operativa invertible, capturar valor marginal programable y evolucionar hacia estructuras compatibles con mercados de capital.",
     aliases: ["p-DER"],
   },
   {
@@ -63,6 +63,25 @@ export const glossaryTerms = [
     category: "Transición Energética",
     definition:
       "Sistema de almacenamiento de energía en baterías (BESS) utilizado para almacenar electricidad, gestionar carga, aportar resiliencia, desplazar energía en el tiempo o prestar servicios a la red.",
+  },
+  {
+    term: "Solar-UPS",
+    slug: "solar-ups",
+    category: "Transición Energética",
+    definition:
+      "Función behind-the-meter que integra generación solar, respaldo, continuidad, energía de calidad y soporte a cargas críticas.",
+    trinomioLens:
+      "Solar-UPS no se evalúa solo por kWh. Puede crear excedente operativo cuando reduce interrupciones, protege continuidad, mejora confiabilidad, evita downtime o habilita mejor gestión de demanda, y ese valor puede traducirse en flujos bancables.",
+  },
+  {
+    term: "Small hydro",
+    slug: "small-hydro",
+    category: "Transición Energética",
+    definition:
+      "Pequeña generación hidroeléctrica aplicada a autoconsumo, exceso de energía conectado a red o modelos de servicio energético estructurados.",
+    trinomioLens:
+      "Small hydro pertenece a la plataforma cuando crea una función energética con excedente operativo y puede estructurarse en contratos, EE / SPV, Project Finance y rutas de capital.",
+    aliases: ["pequeña hidro", "small hydro"],
   },
   {
     term: "Eficiencia energética",
@@ -128,6 +147,8 @@ export const glossaryTerms = [
     category: "Finanzas y Capital",
     definition:
       "Vehículo de Propósito Especial (SPV): entidad legal creada para contener un activo específico, un conjunto contractual, un perímetro de responsabilidad o una estructura de financiamiento de proyectos.",
+    trinomioLens:
+      "El SPV captura y ring-fencea flujos de caja de proyecto mediante contratos, garantías, IRR, NPV, CAFDS y DSCR. Es una capa esencial de Project Finance; la firma crea valor adaptativo al conectar esa bankability con portafolios, FICR e instrumentos de mercado de capitales.",
   },
   {
     term: "EE / Empresa Estructurada",
@@ -136,7 +157,7 @@ export const glossaryTerms = [
     definition:
       "Empresa Estructurada: unidad empresarial organizada con gobierno, contratos, medición, asignación de riesgos y reporting, diseñada para convertir oportunidades energéticas en flujos gobernados y vehículos financiables.",
     trinomioLens:
-      "La EE es donde la oportunidad energética se convierte en una unidad institucionalmente legible: define el perímetro empresarial que permite conectar activos distribuidos, operación, contratos, riesgo y capital.",
+      "La EE es donde la oportunidad energética se convierte en una unidad institucionalmente legible: define el perímetro empresarial que permite traducir activos distribuidos, operación, contratos, riesgo y disciplina de capital.",
     aliases: ["Capa Empresa", "Empresa Estructurada", "EE"],
   },
   {
@@ -185,7 +206,7 @@ export const glossaryTerms = [
     definition:
       "Vehículo de mercado de capitales utilizado para agrupar, gobernar y desplegar capital de riesgo en empresas, proyectos o programas de inversión estructurada elegibles.",
     trinomioLens:
-      "En la arquitectura de Trinomio, el FICR es una capa de formación de capital. Puede conectar carteras de Empresas Estructuradas con inversionistas que requieren gobierno, disciplina de suscripción y construcción de portafolio.",
+      "En la arquitectura de Trinomio, el FICR conecta oportunidades estructuradas con raíces de mercado de capitales. Captura beneficios de aprendizaje y compresión de riesgo generados por la firma o GP, pero no es la fuente de aprendizaje técnico.",
   },
   {
     term: "Financiamiento de Proyectos (Project Finance)",
@@ -193,6 +214,9 @@ export const glossaryTerms = [
     category: "Finanzas y Capital",
     definition:
       "Método de financiamiento en el que el repago se sustenta principalmente en flujos de caja del proyecto, derechos contractuales, desempeño del activo y riesgos asignados, más que en el crédito corporativo general.",
+    trinomioLens:
+      "Project Finance sigue siendo esencial: crea la primera capa de bankability mediante SPV, contratos, riesgo asignado, DSCR, CAFDS, tenor, seguridad y disciplina de lenders. Trinomio no lo reemplaza; lo extiende hacia FICR, portafolios e instrumentos de mercado de capitales para pasar de bankability de proyecto a escalabilidad de transición.",
+    aliases: ["Project Finance", "Financiamiento de Proyectos"],
   },
   {
     term: "Bancabilidad",
@@ -206,7 +230,18 @@ export const glossaryTerms = [
     slug: "dscr",
     category: "Finanzas y Capital",
     definition:
-      "Índice de cobertura del servicio de deuda (DSCR): métrica que compara el flujo de caja disponible con el servicio de deuda programado durante un periodo.",
+      "Índice de cobertura del servicio de deuda (DSCR): métrica que compara CAFDS contra el servicio de deuda programado durante un periodo.",
+    trinomioLens:
+      "DSCR pertenece a la disciplina de capital y al nivel de captura del proyecto. Ayuda a convertir apetito de riesgo en restricciones de estructura, pero no crea por sí mismo valor energético.",
+  },
+  {
+    term: "CAFDS",
+    slug: "cafds",
+    category: "Finanzas y Capital",
+    definition:
+      "Cash available for debt service: flujo de caja disponible para atender servicio de deuda después de ingresos, costos operativos, impuestos y reservas aplicables.",
+    trinomioLens:
+      "CAFDS es el numerador del DSCR y pertenece al nivel de captura del proyecto. En Trinomio, es la traducción financiera de una función energética ya estructurada en contratos y operación.",
   },
   {
     term: "Flujo de caja",
@@ -244,6 +279,17 @@ export const glossaryTerms = [
     category: "Finanzas y Capital",
     definition:
       "Costo promedio ponderado de capital (WACC): retorno requerido combinado entre deuda y capital accionario, ponderado por la estructura de capital.",
+    trinomioLens:
+      "En 3-Syst, WACC funciona como señal de disciplina de capital: el excedente operativo debe sostener ese umbral junto con DSCR, tenor, riesgo y bancabilidad para convertirse en valor financiable.",
+  },
+  {
+    term: "PVGO",
+    slug: "pvgo",
+    category: "Finanzas y Capital",
+    definition:
+      "Present value of growth opportunities: valor presente de oportunidades futuras de crecimiento.",
+    trinomioLens:
+      "En Trinomio, PVGO no es upside de un proyecto aislado. Es la capacidad de la firma para identificar, estructurar, financiar y refrescar repetidamente funciones energéticas donde el excedente operativo puede satisfacer disciplina de capital.",
   },
   {
     term: "P50",
@@ -271,25 +317,27 @@ export const glossaryTerms = [
     slug: "mev",
     category: "Marcos Trinomio",
     definition:
-      "Señal de valor de mercado, energía o empresa utilizada para conectar capacidad energética productiva con formación de valor económico.",
+      "Valor económico marginal de una función energética en un tiempo y ubicación específicos.",
     trinomioLens:
-      "MEV se trata como una señal de navegación, no como un eslogan. Ayuda a evaluar si una oportunidad energética puede sostener una empresa con lógica durable de ingresos y relevancia para el capital.",
+      "MEV puede estar moldeado por T-SD, LMP, escasez hidrológica, costo evitado, timing de dispatch, firmeza, BESS, VPP y cambio regulatorio.",
   },
   {
     term: "EFI",
     slug: "efi",
     category: "Marcos Trinomio",
     definition:
-      "Indicador o filtro energía-finanzas utilizado para evaluar cuándo la productividad energética, la estructura de empresa y la preparación para capital comienzan a alinearse.",
+      "Índice de productividad energía-finanzas: EFI(t,n) = MEV(t,n) / LCOE(t,n). Compara el valor económico marginal de una función energética con su costo nivelado de entrega.",
     trinomioLens:
-      "EFI marca el punto en que un activo técnico empieza a ser legible institucionalmente: producción energética medible, riesgo asignable, operación gobernada y flujo de caja suscribible.",
+      "EFI > 1 indica excedente operativo. La creación de valor financiable comienza cuando ese excedente puede satisfacer WACC, DSCR, tenor, apetito de riesgo y bancabilidad.",
   },
   {
     term: "LCOE",
     slug: "lcoe",
     category: "Transición Energética",
     definition:
-      "Costo nivelado de energía (LCOE): estimación del costo energético durante la vida útil por unidad de electricidad producida, usualmente expresada por MWh o kWh.",
+      "Costo nivelado de entregar una función energética específica durante su vida útil, usualmente expresado por MWh o kWh.",
+    trinomioLens:
+      "LCOE es el denominador de EFI. Bajo Wright's Law, la caída de costos solares y BESS puede mejorar el EFI incluso antes de que la firma estructure la oportunidad.",
   },
   {
     term: "Compresión de Riesgo",
@@ -374,6 +422,24 @@ export const glossaryTerms = [
       "Marco legal, tarifario, operativo y de mercado que determina derechos, obligaciones, permisos, compensaciones y límites para activos energéticos y estructuras de capital.",
   },
   {
+    term: "T-SD",
+    slug: "t-sd",
+    category: "Regulación y Diseño de Mercado",
+    definition:
+      "Tarifa o señal regulada asociada con el sistema de distribución que puede funcionar como ancla económica para decisiones de transición energética.",
+    trinomioLens:
+      "T-SD representa una señal de régimen actual. La Capa Empresa debe prepararse para que esa señal evolucione hacia mecanismos más dinámicos, como LMP o señales de mercado.",
+  },
+  {
+    term: "LMP",
+    slug: "lmp",
+    category: "Regulación y Diseño de Mercado",
+    definition:
+      "Locational marginal price: precio marginal de electricidad en una ubicación específica del sistema, sensible a congestión, pérdidas y valor temporal de despacho.",
+    trinomioLens:
+      "LMP vuelve más explícito el MEV de una función energética. BESS, VPP y flexibilidad se vuelven más valiosos cuando la firma puede traducir esa señal en contratos y flujos financiables.",
+  },
+  {
     term: "Tarifas",
     slug: "tarifas",
     category: "Regulación y Diseño de Mercado",
@@ -432,16 +498,17 @@ export const glossaryTerms = [
     definition:
       "Secuencia operativa de Trinomio para detectar señales de transición, dimensionar estructuras de empresa y activos, y reasignar capital hacia mejores posiciones ajustadas por riesgo.",
     trinomioLens:
-      "Detectar-Dimensionar-Rebalancear es el ciclo de gestión detrás de Energía -> Empresa -> Capital. Mantiene la estrategia vinculada a señales observables de transición, formación de empresas invertibles y migración disciplinada de capital.",
+      "Detectar-Dimensionar-Rebalancear es el ciclo de gestión detrás de Energía → Empresa ← Capital. Mantiene la estrategia vinculada a señales observables de transición, excedente operativo, formación de empresas invertibles y disciplina de capital.",
   },
   {
-    term: "Energía -> Empresa -> Capital",
+    term: "Energía → Empresa ← Capital",
     slug: "energy-firm-capital",
     category: "Marcos Trinomio",
     definition:
-      "Doctrina central de Trinomio: la energía crea la base física productiva, la empresa la organiza en flujos de caja gobernables y el capital escala la estructura.",
+      "Doctrina central de Trinomio: las funciones energéticas y la disciplina de capital se traducen mediante la Empresa como unidad de creación de valor.",
     trinomioLens:
-      "La doctrina evita que la transición energética se lea como una lista de proyectos. Enmarca la unidad invertible como una Capa Empresa que conecta activos distribuidos, contratos, propiedad, riesgo y mercados de capital.",
+      "La doctrina evita leer la transición energética como una lista de proyectos. La Capa Empresa identifica excedente operativo y lo estructura en flujos bancables. El SPV captura flujo de proyecto; la firma crea valor adaptativo.",
+    aliases: ["Energía -> Empresa -> Capital", "Energy → Firm ← Capital", "Energy -> Firm <- Capital"],
   },
   {
     term: "Corredor Tarifario",
@@ -458,6 +525,8 @@ export const glossaryTerms = [
     category: "Regulación y Diseño de Mercado",
     definition:
       "Marco legal costarricense asociado con recursos energéticos distribuidos y la apertura de nuevos arreglos para generación distribuida y participación de mercado relacionada.",
+    trinomioLens:
+      "Ley 10086 abre rutas para DER y participación distribuida, pero no reemplaza la necesidad de Capa Empresa, contratos, medición, riesgo asignado y disciplina de capital.",
   },
   {
     term: "Expediente 23414",
@@ -465,6 +534,8 @@ export const glossaryTerms = [
     category: "Regulación y Diseño de Mercado",
     definition:
       "Expediente legislativo costarricense relevante para la modernización del mercado eléctrico, los recursos distribuidos y el diseño institucional de rutas de transición.",
+    trinomioLens:
+      "Trinomio lo trata como señal de cambio de régimen, no solo como referencia legal. La modernización requiere contratos, instituciones de financiamiento, compresión de riesgo y arquitectura bancable antes de debilitar ICE, cooperativas, comparadores, comunidades o inversionistas.",
   },
   {
     term: "Combustión térmica",
@@ -593,11 +664,22 @@ export const glossaryTerms = [
       "Flujo económico sujeto a reglas, medición, responsabilidades, controles y asignación de riesgos que lo vuelven legible para capital institucional.",
   },
   {
+    term: "Arquitectura bancable",
+    slug: "arquitectura-bancable",
+    category: "Conceptos box-key",
+    definition:
+      "Estructura de contratos, gobierno, riesgos, garantías, información y flujos que permite a bancos, SAFIs, inversionistas o vehículos de capital evaluar y suscribir una oportunidad.",
+    trinomioLens:
+      "La arquitectura bancable es la traducción pública de Energy → Firm ← Capital: la firma convierte excedente energético en flujo que puede satisfacer Project Finance primero y luego conectarse con FICR, portafolios e instrumentos de mercado de capitales.",
+  },
+  {
     term: "Capital institucional",
     slug: "capital-institucional",
     category: "Conceptos box-key",
     definition:
       "Capital administrado por bancos, fondos, inversionistas, SAFIs u otros actores con criterios formales de riesgo, gobierno, escala y trazabilidad.",
+    trinomioLens:
+      "Capital institucional no es el punto final de una cadena lineal. Es disciplina que entra desde el inicio mediante WACC, DSCR, tenor, covenants, apetito de riesgo y requisitos de bankability. Project Finance hace bancable el activo individual; los mercados de capital hacen escalable la transición.",
   },
   {
     term: "Activo medible",
@@ -675,6 +757,26 @@ export const glossaryTerms = [
     category: "Conceptos box-key",
     definition:
       "Situación donde recurso, carga, activo, tecnología o regulación pueden organizarse en una estructura productiva, operable y financiable.",
+  },
+  {
+    term: "Greenfield Opportunity",
+    slug: "greenfield-opportunity",
+    category: "Conceptos box-key",
+    definition:
+      "Oportunidad energética que existe como potencial de recurso, tierra, carga, resiliencia, ahorro, ubicación o regulación, pero aún no tiene flujo bancable.",
+    trinomioLens:
+      "Trinomio parte del greenfield cuando todavía no existe activo financiable: valida la función energética y la estructura hacia EE / SPV, contratos, Project Finance y rutas de capital.",
+    aliases: ["greenfield", "oportunidad greenfield"],
+  },
+  {
+    term: "Brownfield Energy-Techno-Economic Asset",
+    slug: "brownfield-energy-techno-economic-asset",
+    category: "Conceptos box-key",
+    definition:
+      "Oportunidad energética ya estructurada como activo techno-económico con función validada, lógica de excedente operativo, contratos, riesgo asignado y visibilidad de flujo.",
+    trinomioLens:
+      "El brownfield Trinomio no es solo un activo construido. Es una oportunidad ya traducida en arquitectura financiera capaz de dialogar con Project Finance, FICR y mercados de capital.",
+    aliases: ["brownfield", "activo brownfield", "brownfield asset"],
   },
 ] as const satisfies readonly GlossaryTerm[];
 

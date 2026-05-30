@@ -14,29 +14,29 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contacto | Trinomio",
   description:
-    "Rutas de conversación institucional con Trinomio para activos distribuidos, Empresas Estructuradas y arquitectura de capital.",
+    "Rutas de conversación institucional con Trinomio para convertir oportunidades energéticas en activos bancables.",
 };
 
 const contactRoutes = [
   {
     audience: "Cooperativas y distribuidoras eléctricas",
     purpose:
-      "Para estructurar oportunidades DER, BESS, resiliencia y nuevos modelos de servicio energético.",
+      "Para convertir transición regulatoria, DER, BESS, resiliencia y nuevos modelos de servicio en arquitectura bancable.",
   },
   {
     audience: "SAFIs, bancos e inversionistas",
     purpose:
-      "Para analizar vehículos invertibles, flujos gobernados, FICR, deuda estructurada o esquemas de financiamiento.",
+      "Para analizar Project Finance, flujos bancables, FICR, deuda estructurada, DSCR, tenor y esquemas de financiamiento repetibles.",
   },
   {
     audience: "Empresas y off-takers",
     purpose:
-      "Para evaluar eficiencia, energía firme, contratos EaaS / PPA / TaaS y resiliencia operativa.",
+      "Para evaluar eficiencia, energía firme, contratos EaaS / PPA / TaaS, resiliencia y excedente operativo.",
   },
   {
     audience: "Aliados técnicos, legales o estratégicos",
     purpose:
-      "Para colaborar en la formación de empresas estructuradas, SPVs y plataformas de transición energética.",
+      "Para colaborar en empresas estructuradas, SPVs, contratos, seguridad jurídica y plataformas de transición energética.",
   },
 ] as const;
 
@@ -61,14 +61,14 @@ export default function ContactPage() {
               Contacto
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              Estructuremos oportunidades energéticas en empresas, flujos y
-              vehículos invertibles
+              Convirtamos presión energética en activos bancables
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
               Trinomio conversa con cooperativas eléctricas, SAFIs, bancos,
               inversionistas, empresas y aliados estratégicos que buscan
-              organizar la transición energética desde la Capa Empresa hasta el
-              capital institucional.
+              estructurar tierra, carga, Solar-UPS, small hydro, BESS, DERs,
+              eficiencia o energía excedente mediante Capa Empresa, Project
+              Finance, FICR y flujos bancables.
             </p>
           </div>
         </section>
@@ -84,8 +84,8 @@ export default function ContactPage() {
             <div>
               <SectionHeading
                 eyebrow="Escríbanos"
-                title="Inicie una conversación institucional con Trinomio."
-                description="Si desea conversar sobre una oportunidad energética, una alianza estratégica, un mandato de estructuración o una iniciativa de capital para la transición energética, puede escribirnos directamente."
+                title="Estructure su oportunidad energética."
+                description="Si desea convertir tierra, carga, resiliencia, energía excedente o necesidad de crecimiento en una arquitectura bancable, puede escribirnos directamente."
               />
               <div className="mt-10 flow-card border border-white/12 bg-white/[0.045] p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-trinomio-cyan">
@@ -127,8 +127,8 @@ export default function ContactPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Mapa de conversación"
-              title="La conversación se ordena por ecosistema: proyecto, EE, HoldCo y Capa Capital."
-              description="El punto de partida puede ser tierra, carga, generación, una Entidad Distribuidora o una institución financiera; la arquitectura conecta cada origen con gobierno y capital."
+              title="La conversación se ordena por traducción: función energética, EE, SPV, HoldCo y disciplina de capital."
+              description="El punto de partida puede ser tierra, carga, generación, una Entidad Distribuidora o una institución financiera; la arquitectura conecta cada origen con gobierno, riesgo, contratos y capital."
             />
             <EcosystemArchitectureMap />
             <DiagramNavigation links={frameworkLinks.proof} />
@@ -145,7 +145,7 @@ export default function ContactPage() {
             <SectionHeading
               eyebrow="Tracción institucional"
               title="Ejecución no confidencial del marco Trinomio."
-              description="Estas referencias muestran aplicación práctica de Capa Empresa y Capa Capital sin revelar contrapartes, términos ni procesos internos."
+              description="Estas referencias muestran aplicación práctica de Capa Empresa y disciplina de capital sin revelar contrapartes, términos ni procesos internos."
             />
             <InstitutionalTraction />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -175,8 +175,8 @@ export default function ContactPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Áreas de colaboración"
-              title="Cinco formas de ordenar la conversación institucional."
-              description="Trinomio puede participar desde un diagnóstico estratégico hasta la estructuración de empresas, arquitectura de inversión, gobierno de riesgos y preparación de equipos."
+              title="Cinco formas de pasar de oportunidad a activo bancable."
+              description="Trinomio puede participar desde diagnóstico greenfield hasta estructuración EE / SPV, Project Finance, FICR, gobierno de riesgos y preparación de equipos."
             />
             <CollaborationAreas />
             <RelatedFrameworks links={frameworkLinks.doctrine} />
@@ -189,8 +189,8 @@ export default function ContactPage() {
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              Las transiciones crean incertidumbre. La interpretación crea
-              ventaja estratégica.
+              Structure your energy opportunity. Move from project bankability
+              to transition scalability.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

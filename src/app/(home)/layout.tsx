@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Trinomio | Energy -> Firm -> Capital",
+  title: "Trinomio | Energy → Firm ← Capital",
   description:
-    "Trinomio incubates the Capa Empresa connecting distributed energy systems with investment architecture for the new economy.",
+    "Trinomio turns energy surplus into bankable assets through the firm layer between energy functions and capital-market discipline.",
 };
 
 export default function HomeRootLayout({

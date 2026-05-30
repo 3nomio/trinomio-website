@@ -10,8 +10,8 @@ export function Footer() {
           imageClassName="h-8 w-auto"
         />
         <p className="uppercase tracking-[0.18em]">
-          Energía <span className="text-trinomio-cyan">-&gt;</span> Empresa{" "}
-          <span className="text-trinomio-cyan">-&gt;</span> Capital
+          Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
+          <span className="text-trinomio-cyan">←</span> Capital
         </p>
       </div>
     </footer>

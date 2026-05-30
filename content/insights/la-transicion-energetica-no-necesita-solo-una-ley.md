@@ -15,13 +15,15 @@ tags:
 - Electricity Reform
 ---
 
-La desconvocatoria del expediente 23.414 no detiene la transición energética.
+La desconvocatoria del Expediente 23414 no detiene la transición energética.
 
 Más bien revela algo más profundo: Costa Rica todavía no ha construido la arquitectura institucional, financiera y contractual que necesita para transitar hacia un sistema eléctrico más distribuido, inteligente y flexible sin debilitar la base que le dio estabilidad durante décadas.
 
 Y esa diferencia importa.
 
 Porque la discusión nunca fue solamente sobre tarifas, apertura de mercado o participación privada. Lo que realmente quedó expuesto es una tensión mucho más estructural: cómo modernizar el sistema eléctrico mientras se preserva estabilidad institucional, legitimidad social y capacidad de ejecución.
+
+La posición no es rechazar la modernización. La posición es evitar una modernización sin arquitectura bancable: sin contratos, sin instituciones de financiamiento, sin compresión de riesgo y sin estructuras capaces de proteger al ICE, cooperativas, comunidades, comparadores e inversionistas.
 
 En muchos casos, el debate público sigue interpretando la transición energética como una evolución incremental del modelo actual. Más generación distribuida. Más paneles solares. Más eficiencia.
 
@@ -49,11 +51,13 @@ Contratos adaptativos.
 
 Vehículos empresariales especializados.
 
-Estructuras capaces de organizar activos energéticos en portafolios bancables.
+Estructuras capaces de organizar funciones energéticas en portafolios bancables.
 
 Y eventualmente [capital institucional](/es/glosario#capital-institucional) que pueda participar una vez que la primera capa de incertidumbre haya sido comprimida en estructuras comprensibles y gobernables.
 
 El capital institucional no espera certeza absoluta. Espera estructura.
+
+Por eso Trinomio lee el Expediente 23414 como una señal de régimen, no solo como un evento legal. Bajo transición regulatoria, la firma se vuelve más importante porque traduce incertidumbre, dispatch, cambios tarifarios y disciplina de capital en flujos financiables. La arquitectura pública puede cambiar; la pregunta es si antes existe la Capa Empresa capaz de convertir excedente energético en valor financiable.
 
 Por eso, probablemente los países que mejor naveguen la transición energética no serán necesariamente los que desregulen más rápido, sino los que logren construir mecanismos capaces de coordinar innovación, estabilidad institucional y formación de capital simultáneamente.
 

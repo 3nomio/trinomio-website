@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Insights | Trinomio",
   description:
-    "Análisis institucional de Trinomio sobre generación distribuida, Capa Empresa, underwriting y arquitectura de inversión.",
+    "Análisis institucional de Trinomio sobre greenfield energético, activos bancables, Project Finance, FICR y arquitectura de inversión.",
 };
 
 function formatDate(date: string) {
@@ -100,15 +100,15 @@ export default function InsightsPage() {
               Insights
             </p>
             <p className="mt-5 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Energía -&gt; Empresa -&gt; Capital.
+              Energía → Empresa ← Capital.
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
               Lectura institucional del Régimen de Transición.
             </h1>
             <p className="mt-8 max-w-3xl text-lg leading-8 text-[#E2E6E9]/90">
-              Análisis sobre generación distribuida, Capa Empresa,
-              underwriting, Arquitectura de Inversión e infraestructura
-              financiable para la nueva economía.
+              Análisis sobre oportunidades greenfield, Capa Empresa,
+              underwriting, Project Finance, FICR, Solar-UPS, small hydro,
+              BESS e infraestructura bancable para la nueva economía.
             </p>
           </div>
         </section>
@@ -119,7 +119,7 @@ export default function InsightsPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Biblioteca Institucional"
-              title="Artículos estructurados desde Energía → Empresa → Capital."
+              title="Artículos estructurados desde Energía → Empresa ← Capital."
             />
             <div className="mt-14 grid gap-5 lg:grid-cols-2">
               {insights.map((insight, index) => (
@@ -167,13 +167,14 @@ export default function InsightsPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1fr] lg:items-center">
             <SectionHeading
               eyebrow="Posicionamiento"
-              title="La interpretación empieza en la energía y se completa en la Empresa Estructurada."
+              title="La interpretación empieza en la oportunidad energética y se completa en el activo bancable."
             />
             <div className="flow-card border border-white/12 bg-white/[0.045] p-8">
               <p className="text-2xl font-semibold leading-tight text-white">
-                Trinomio publica desde la Capa Empresa: el lugar donde los
-                activos de energía distribuida se organizan en contratos,
-                gobernanza, flujos de caja y Arquitectura de Inversión.
+                Trinomio publica desde la Capa Empresa: el lugar donde tierra,
+                carga, resiliencia, DERs, Solar-UPS, small hydro y BESS se
+                organizan en contratos, gobernanza, Project Finance, FICR y
+                Arquitectura de Inversión.
               </p>
             </div>
             <RelatedFrameworks links={frameworkLinks.labs} />
@@ -184,8 +185,7 @@ export default function InsightsPage() {
           <div className="orbital-field absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              La energía crea activos. La Capa Empresa crea Empresas
-              Estructuradas.
+              Energy is not a deal. Energy is strategic architecture.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

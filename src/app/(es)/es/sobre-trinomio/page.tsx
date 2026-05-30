@@ -15,13 +15,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre Trinomio | Trinomio",
   description:
-    "Trinomio construye la Capa Empresa entre activos de energía distribuida y capital institucional.",
+    "Trinomio convierte oportunidades energéticas greenfield en activos bancables mediante Capa Empresa, Project Finance y capital-market architecture.",
 };
 
 const labs = [
-  { title: "Sentir", text: "Detectamos Señales de Transición antes de que sean consenso." },
-  { title: "Dimensionar", text: "Convertimos oportunidades en Empresas Estructuradas financiables." },
-  { title: "Rebalancear", text: "Acompañamos la migración del capital hacia nueva infraestructura." },
+  { title: "Sentir", text: "Detectamos tierra, carga, Solar-UPS, small hydro, BESS, DERs y señales regulatorias antes de que sean activos financiables." },
+  { title: "Dimensionar", text: "Convertimos oportunidad greenfield en función techno-económica, excedente operativo y Empresa Estructurada." },
+  { title: "Rebalancear", text: "Conectamos Project Finance, FICR, portafolio e instrumentos financieros para escalar la transición." },
 ] as const;
 
 const riskSignals = [
@@ -55,14 +55,13 @@ export default function AboutTrinomioPage() {
               Sobre Trinomio
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              Trinomio construye la Capa Empresa entre energía distribuida y
-              capital institucional
+              Trinomio convierte oportunidades energéticas en activos bancables
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
               Somos una firma de estructuración en energía y finanzas que
-              organiza activos, contratos, gobierno e información para convertir
-              oportunidades de transición energética en empresas, flujos y
-              vehículos invertibles.
+              organiza recursos, contratos, gobierno e información para mover
+              oportunidades greenfield hacia activos brownfield con flujo,
+              Project Finance, FICR y escalabilidad institucional.
             </p>
           </div>
         </section>
@@ -73,8 +72,8 @@ export default function AboutTrinomioPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Nuestra Tesis"
-              title="Energía → Empresa → Capital"
-              description="Trinomio opera en la intersección de energía, formación de empresas y capital. La energía crea oportunidades productivas, la Capa Empresa las organiza y el capital escala estructuras legibles."
+              title="Energía → Empresa ← Capital"
+              description="Trinomio opera donde funciones energéticas y disciplina de capital se traducen mediante la Capa Empresa. La energía crea oportunidades productivas; el capital impone requisitos; la empresa convierte excedente operativo en activos bancables."
             />
             <FlowDoctrine />
             <DiagramNavigation links={frameworkLinks.doctrine} />
@@ -87,19 +86,19 @@ export default function AboutTrinomioPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1fr] lg:items-center">
             <SectionHeading
               eyebrow="Nuestro Diferencial"
-              title="La Capa Empresa convierte complejidad técnica y contractual en estructuras invertibles."
+              title="La Capa Empresa convierte complejidad técnica y contractual en activos bancables."
             />
             <div className="flow-card border border-white/12 bg-white/[0.045] p-8">
               <p className="text-2xl font-semibold leading-tight text-white">
                 Trinomio no es solo asesoría, desarrollo de proyectos o
                 consultoría financiera. Estructura la capa empresarial que
-                permite que oportunidades de energía distribuida se vuelvan
-                financiables.
+                permite que oportunidades de energía distribuida, Solar-UPS,
+                BESS, small hydro, DERs y eficiencia se vuelvan bancables.
               </p>
               <p className="mt-6 border-l border-trinomio-green/55 pl-4 text-lg leading-8 text-[#E2E6E9]/90">
                 Donde otros ven proyectos energéticos aislados, Trinomio diseña
-                la arquitectura empresarial que permite convertirlos en flujos
-                gobernados y capital financiable.
+                arquitectura empresarial para pasar de oportunidad greenfield a
+                Project Finance, FICR, portafolio y capital-market scalability.
               </p>
             </div>
             <RelatedFrameworks links={frameworkLinks.doctrine} />
@@ -144,7 +143,7 @@ export default function AboutTrinomioPage() {
             <SectionHeading
               eyebrow="Riesgo y Adaptación"
               title="El Régimen de Transición no es solo cumplimiento."
-              description="Es capacidad de adaptación antes de que cambie la Señal de Transición."
+              description="Exp. 23414 no es el evento final. Es una señal de presión: Costa Rica necesita más energía, más flexibilidad, más inversión y una arquitectura que proteja solidaridad mientras escala."
             />
             <div className="grid gap-4 sm:grid-cols-2">
               {riskSignals.map((item) => (
@@ -192,8 +191,9 @@ export default function AboutTrinomioPage() {
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              El capital no migra hacia la energía. Migra hacia las Empresas
-              Estructuradas.
+              Energy is not a deal. Energy is strategic architecture.
+              Trinomio convierte presión de crecimiento energético en activos
+              bancables.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

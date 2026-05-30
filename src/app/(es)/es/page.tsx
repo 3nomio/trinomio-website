@@ -156,8 +156,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Para quién trabajamos"
-              title="Instituciones y propietarios de activos que necesitan convertir transición energética en decisiones financiables."
-              description="Trinomio trabaja con actores que enfrentan riesgos, activos u oportunidades energéticas y necesitan organizarlos como Capa Empresa antes de llevarlos a capital."
+              title="Instituciones y propietarios que necesitan convertir presión energética en activos bancables."
+              description="Trinomio trabaja con actores que enfrentan tierra, carga, resiliencia, regulación, inversión o capital y necesitan estructurarlos como Capa Empresa antes de escalar hacia vehículos de inversión y mercados de capital."
             />
             <AudienceSection />
             <RelatedFrameworks links={primaryLoopLinks} />
@@ -175,7 +175,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Áreas de colaboración"
               title="Formas concretas de trabajar con Trinomio."
-              description="Cada colaboración parte de una pregunta institucional: cómo leer la transición, cómo estructurar una oportunidad energética y cómo preparar una arquitectura de capital."
+              description="Cada colaboración parte de una pregunta institucional: cómo leer la transición, cómo estructurar potencial energético estratégico y cómo moverlo hacia activos bancables y escalables."
             />
             <CollaborationAreas />
           </div>
@@ -192,7 +192,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="3Labs"
               title="Capacidades dinámicas para finanzas energéticas adaptativas."
-              description="Sentir, Dimensionar y Rebalancear describen las capacidades institucionales para leer el Régimen de Transición, estructurar economía empresarial y mantener la formación de capital sensible al cambio."
+              description="Sentir, Dimensionar y Rebalancear describen cómo una oportunidad energética pasa de potencial estratégico a función validada, bancabilidad, arquitectura de inversión y escalabilidad de transición."
             />
             <div className="diagram-stage relative mt-14 p-5 md:hidden">
               <div className="adaptive-grid absolute inset-0 opacity-24" />
@@ -202,7 +202,7 @@ export default function SpanishHome() {
                     3Labs
                   </p>
                   <p className="mt-3 text-xl font-semibold leading-tight text-white">
-                    Señal de Transición → Capa Empresa → capital
+                    Señal de Transición → Capa Empresa ← capital
                   </p>
                 </div>
                 <div className="mx-auto my-4 h-8 w-px bg-trinomio-cyan/38" />
@@ -240,7 +240,7 @@ export default function SpanishHome() {
                     3Labs
                   </p>
                   <p className="mt-3 text-2xl font-semibold text-white">
-                    Señal de Transición → Capa Empresa → capital
+                    Señal de Transición → Capa Empresa ← capital
                   </p>
                 </div>
                 {labs.map((lab, index) => {
@@ -292,7 +292,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Insights"
               title="Lecturas institucionales sobre energía, empresa y capital."
-              description="Análisis próximos sobre Capa Activo, riesgo operativo, portafolios distribuidos y formación de capital para el Régimen de Transición."
+              description="Análisis sobre potencial energético estratégico, activos tecno-económicos bancables, Solar-UPS, small hydro, BESS, DERs, financiamiento y formación de capital para el Régimen de Transición."
             />
           </div>
         </section>
@@ -306,8 +306,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Sobre Trinomio"
-              title="Una plataforma institucional para incubar la Capa Empresa."
-              description="Trinomio trabaja en el punto donde la energía distribuida necesita gobierno económico, operación, contratos y Arquitectura de Inversión para convertirse en infraestructura financiable."
+              title="Una plataforma institucional para incubar activos energéticos bancables."
+              description="Trinomio trabaja donde la energía distribuida, BTM, Solar-UPS, small hydro, BESS y eficiencia necesitan gobierno económico, operación, contratos, financiamiento y arquitectura de inversión."
             />
           </div>
         </section>
@@ -319,8 +319,8 @@ export default function SpanishHome() {
           <div className="accent-callout relative mx-auto max-w-7xl border p-8">
             <SectionHeading
               eyebrow="Contacto"
-              title="Conversaciones institucionales sobre energía, empresa y capital."
-              description="Para alianzas estratégicas, Arquitecturas de Inversión y desarrollo de Empresas Estructuradas sobre activos distribuidos."
+              title="Estructure su oportunidad energética."
+              description="Para convertir tierra, carga, resiliencia, energía excedente o presión de crecimiento en activos bancables, Empresas Estructuradas y plataformas de transición financiables."
             />
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

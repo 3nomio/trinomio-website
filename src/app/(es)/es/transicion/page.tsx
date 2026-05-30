@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Transición Energética | Trinomio",
   description:
-    "La transición energética necesita Capa Empresa para convertir activos distribuidos, contratos y flujos de caja en estructuras financiables.",
+    "Costa Rica necesita más energía limpia, mayor productividad energética y arquitectura financiera para convertir oportunidades en activos bancables.",
 };
 
 const legacyEconomy = [
@@ -50,10 +50,10 @@ const efiSignals = [
 ];
 
 const transitionSequence = [
-  "energía distribuida",
+  "función energética",
+  "excedente operativo",
   "Capa Empresa",
-  "flujo gobernado",
-  "capital institucional",
+  "disciplina de capital",
 ] as const;
 
 function SignalList({ items }: { items: readonly string[] }) {
@@ -94,18 +94,18 @@ export default function TransitionPage() {
               La Transición
             </p>
             <p className="mt-5 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Energía distribuida -&gt; Capa Empresa -&gt; flujo gobernado -&gt;
-              capital institucional.
+              Funciones energéticas → Capa Empresa ← disciplina de capital.
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              La transición energética necesita una capa empresarial para
-              volverse financiable
+              Costa Rica necesita una arquitectura energética financiable para
+              su próximo ciclo de crecimiento
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
-              Los activos distribuidos, la eficiencia, el almacenamiento y la
-              resiliencia operativa no se convierten automáticamente en valor
-              institucional. Primero deben organizarse en empresas, contratos,
-              gobierno, información y flujos de caja legibles para el capital.
+              Más crecimiento requiere más y mejor energía: limpia, confiable,
+              suficiente, competitiva y escalable. Los activos distribuidos, la
+              eficiencia, Solar-UPS, BESS, small hydro y resiliencia operativa
+              deben organizarse en empresas, contratos, Project Finance, FICR y
+              flujos legibles para el capital.
             </p>
             <RelatedFrameworks className="max-w-5xl" links={frameworkLinks.transition} />
           </div>
@@ -118,26 +118,26 @@ export default function TransitionPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Problema institucional"
-              title="La transición no es solo tecnológica. Es un desafío de estructuración."
-              description="Más DER, más BESS o más eficiencia no bastan. Sin una estructura empresarial que organice riesgos, contratos, medición y gobierno, la oportunidad energética permanece fragmentada y difícil de financiar."
+              title="La transición no es solo tecnológica. Es un desafío de crecimiento y estructuración."
+              description="La IEA describe una política energética costarricense orientada a renovables, expansión de capacidad y reemplazo de plantas antiguas. La presión estratégica es convertir más energía limpia y productividad energética en funciones financiables, no solo en proyectos aislados."
             />
             <div className="diagram-stage mt-14 overflow-hidden p-5 sm:p-8">
               <div className="relative grid gap-4 lg:grid-cols-3">
                 {[
                   {
                     eyebrow: "Activo",
-                    title: "La energía produce capacidad física.",
-                    text: "Generación distribuida, almacenamiento, eficiencia y resiliencia operativa crean una base productiva cercana al consumo.",
+                    title: "La energía empieza como oportunidad greenfield.",
+                    text: "Tierra, carga, BESS, Solar-UPS, small hydro, eficiencia y resiliencia crean potencial productivo cercano al consumo.",
                   },
                   {
                     eyebrow: "Empresa",
-                    title: "La Capa Empresa organiza la oportunidad.",
-                    text: "Contratos, propiedad, operación, medición, gobierno y asignación de riesgos convierten esa base en unidad económica.",
+                    title: "La Capa Empresa la convierte en activo brownfield.",
+                    text: "Contratos, propiedad, operación, medición, gobierno y riesgo convierten esa base en unidad techno-económica.",
                   },
                   {
                     eyebrow: "Capital",
-                    title: "El flujo gobernado permite underwriting.",
-                    text: "Bancos, SAFIs, inversionistas y socios estratégicos necesitan información, trazabilidad y disciplina de caja para participar.",
+                    title: "Project Finance y FICR habilitan escala.",
+                    text: "Bancos, SAFIs, FICR e inversionistas necesitan información, trazabilidad, disciplina de caja y portafolio.",
                   },
                 ].map((item, index) => (
                   <article
@@ -173,8 +173,8 @@ export default function TransitionPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.72fr_1fr]">
             <SectionHeading
               eyebrow="Rol de Trinomio"
-              title="Trinomio trabaja en la capa intermedia entre oportunidad energética y capital institucional."
-              description="Ahí la oportunidad energética se convierte en Empresa Estructurada, y la empresa produce flujos de caja capaces de dialogar con bancos, SAFIs, inversionistas y mercados de capital."
+              title="Trinomio mueve oportunidades desde greenfield energético hasta activos bancables."
+              description="Ahí la oportunidad energética se convierte en Empresa Estructurada, y la empresa traduce excedente operativo en flujos capaces de dialogar con Project Finance, FICR, bancos, SAFIs, inversionistas y mercados de capital."
             />
             <div className="diagram-stage relative overflow-hidden p-6">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
@@ -256,7 +256,7 @@ export default function TransitionPage() {
             <SectionHeading
               eyebrow="Umbral de financiabilidad"
               title="La oportunidad cruza el umbral cuando puede producir flujo gobernado."
-              description="EFI se entiende como una lectura institucional: no basta con medir el activo. Hay que saber cuándo producción, contrato, gobierno y trazabilidad permiten una conversación de capital."
+              description="EFI identifica si una función energética crea excedente operativo. La oportunidad se vuelve financiable solo cuando ese excedente puede sostener contratos, trazabilidad y disciplina de capital."
             />
             <div className="diagram-stage relative mt-14 overflow-hidden p-5 sm:p-8">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
@@ -288,15 +288,17 @@ export default function TransitionPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-start">
             <SectionHeading
               eyebrow="Presiones de contexto"
-              title="El régimen macro aumenta la necesidad de estructuras financiables."
-              description="Cambio tecnológico, presión regulatoria, volatilidad energética, requerimientos de capital y resiliencia operativa elevan la importancia de organizar activos distribuidos como empresas gobernables."
+              title="El régimen macro aumenta la necesidad de arquitectura energética bancable."
+              description="Costa Rica no necesita solo reforma energética. Necesita una arquitectura de crecimiento energético capaz de atraer inversión, sostener solidaridad, ampliar energía limpia y elevar productividad."
             />
             <div>
               <SignalList items={macroForces} />
               <p className="flow-card mt-8 border border-trinomio-cyan/25 bg-white/[0.035] p-5 text-lg leading-8 text-[#E2E6E9]/92">
-                En este contexto, el capital no busca exposición dispersa.
-                Busca estructuras con gobierno, información, contratos y
-                mecanismos de protección suficientes para suscribir riesgo.
+                La electricidad debe tomar un rol mayor en la economía, y las
+                renovables variables exigirán más flexibilidad, almacenamiento
+                y eficiencia. En ese contexto, el capital busca estructuras con
+                gobierno, información, contratos y protección suficientes para
+                suscribir riesgo.
               </p>
             </div>
             <RelatedFrameworks links={frameworkLinks.transition} />
@@ -311,8 +313,8 @@ export default function TransitionPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Puente institucional"
-              title="Energía distribuida → Capa Empresa → Flujo gobernado → Capital institucional"
-              description="El capital no puede migrar directamente hacia oportunidades energéticas dispersas. Migra hacia empresas estructuradas que convierten activos, contratos, riesgo y operación en una arquitectura legible, financiable y escalable."
+              title="Funciones energéticas → Capa Empresa ← Disciplina de capital"
+              description="El capital no puede migrar directamente hacia oportunidades energéticas dispersas. Project Finance hace bancable el activo individual; FICR, portafolio e instrumentos de mercado ayudan a que la transición sea escalable."
             />
             <div className="diagram-stage relative mt-12 overflow-hidden p-6 sm:p-8">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
@@ -335,10 +337,9 @@ export default function TransitionPage() {
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              El desafío no es solo financiar activos energéticos. Es construir
-              las unidades empresariales que permitan que esos activos se
-              conviertan en flujos, garantías, información y vehículos
-              invertibles.
+              Costa Rica no necesita solo más proyectos energéticos. Necesita
+              una arquitectura que convierta presión de crecimiento, energía
+              limpia y productividad en activos bancables.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

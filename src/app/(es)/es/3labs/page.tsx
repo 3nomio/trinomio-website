@@ -48,24 +48,24 @@ const labs = [
   {
     title: "REBALANCEAR",
     subtitle: "Ajustar arquitectura empresarial y financiera",
-    copy: "Ordenamos Capa Empresa, SPV, FICR, deuda, alianzas, gobierno y reporting para que la estructura pueda dialogar con capital institucional.",
-    output: "Resultado: estructura preparada para discusión con bancos, SAFIs, inversionistas, cooperativas y socios estratégicos.",
-    cues: ["Capa Empresa", "SPV", "FICR", "deuda", "alianzas", "gobierno", "reporting"],
+    copy: "Ordenamos Project Finance, Capa Empresa, SPV, FICR, deuda, alianzas, gobierno y reporting para conectar bankability de proyecto con intermediación de mercado de capitales.",
+    output: "Resultado: estructura preparada para discusión con bancos, SAFIs, FICR, inversionistas, cooperativas y socios estratégicos.",
+    cues: ["Project Finance", "Capa Empresa", "SPV", "FICR", "deuda", "gobierno", "reporting"],
   },
 ] as const;
 
 const efiLevels = [
   {
     level: "Micro",
-    text: "valor del kWh en el momento de entrega",
+    text: "función energética con excedente operativo",
   },
   {
     level: "Meso",
-    text: "valor de empresa y portafolio",
+    text: "estructura empresarial y flujo bancable",
   },
   {
     level: "Macro",
-    text: "rotación de capital hacia la nueva economía",
+    text: "disciplina de capital y repetición de plataforma",
   },
 ] as const;
 
@@ -240,7 +240,7 @@ export default function ThreeLabsPage() {
               3Labs
             </p>
             <p className="mt-5 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Sistema operativo para pasar de Energía → Empresa → Capital.
+              Sistema operativo para traducir Energía → Empresa ← Capital.
             </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
               3Labs: capacidades para convertir señales de transición en
@@ -260,14 +260,14 @@ export default function ThreeLabsPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Sistema 3Labs"
-              title="3Labs no es una unidad de investigación aislada. Es el sistema operativo que permite pasar de Energía → Empresa → Capital."
-              description="Cada capacidad convierte señales externas en decisiones institucionales: qué oportunidad observar, cómo cuantificarla y qué arquitectura necesita para dialogar con capital."
+              title="3Labs no es una unidad de investigación aislada. Es el sistema operativo que permite traducir Energía → Empresa ← Capital."
+              description="Cada capacidad convierte señales externas en decisiones institucionales: qué oportunidad observar, cómo cuantificar su excedente operativo y qué arquitectura necesita para satisfacer disciplina de capital."
             />
             <OrbitalLabs />
             <DiagramNavigation links={frameworkLinks.labs} />
             <p className="mt-10 text-center text-sm font-semibold uppercase tracking-[0.24em] text-[#E2E6E9]/82">
               Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
-              <span className="text-trinomio-cyan">→</span> Capital
+              <span className="text-trinomio-cyan">←</span> Capital
             </p>
           </div>
         </section>
@@ -297,7 +297,7 @@ export default function ThreeLabsPage() {
             <SectionHeading
               eyebrow="EFI"
               title="EFI ayuda a decidir cuándo una señal puede convertirse en oportunidad estructurable."
-              description="La lectura no termina en el kWh. Cruza hacia empresa y capital cuando la oportunidad tiene magnitud económica, riesgo asignable, trazabilidad y una ruta de gobierno."
+              description="EFI identifica excedente operativo: cuándo una función energética crea más valor marginal del que cuesta entregar. Luego 3Labs prueba si ese excedente puede sostener WACC, DSCR, tenor y bankability."
             />
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
               {efiLevels.map((item, index) => (
