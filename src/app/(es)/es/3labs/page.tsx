@@ -219,7 +219,6 @@ export default function ThreeLabsPage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(23,215,255,0.16),transparent_30rem),radial-gradient(circle_at_78%_24%,rgba(96,157,255,0.2),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
           <div className="adaptive-grid absolute inset-0 opacity-45" />
           <div className="orbital-field orbital-drift absolute right-[-14rem] top-16 size-[42rem] rounded-full opacity-32" />
-          <div className="animated-flow-line absolute left-0 right-0 top-1/2" />
 
           <div className="relative mx-auto max-w-7xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-trinomio-green">

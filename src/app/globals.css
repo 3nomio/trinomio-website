@@ -189,6 +189,7 @@ dd {
 .animated-flow-line {
   background: linear-gradient(90deg, transparent, rgba(23, 215, 255, 0.18), var(--cyan), var(--electric-blue), rgba(63, 224, 131, 0.22), transparent);
   background-size: 220% 100%;
+  display: none;
   height: 1px;
   opacity: 0.75;
   animation: flow-pulse 7s linear infinite;
