@@ -2,6 +2,7 @@ import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNav
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
+import { ScrollNavigation } from "@/components/ScrollNavigation";
 import { SectionHeading } from "@/components/SectionHeading";
 import { getGlossaryHref, getGlossaryTermByLabel } from "@/lib/glossary";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
@@ -215,6 +216,7 @@ export default function ThreeLabsPage() {
     <>
       <Header navItems={spanishNav} />
       <main>
+        <ScrollNavigation menuHref="/es" />
         <section className="relative overflow-hidden bg-trinomio-navy-deep px-5 py-24 text-white sm:px-8 lg:py-32">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(23,215,255,0.16),transparent_30rem),radial-gradient(circle_at_78%_24%,rgba(96,157,255,0.2),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
           <div className="adaptive-grid absolute inset-0 opacity-45" />

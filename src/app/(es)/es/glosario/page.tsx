@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Logo } from "@/components/Logo";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
+import { ScrollNavigation } from "@/components/ScrollNavigation";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   getGlossaryHref,
@@ -161,6 +162,12 @@ export default function GlossaryPage() {
         </section>
 
         <OrbitalDivider />
+
+        <ScrollNavigation
+          ariaLabel="Navegación rápida del glosario"
+          indexHref="#alfabetico"
+          menuHref="/es"
+        />
 
         <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
           <div className="relative mx-auto max-w-7xl">

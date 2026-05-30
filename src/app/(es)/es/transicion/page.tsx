@@ -4,6 +4,7 @@ import { GlossaryTermLink } from "@/components/GlossaryTermLink";
 import { Header } from "@/components/Header";
 import { Logo } from "@/components/Logo";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
+import { ScrollNavigation } from "@/components/ScrollNavigation";
 import { SectionHeading } from "@/components/SectionHeading";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import type { Metadata } from "next";
@@ -77,6 +78,7 @@ export default function TransitionPage() {
     <>
       <Header navItems={spanishNav} />
       <main>
+        <ScrollNavigation menuHref="/es" />
         <section className="relative overflow-hidden bg-trinomio-navy-deep px-5 py-20 text-white sm:px-8 lg:py-28">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_16%,rgba(23,215,255,0.17),transparent_30rem),radial-gradient(circle_at_78%_30%,rgba(96,157,255,0.2),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
           <div className="orbital-field orbital-drift absolute right-[-14rem] top-16 size-[42rem] rounded-full opacity-32" />

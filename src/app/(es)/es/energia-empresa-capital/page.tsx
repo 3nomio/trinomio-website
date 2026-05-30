@@ -6,6 +6,7 @@ import { InstitutionalTraction } from "@/components/InstitutionalTraction";
 import { Logo } from "@/components/Logo";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
 import { ProjectContinuitySection } from "@/components/ProjectContinuitySection";
+import { ScrollNavigation } from "@/components/ScrollNavigation";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TerritorialTransitionCard } from "@/components/TerritorialTransitionCard";
 import { getGlossaryHref, getGlossaryTermByLabel } from "@/lib/glossary";
@@ -145,6 +146,7 @@ export default function EnergyFirmCapitalPage() {
     <>
       <Header navItems={spanishNav} />
       <main>
+        <ScrollNavigation menuHref="/es" />
         <section className="relative overflow-hidden bg-trinomio-navy-deep px-5 py-24 text-white sm:px-8 lg:py-32">
           <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_18%_18%,rgba(23,215,255,0.16),transparent_30rem),radial-gradient(circle_at_78%_28%,rgba(96,157,255,0.2),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
           <div className="adaptive-grid absolute inset-0 z-0 opacity-50" />
