@@ -33,6 +33,15 @@ const riskSignals = [
   "flexibilidad",
 ] as const;
 
+const closingLinks = [
+  {
+    label: "Leer síntesis",
+    href: "/es/sintesis",
+    meta: "Resumen de dos minutos del modelo Trinomio",
+  },
+  ...primaryLoopLinks,
+] as const;
+
 export default function AboutTrinomioPage() {
   return (
     <>
@@ -195,7 +204,7 @@ export default function AboutTrinomioPage() {
               Trinomio convierte presión de crecimiento energético en activos
               bancables.
             </h2>
-            <RelatedFrameworks links={primaryLoopLinks} />
+            <RelatedFrameworks links={closingLinks} />
           </div>
         </section>
       </main>

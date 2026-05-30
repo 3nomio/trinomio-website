@@ -10,6 +10,7 @@ import { OrbitalDivider } from "@/components/OrbitalDivider";
 import { SectionHeading } from "@/components/SectionHeading";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contacto | Trinomio",
@@ -118,6 +119,12 @@ export default function ContactPage() {
                     gobernanza y capital deben organizarse como una arquitectura
                     bancable.
                   </p>
+                  <Link
+                    className="mt-4 inline-flex text-sm font-semibold text-white transition hover:text-trinomio-cyan-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trinomio-cyan"
+                    href="/es/sintesis"
+                  >
+                    Leer síntesis <span className="ml-2 text-trinomio-cyan">→</span>
+                  </Link>
                 </div>
               </div>
             </div>

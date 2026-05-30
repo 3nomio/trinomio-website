@@ -1,4 +1,5 @@
 import { Logo } from "@/components/Logo";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -9,10 +10,18 @@ export function Footer() {
           className="rounded-full bg-white/[0.03] p-1.5 ring-1 ring-white/10"
           imageClassName="h-8 w-auto"
         />
-        <p className="uppercase tracking-[0.18em]">
-          Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
-          <span className="text-trinomio-cyan">←</span> Capital
-        </p>
+        <div className="flex flex-col gap-3 sm:items-end">
+          <p className="uppercase tracking-[0.18em]">
+            Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
+            <span className="text-trinomio-cyan">←</span> Capital
+          </p>
+          <Link
+            className="text-xs font-semibold uppercase tracking-[0.18em] text-[#E2E6E9]/68 transition hover:text-trinomio-cyan-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trinomio-cyan"
+            href="/es/sintesis"
+          >
+            Síntesis
+          </Link>
+        </div>
       </div>
     </footer>
   );
