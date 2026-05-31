@@ -3,7 +3,7 @@ title: "La verdadera colisión del mercado no es bonos vs AI"
 slug: "la-verdadera-colision-del-mercado-no-es-bonos-vs-ai"
 date: "2026-05-20"
 excerpt: "Los mercados están intentando valorar simultáneamente productividad y fragilidad del capital."
-category: "Capital Markets"
+category: "Mercados de Capital"
 author: "Oscar Luis Chaves"
 coverImage: "/images/insights/productivity-vs-debt.png"
 tags:

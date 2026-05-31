@@ -3,7 +3,7 @@ title: "La transición energética no necesita solo una ley. Necesita una nueva 
 slug: "la-transicion-energetica-no-necesita-solo-una-ley"
 date: "2026-05-20"
 excerpt: "Costa Rica enfrenta un desafío más profundo que una reforma eléctrica: construir la arquitectura institucional, financiera y contractual capaz de coordinar innovación, estabilidad y capital."
-category: "Energy Transition"
+category: "Transición Energética"
 author: "Oscar Luis Chaves"
 coverImage: "/images/insights/energy-transition-capital-architecture.png"
 tags:
