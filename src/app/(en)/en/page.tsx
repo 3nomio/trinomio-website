@@ -31,8 +31,8 @@ export default function EnglishHome() {
           <ButtonLink href="/en/costa-rica-opportunity">
             Explore the Costa Rica opportunity -&gt;
           </ButtonLink>
-          <ButtonLink href="/es" variant="secondary">
-            View Spanish site -&gt;
+          <ButtonLink href="/en/insights" variant="secondary">
+            Read institutional insights -&gt;
           </ButtonLink>
         </div>
       </section>

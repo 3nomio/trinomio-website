@@ -11,6 +11,7 @@ export type Insight = {
   slug: string;
   content: string;
   readingTime: number;
+  locale: "es" | "en";
 };
 
 type Frontmatter = Omit<Insight, "content" | "readingTime">;
@@ -76,6 +77,9 @@ function parseInsight(fileName: string): Insight {
   const raw = fs.readFileSync(filePath, "utf8");
   const { content, frontmatter } = readFrontmatter(raw);
 
+  const rawLocale = frontmatter["locale"] ?? "es";
+  const locale: "es" | "en" = rawLocale === "en" ? "en" : "es";
+
   return {
     title: requiredField(frontmatter, "title", fileName),
     excerpt: requiredField(frontmatter, "excerpt", fileName),
@@ -86,6 +90,7 @@ function parseInsight(fileName: string): Insight {
     slug: requiredField(frontmatter, "slug", fileName),
     content,
     readingTime: estimateReadingTime(content),
+    locale,
   };
 }
 
@@ -125,8 +130,16 @@ export function getFinalInsight() {
   return getAllInsights().at(-1);
 }
 
+export function getSpanishInsights() {
+  return getAllInsights().filter((insight) => insight.locale === "es");
+}
+
+export function getEnglishInsights() {
+  return getAllInsights().filter((insight) => insight.locale === "en");
+}
+
 export function getInsightCategories() {
   return Array.from(
-    new Set(getAllInsights().map((insight) => insight.category)),
+    new Set(getSpanishInsights().map((insight) => insight.category)),
   );
 }

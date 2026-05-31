@@ -14,7 +14,7 @@ import { CollaborationAreas } from "@/components/CollaborationAreas";
 import { TerritorialTransitionCard } from "@/components/TerritorialTransitionCard";
 import { labs, pillars } from "@/lib/content";
 import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNavigation";
-import { getAllInsights } from "@/lib/insights";
+import { getSpanishInsights } from "@/lib/insights";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default function SpanishHome() {
-  const recentInsights = getAllInsights().slice(0, 3);
+  const recentInsights = getSpanishInsights().slice(0, 3);
 
   return (
     <>

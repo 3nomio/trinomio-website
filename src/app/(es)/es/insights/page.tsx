@@ -6,7 +6,7 @@ import { OrbitalDivider } from "@/components/OrbitalDivider";
 import { SectionHeading } from "@/components/SectionHeading";
 import Link from "next/link";
 import {
-  getAllInsights,
+  getSpanishInsights,
   getInsightCategories,
   type Insight,
 } from "@/lib/insights";
@@ -78,7 +78,7 @@ function InsightCard({
 }
 
 export default function InsightsPage() {
-  const insights = getAllInsights();
+  const insights = getSpanishInsights();
   const categories = getInsightCategories();
 
   return (
