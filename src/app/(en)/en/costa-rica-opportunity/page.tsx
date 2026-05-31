@@ -192,7 +192,7 @@ export default function CostaRicaOpportunityPage() {
               discipline.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/es/contacto#escribanos">
+              <ButtonLink href="/en/contact">
                 Explore Costa Rica&apos;s energy-transition opportunity with
                 Trinomio -&gt;
               </ButtonLink>

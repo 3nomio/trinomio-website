@@ -70,7 +70,7 @@ const pathwayCopy = {
     primaryCta: "Explore the Costa Rica opportunity",
     secondaryCta: "Discuss a structured opportunity",
     primaryHref: "/en/costa-rica-opportunity",
-    secondaryHref: "/es/contacto#escribanos",
+    secondaryHref: "/en/contact",
     steps: [
       {
         title: "Strategic Energy Potential",

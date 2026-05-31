@@ -2,7 +2,7 @@ import { Logo } from "@/components/Logo";
 import Link from "next/link";
 
 type EnglishMicroNavProps = {
-  active?: "home" | "opportunity";
+  active?: "home" | "opportunity" | "contact";
 };
 
 export function EnglishMicroNav({ active = "home" }: EnglishMicroNavProps) {
@@ -21,11 +21,25 @@ export function EnglishMicroNav({ active = "home" }: EnglishMicroNavProps) {
           className="flex flex-wrap items-center gap-2 text-sm text-[#E2E6E9]/90"
         >
           <Link
+            aria-current={active === "home" ? "page" : undefined}
+            className="border border-white/10 bg-white/[0.035] px-3 py-2 transition hover:border-trinomio-cyan/45 hover:text-trinomio-cyan aria-[current=page]:border-trinomio-cyan/40 aria-[current=page]:bg-white/[0.075] aria-[current=page]:text-white"
+            href="/en"
+          >
+            Home
+          </Link>
+          <Link
             aria-current={active === "opportunity" ? "page" : undefined}
             className="border border-white/10 bg-white/[0.035] px-3 py-2 transition hover:border-trinomio-cyan/45 hover:text-trinomio-cyan aria-[current=page]:border-trinomio-cyan/40 aria-[current=page]:bg-white/[0.075] aria-[current=page]:text-white"
             href="/en/costa-rica-opportunity"
           >
-            Opportunity
+            Costa Rica Opportunity
+          </Link>
+          <Link
+            aria-current={active === "contact" ? "page" : undefined}
+            className="border border-white/10 bg-white/[0.035] px-3 py-2 transition hover:border-trinomio-cyan/45 hover:text-trinomio-cyan aria-[current=page]:border-trinomio-cyan/40 aria-[current=page]:bg-white/[0.075] aria-[current=page]:text-white"
+            href="/en/contact"
+          >
+            Contact
           </Link>
           <Link
             className="border border-white/10 bg-white/[0.035] px-3 py-2 transition hover:border-trinomio-cyan/45 hover:text-trinomio-cyan"
