@@ -104,7 +104,7 @@ export default function CostaRicaOpportunityPage() {
         <SectionHeading
           eyebrow="Why Costa Rica"
           title="A focused transition context for international capital"
-          description="For Stage EN-1, the country context is framed carefully and generally. The page does not introduce unsupported IEA or policy facts until the requested Costa Rica profile source is added and reviewed."
+          description="Costa Rica offers a focused context for evaluating how energy-transition execution, long-term contracts, and capital discipline can be organized into bankable investment assets."
         />
         <div className="space-y-5 text-base leading-7 text-[#E2E6E9]/88">
           <p>

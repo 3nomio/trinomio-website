@@ -40,20 +40,36 @@ export default function EnglishContactPage() {
           </p>
           <p className="mt-6 max-w-3xl text-base leading-7 text-[#E2E6E9]/86">
             Explore Costa Rica&apos;s energy-transition opportunity with
-            Trinomio.
+            Trinomio by emailing Oscar at oscar@3nomio.com.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="mailto:oscar@3nomio.com?subject=International%20inquiry%20for%20Trinomio">
-              Email Trinomio
+              Email Trinomio: oscar@3nomio.com
             </ButtonLink>
             <ButtonLink href="/es/contacto" variant="secondary">
-              Spanish institutional contact -&gt;
+              Spanish institutional contact, if needed -&gt;
             </ButtonLink>
           </div>
         </div>
 
-        <aside className="border border-white/12 bg-white/[0.045] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
+        <aside className="border border-trinomio-cyan/24 bg-white/[0.055] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)]">
+          <div className="border-b border-white/10 pb-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
+              Primary contact
+            </p>
+            <a
+              className="mt-3 inline-flex text-2xl font-semibold leading-tight text-white transition hover:text-trinomio-cyan"
+              href="mailto:oscar@3nomio.com?subject=International%20inquiry%20for%20Trinomio"
+            >
+              oscar@3nomio.com
+            </a>
+            <p className="mt-3 text-sm leading-6 text-[#E2E6E9]/82">
+              Best path for international inquiries about energy-transition
+              structuring, bankable cash-flow assets, and capital recycling.
+            </p>
+          </div>
+
+          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
             Who this page is for
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -68,14 +84,14 @@ export default function EnglishContactPage() {
           </div>
           <div className="mt-7 border-t border-white/10 pt-6">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
-              Email
+              Secondary route
             </p>
-            <a
-              className="mt-3 inline-flex text-lg font-semibold text-white transition hover:text-trinomio-cyan"
-              href="mailto:oscar@3nomio.com"
+            <Link
+              className="mt-3 inline-flex text-sm font-semibold text-[#E2E6E9] transition hover:text-trinomio-cyan"
+              href="/es/contacto"
             >
-              oscar@3nomio.com
-            </a>
+              Spanish institutional contact -&gt;
+            </Link>
           </div>
         </aside>
       </section>
