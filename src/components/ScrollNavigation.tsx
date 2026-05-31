@@ -14,9 +14,9 @@ type ScrollNavigationProps = {
 
 export function ScrollNavigation({
   indexHref,
-  indexLabel = "↑ Índice",
+  indexLabel,
   menuHref,
-  menuLabel = "← Menú",
+  menuLabel = "← Volver",
   ariaLabel = "Navegación rápida",
   threshold = 560,
 }: ScrollNavigationProps) {
@@ -37,6 +37,7 @@ export function ScrollNavigation({
 
   const controlClass =
     "inline-flex min-h-11 items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_38px_rgba(0,0,0,0.28)] backdrop-blur transition hover:border-trinomio-cyan hover:text-trinomio-cyan-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trinomio-cyan";
+  const secondaryLabel = indexLabel ?? "↑ Subir";
 
   return (
     <nav
@@ -58,7 +59,7 @@ export function ScrollNavigation({
           className={`${controlClass} border-trinomio-cyan/55 bg-[linear-gradient(135deg,rgba(23,215,255,0.22),rgba(96,157,255,0.2))]`}
           href={indexHref}
         >
-          {indexLabel}
+          {secondaryLabel}
         </Link>
       ) : (
         <button
@@ -66,7 +67,7 @@ export function ScrollNavigation({
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           type="button"
         >
-          {indexLabel}
+          {secondaryLabel}
         </button>
       )}
     </nav>

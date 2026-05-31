@@ -47,7 +47,7 @@ export default function AboutTrinomioPage() {
     <>
       <Header navItems={spanishNav} />
       <main>
-        <ScrollNavigation menuHref="/es" />
+        <ScrollNavigation indexLabel="↑ Subir" menuHref="/es" menuLabel="← Volver" />
         <section className="relative overflow-hidden bg-trinomio-navy-deep px-5 py-24 text-white sm:px-8 lg:py-32">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(23,215,255,0.14),transparent_30rem),radial-gradient(circle_at_78%_28%,rgba(96,157,255,0.18),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
           <div className="adaptive-grid absolute inset-0 opacity-42" />

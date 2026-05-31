@@ -4,8 +4,8 @@
 
 Added a lightweight reusable `ScrollNavigation` component for long internal pages. The control is fixed near the lower-right viewport edge, remains hidden until the user scrolls beyond the configured threshold, and then exposes compact pill actions:
 
-- `← Menú` links back to the relevant language menu.
-- `↑ Índice` links to a page index anchor when one exists, or scrolls smoothly to the top when no index anchor is provided.
+- `← Volver` links back to the configured return route.
+- `↑ Subir` links to the configured in-page anchor when one exists, or scrolls smoothly to the top when no anchor is provided.
 
 The component uses existing Trinomio colors, typography, spacing, focus outlines, and backdrop treatment. It introduces no new dependencies.
 

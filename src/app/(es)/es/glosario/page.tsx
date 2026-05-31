@@ -166,7 +166,9 @@ export default function GlossaryPage() {
         <ScrollNavigation
           ariaLabel="Navegación rápida del glosario"
           indexHref="#alfabetico"
+          indexLabel="↑ Subir"
           menuHref="/es"
+          menuLabel="← Volver"
         />
 
         <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
