@@ -6,7 +6,11 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Logo } from "@/components/Logo";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
-import { getAdjacentInsights, getInsightBySlug } from "@/lib/insights";
+import {
+  getAdjacentInsights,
+  getFinalInsight,
+  getInsightBySlug,
+} from "@/lib/insights";
 import { frameworkLinks, spanishNav, type ContextualLink } from "@/lib/navigation";
 
 type InsightArticlePageProps = {
@@ -168,7 +172,9 @@ export function InsightArticlePage({
     notFound();
   }
 
-  const { previous, next } = getAdjacentInsights(insight.slug);
+  const { previous } = getAdjacentInsights(insight.slug);
+  const finalInsight = getFinalInsight();
+  const isFinalInsight = finalInsight?.slug === insight.slug;
 
   return (
     <>
@@ -275,21 +281,26 @@ export function InsightArticlePage({
                 </div>
               )}
 
-              {next ? (
+              {finalInsight && !isFinalInsight ? (
                 <Link
                   className="flow-card block border border-white/12 bg-white/[0.045] p-6 transition hover:border-trinomio-green/45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trinomio-cyan md:text-right"
-                  href={`${insightsBasePath}/${next.slug}`}
+                  href={`${insightsBasePath}/${finalInsight.slug}`}
                 >
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
-                    Siguiente artículo
+                    Último artículo de la serie
                   </p>
                   <h2 className="mt-5 text-2xl font-semibold leading-tight text-white">
-                    {next.title}
+                    {finalInsight.title}
                   </h2>
                 </Link>
               ) : (
-                <div className="border border-white/10 bg-white/[0.025] p-6 text-sm uppercase tracking-[0.16em] text-[#E2E6E9]/56 md:text-right">
-                  Último artículo de la serie
+                <div className="border border-white/10 bg-white/[0.025] p-6 md:text-right">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
+                    Último artículo de la serie
+                  </p>
+                  <p className="mt-5 text-sm font-semibold uppercase tracking-[0.16em] text-[#E2E6E9]/56">
+                    Está leyendo el cierre de esta serie
+                  </p>
                 </div>
               )}
             </div>

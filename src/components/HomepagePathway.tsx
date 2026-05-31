@@ -67,10 +67,10 @@ const pathwayCopy = {
       "Bankable Cash Flow",
       "Capital-Market Scalability",
     ],
-    primaryCta: "Structure your energy opportunity",
-    secondaryCta: "Turn energy potential into bankable assets",
-    primaryHref: "/es/contacto#escribanos",
-    secondaryHref: "/es/energia-empresa-capital#capa-capital",
+    primaryCta: "Explore the Costa Rica opportunity",
+    secondaryCta: "Discuss a structured opportunity",
+    primaryHref: "/en/costa-rica-opportunity",
+    secondaryHref: "/es/contacto#escribanos",
     steps: [
       {
         title: "Strategic Energy Potential",

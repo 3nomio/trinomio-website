@@ -121,6 +121,10 @@ export function getAdjacentInsights(slug: string) {
   };
 }
 
+export function getFinalInsight() {
+  return getAllInsights().at(-1);
+}
+
 export function getInsightCategories() {
   return Array.from(
     new Set(getAllInsights().map((insight) => insight.category)),
