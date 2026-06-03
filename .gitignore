@@ -10,3 +10,5 @@ node_modules/
 *.xls
 *.pptx
 *.pdf
+.vercel
+.env*

@@ -24,7 +24,7 @@ No homepage, 3Labs, insights, thesis, contact, language gateway, or Obsidian fil
 - Desktop: a small lower-right floating pill control remains available during long-scroll reading.
 - Tablet/mobile: the same compact lower-right control remains within the viewport and wraps if needed within the available screen width.
 - Links are keyboard-accessible, use visible focus styling, and preserve the existing Trinomio color system.
-- The control links to the existing alphabetical index anchor with `↑ Índice` and to `/es` with `← Menú`.
+- The control links to the existing alphabetical index anchor with `↑ Subir` and to `/es` with `← Volver`.
 
 ## Validation Commands
 
