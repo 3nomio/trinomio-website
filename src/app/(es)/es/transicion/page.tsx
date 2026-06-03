@@ -105,9 +105,73 @@ export default function TransitionPage() {
               suficiente, competitiva y escalable. Los activos distribuidos, la
               eficiencia, Solar-UPS, BESS, small hydro y resiliencia operativa
               deben organizarse en empresas, contratos, Project Finance, FICR y
-              flujos legibles para el capital.
+              flujos legibles para el capital. La Ley 10086 abrió el marco para
+              generación distribuida detrás del medidor. El Expediente 23414
+              refleja una discusión más amplia sobre modernización, apertura y
+              nuevas formas de organización del sistema. Entre los dos existe la
+              brecha de arquitectura financiera que Trinomio estructura.
             </p>
             <RelatedFrameworks className="max-w-5xl" links={frameworkLinks.transition} />
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32">
+          <div className="orbital-field absolute right-[-10rem] top-16 size-96 rounded-full opacity-18" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="El sistema eléctrico costarricense"
+              title="Una base renovable sólida que enfrenta una nueva presión de escala."
+              description="Costa Rica opera un sistema casi 100% renovable, gestionado por actores públicos y cooperativas distribuidoras. Ese modelo construyó cobertura casi universal, tarifas solidarias y estabilidad institucional. El próximo ciclo exige más energía, más inversión y un tipo de capital que ese modelo no fue diseñado para movilizar directamente."
+            />
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {[
+                {
+                  eyebrow: "La fortaleza",
+                  title: "Generación casi 100% renovable.",
+                  text: "Hidro, geotérmica, eólica y solar. Actores públicos y cooperativas distribuidoras construyeron cobertura casi universal con tarifas solidarias y estabilidad operativa de largo plazo.",
+                },
+                {
+                  eyebrow: "La presión",
+                  title: "Crecimiento, electrificación y DERs distribuidos.",
+                  text: "El aumento de demanda, la electrificación del transporte, la competitividad industrial y los activos distribuidos crean una presión de escala que el sistema centralizado no puede absorber solo.",
+                },
+                {
+                  eyebrow: "La brecha",
+                  title: "Capital que no puede entrar directamente.",
+                  text: "La Ley 10086 habilita generación distribuida detrás del medidor. El Expediente 23414 abre una discusión sobre nuevas formas de participación y organización del sistema. Entre los dos existe la brecha de arquitectura financiera que convierte potencial energético en activos bancables.",
+                },
+              ].map((item, index) => (
+                <article
+                  className="diagram-card relative min-h-72 overflow-hidden p-6"
+                  key={item.eyebrow}
+                >
+                  <div className="orbital-field orbital-drift absolute -right-20 -top-20 size-52 rounded-full opacity-20" />
+                  <p className="relative text-sm text-trinomio-cyan">0{index + 1}</p>
+                  <p className="relative mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
+                    {item.eyebrow}
+                  </p>
+                  <h2 className="relative mt-4 text-3xl font-semibold leading-tight text-white">
+                    {item.title}
+                  </h2>
+                  <p className="relative mt-5 text-sm leading-6 text-[#E2E6E9]/88">
+                    {item.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-10 flow-card border border-trinomio-cyan/25 bg-white/[0.035] p-5">
+              <p className="text-lg leading-8 text-[#E2E6E9]/90">
+                Las cooperativas y distribuidoras no enfrentan un problema de
+                voluntad sino de arquitectura: su mandato solidario, su
+                estructura regulada y su capital propio no fueron diseñados para
+                absorber inversión privada distribuida a la velocidad que la
+                transición requiere. Trinomio no reemplaza ese modelo. Lo
+                complementa con la Capa Empresa que convierte excedente
+                energético en flujos legibles para el capital institucional.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -258,6 +322,44 @@ export default function TransitionPage() {
               title="La oportunidad cruza el umbral cuando puede producir flujo gobernado."
               description="EFI identifica si una función energética crea excedente operativo. La oportunidad se vuelve financiable solo cuando ese excedente puede sostener contratos, trazabilidad y disciplina de capital."
             />
+            <div className="accent-callout mt-10 border border-trinomio-cyan/30 bg-white/[0.04] p-6 backdrop-blur">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
+                EFI = MEV / LCOE
+              </p>
+              <div className="mt-5 grid gap-6 md:grid-cols-3">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-trinomio-green">
+                    MEV
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#E2E6E9]/88">
+                    Valor de Energía Marginal: el valor económico que una
+                    función energética libera al sistema en un momento y
+                    ubicación específicos — tarifa evitada, reducción de punta,
+                    capacidad, flexibilidad.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-trinomio-green">
+                    LCOE
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#E2E6E9]/88">
+                    Costo Nivelado de Energía: el costo de entregar esa función
+                    durante su vida útil. Cae estructuralmente conforme maduran
+                    solar y BESS.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-trinomio-green">
+                    EFI &gt; 1
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-[#E2E6E9]/88">
+                    Cuando MEV supera LCOE existe excedente operativo. Ese
+                    excedente es la base sobre la que la Capa Empresa construye
+                    contratos, gobierno y disciplina de capital.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="diagram-stage relative mt-14 overflow-hidden p-5 sm:p-8">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
               <div className="relative grid gap-4 lg:grid-cols-5">
@@ -312,26 +414,97 @@ export default function TransitionPage() {
           <div className="orbital-field absolute right-[-8rem] top-20 size-96 rounded-full opacity-22" />
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
-              eyebrow="Puente institucional"
-              title="Funciones energéticas → Capa Empresa ← Disciplina de capital"
-              description="El capital no puede migrar directamente hacia oportunidades energéticas dispersas. Project Finance hace bancable el activo individual; FICR, portafolio e instrumentos de mercado ayudan a que la transición sea escalable."
+              eyebrow="Respuesta institucional"
+              title="EE, Project Finance y FICR cierran el circuito."
+              description="La transición no se financia con proyectos aislados. Se financia cuando la Empresa Estructurada convierte excedente operativo en activo bancable, Project Finance crea la primera capa de disciplina y el FICR escala esa bancabilidad hacia portafolio e intermediación de capital."
             />
-            <div className="diagram-stage relative mt-12 overflow-hidden p-6 sm:p-8">
-              <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
-              <div className="relative grid gap-4 lg:grid-cols-4">
-                {transitionSequence.map((item, index) => (
-                  <div className="diagram-card min-h-56 p-6" key={item}>
-                    <p className="text-sm text-trinomio-cyan">0{index + 1}</p>
-                    <GlossaryTermLink className="mt-20 block text-3xl font-semibold leading-tight text-white">
-                      {item}
-                    </GlossaryTermLink>
-                  </div>
-                ))}
-              </div>
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {[
+                {
+                  eyebrow: "01 — EE",
+                  label: "Empresa Estructurada",
+                  text: "Vehículo con gobierno, contratos, medición, asignación de riesgos y reporting. Convierte función energética en unidad techno-económica comprensible para bancos, SAFIs e inversionistas.",
+                },
+                {
+                  eyebrow: "02 — Project Finance",
+                  label: "Primera capa de bancabilidad",
+                  text: "SPV, contratos, DSCR, CAFDS, asignación de riesgo y disciplina de lenders. Hace bancable el activo individual antes de que el capital institucional pueda escalar la estructura.",
+                },
+                {
+                  eyebrow: "03 — FICR",
+                  label: "Escala de capital",
+                  text: "Vehículo regulado de capital de riesgo que agrupa EEs bancables en portafolio, comprime riesgo para el inversionista institucional y crea el puente hacia mercados de capital.",
+                },
+              ].map((item) => (
+                <article
+                  className="diagram-card relative min-h-80 overflow-hidden p-6"
+                  key={item.eyebrow}
+                >
+                  <div className="orbital-field orbital-drift absolute -right-20 -top-20 size-52 rounded-full opacity-20" />
+                  <p className="relative text-sm text-trinomio-cyan">
+                    {item.eyebrow}
+                  </p>
+                  <h2 className="relative mt-4 text-3xl font-semibold leading-tight text-white">
+                    {item.label}
+                  </h2>
+                  <p className="relative mt-5 text-sm leading-6 text-[#E2E6E9]/88">
+                    {item.text}
+                  </p>
+                </article>
+              ))}
             </div>
             <DiagramNavigation links={frameworkLinks.doctrine} />
           </div>
         </section>
+
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
+          <div className="orbital-field absolute -left-24 top-20 size-80 rounded-full opacity-18" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Para quién es la transición"
+              title="Distintos actores. Distintos mandatos. Una arquitectura común."
+              description="La transición energética no afecta a todos de la misma forma. Cada actor enfrenta presión desde su posición institucional. Trinomio estructura la Capa Empresa desde el mandato específico de cada uno."
+            />
+            <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  audience: "Cooperativas y distribuidoras",
+                  text: "Redes, usuarios y balances que cambian con DERs, electrificación y nuevas cargas. La Capa Empresa estructura la transición sin debilitar el modelo solidario.",
+                },
+                {
+                  audience: "Desarrolladores y generadores",
+                  text: "Activos u oportunidades que necesitan contratos, vehículos de proyecto y rutas de capital para volverse bancables ante bancos, SAFIs e inversionistas.",
+                },
+                {
+                  audience: "Grandes consumidores y off-takers",
+                  text: "La energía afecta costo, continuidad y competitividad. EaaS, PPA y resiliencia pueden convertirse en flujos contractuales gobernados y financiables.",
+                },
+                {
+                  audience: "Inversionistas, SAFIs y bancos",
+                  text: "El capital busca estructuras con gobierno, información, contratos y protección suficientes para suscribir riesgo. Project Finance y FICR organizan esa exposición.",
+                },
+              ].map((item, index) => (
+                <article
+                  className="flow-card border border-white/12 bg-white/[0.04] p-5"
+                  key={item.audience}
+                >
+                  <p className="text-sm text-trinomio-cyan">0{index + 1}</p>
+                  <h2 className="mt-8 text-2xl font-semibold leading-tight text-white">
+                    {item.audience}
+                  </h2>
+                  <p className="mt-5 text-sm leading-6 text-[#E2E6E9]/88">
+                    {item.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+            <RelatedFrameworks links={primaryLoopLinks} />
+          </div>
+        </section>
+
+        <OrbitalDivider />
 
         <section className="relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
