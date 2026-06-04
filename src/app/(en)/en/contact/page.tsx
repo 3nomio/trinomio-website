@@ -9,16 +9,6 @@ export const metadata: Metadata = {
     "Contact Trinomio to explore Costa Rica's energy-transition opportunity and bankable long-term energy cash-flow assets.",
 };
 
-const audiences = [
-  "International developers",
-  "Investors",
-  "DFIs / climate capital",
-  "Banks",
-  "SAFI / FICR readers",
-  "Strategic energy partners",
-  "Regional capital-market actors",
-] as const;
-
 export default function EnglishContactPage() {
   return (
     <main className="relative min-h-svh overflow-hidden bg-trinomio-navy-deep text-white">
@@ -72,15 +62,26 @@ export default function EnglishContactPage() {
           <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
             Who this page is for
           </p>
-          <div className="mt-5 flex flex-wrap gap-2">
-            {audiences.map((audience) => (
-              <span
-                className="border border-white/10 bg-white/[0.04] px-3 py-2 text-xs font-semibold leading-5 text-[#E2E6E9]/86"
-                key={audience}
-              >
-                {audience}
-              </span>
-            ))}
+          <div className="mt-5 space-y-4">
+            <div className="border-l-2 border-trinomio-cyan/40 pl-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-trinomio-cyan">
+                Financial institutions / SAFIs
+              </p>
+              <p className="mt-2 text-xs leading-5 text-[#E2E6E9]/82">
+                Energy transition deal flow that doesn&apos;t reach you
+                structured. Trinomio converts it into DSCR-tested, FICR-ready
+                portfolios with regulated cooperative counterparties.
+              </p>
+            </div>
+            <div className="border-l-2 border-trinomio-green/40 pl-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-trinomio-green">
+                Strategic energy partners
+              </p>
+              <p className="mt-2 text-xs leading-5 text-[#E2E6E9]/82">
+                Developers, DFIs, banks, and regional capital actors exploring
+                Costa Rica&apos;s structured energy asset pipeline.
+              </p>
+            </div>
           </div>
           <div className="mt-7 border-t border-white/10 pt-6">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">

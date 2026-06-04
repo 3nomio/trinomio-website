@@ -22,12 +22,12 @@ const contactRoutes = [
   {
     audience: "Cooperativas y distribuidoras eléctricas",
     purpose:
-      "Para convertir transición regulatoria, DER, BESS, resiliencia y nuevos modelos de servicio en arquitectura bancable.",
+      "Su cooperativa tiene la concesión, la carga y los socios. Trinomio estructura la EE para que usted no cargue el CAPEX ni la deuda — energía limpia a precio conocido por 20 años, sin exposición de balance. Su rol como proveedor energético queda intacto.",
   },
   {
     audience: "SAFIs, bancos e inversionistas",
     purpose:
-      "Para analizar Project Finance, flujos bancables, FICR, deuda estructurada, DSCR, tenor y esquemas de financiamiento repetibles.",
+      "El flujo de proyectos de transición energética no llega estructurado a SUGEVAL. Trinomio lo resuelve — EEs con DSCR probado, contrapartes cooperativas reguladas, gobernanza EFI continua y portafolio FICR-listo. Flujos contratados, contrapartes creíbles, reportes que sus LPs pueden leer.",
   },
   {
     audience: "Empresas y off-takers",
@@ -76,6 +76,95 @@ export default function ContactPage() {
               eficiencia o energía excedente mediante Capa Empresa, Project
               Finance, FICR y flujos bancables.
             </p>
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Dos conversaciones"
+              title="La misma arquitectura. Dos puntos de entrada."
+              description="Trinomio trabaja desde el origen de la oportunidad — sea una cooperativa con carga y concesión, o una institución financiera con capital y necesidad de flujos estructurados."
+            />
+            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+              <article className="flow-card border border-trinomio-cyan/24 bg-white/[0.045] p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-trinomio-cyan">
+                  Cooperativas / Distribuidoras eléctricas
+                </p>
+                <h2 className="mt-6 text-2xl font-semibold leading-tight text-white">
+                  Usted tiene la concesión.<br />Le falta la estructura.
+                </h2>
+                <p className="mt-5 text-sm leading-7 text-[#E2E6E9]/86">
+                  Su cooperativa tiene la concesión, la carga y los socios. La
+                  transición energética llega igual — la pregunta es si usted la
+                  lidera o reacciona.
+                </p>
+                <ul className="mt-6 space-y-3">
+                  {[
+                    "EaaS sin CAPEX ni deuda de balance",
+                    "Energía limpia a precio conocido por 20 años",
+                    "Su rol como proveedor energético queda intacto",
+                  ].map((point) => (
+                    <li
+                      className="flex items-start gap-3 text-sm leading-6 text-[#E2E6E9]/88"
+                      key={point}
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-trinomio-cyan" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <a
+                    className="inline-flex text-sm font-semibold text-white transition hover:text-trinomio-cyan"
+                    href="mailto:oscar@3nomio.com?subject=Cooperativa%20-%20Oportunidad%20energ%C3%A9tica"
+                  >
+                    Escribir a Trinomio{" "}
+                    <span className="ml-2 text-trinomio-cyan">→</span>
+                  </a>
+                </div>
+              </article>
+
+              <article className="flow-card border border-trinomio-green/24 bg-white/[0.045] p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-trinomio-green">
+                  SAFIs / Bancos / Inversionistas
+                </p>
+                <h2 className="mt-6 text-2xl font-semibold leading-tight text-white">
+                  El flujo no llega estructurado.<br />Trinomio lo resuelve.
+                </h2>
+                <p className="mt-5 text-sm leading-7 text-[#E2E6E9]/86">
+                  La transición energética en Costa Rica es la mayor oportunidad
+                  de despliegue de capital de la próxima década. El problema: el
+                  flujo de proyectos no llega estructurado a SUGEVAL.
+                </p>
+                <ul className="mt-6 space-y-3">
+                  {[
+                    "EEs con DSCR probado y gobernanza EFI continua",
+                    "Contrapartes cooperativas reguladas y creíbles",
+                    "Portafolio FICR-listo, reportes que sus LPs pueden leer",
+                  ].map((point) => (
+                    <li
+                      className="flex items-start gap-3 text-sm leading-6 text-[#E2E6E9]/88"
+                      key={point}
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-trinomio-green" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <a
+                    className="inline-flex text-sm font-semibold text-white transition hover:text-trinomio-green"
+                    href="mailto:oscar@3nomio.com?subject=SAFI%20-%20Portafolio%20FICR"
+                  >
+                    Escribir a Trinomio{" "}
+                    <span className="ml-2 text-trinomio-green">→</span>
+                  </a>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
