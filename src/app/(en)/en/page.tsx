@@ -1,6 +1,8 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
 import { HomepagePathway } from "@/components/HomepagePathway";
+import { EngagementPlaybookV2SectionEN } from "@/components/EngagementPlaybookV2SectionEN";
+import { PersonaRouterV2SectionEN } from "@/components/PersonaRouterV2SectionEN";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,6 +39,8 @@ export default function EnglishHome() {
         </div>
       </section>
       <HomepagePathway compact locale="en" />
+      <EngagementPlaybookV2SectionEN />
+      <PersonaRouterV2SectionEN />
     </main>
   );
 }
