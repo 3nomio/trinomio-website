@@ -29,7 +29,7 @@ export function EngagementPlaybookV2SectionEN() {
               <span className="block font-semibold text-white mb-3">
                 Others build projects and guess once. We build companies, measure every day, and design them with doors to the future.
               </span>
-              The difference isn't speed—it's sustainability. A project might earn money for one year. A company earns money for twenty years because it's designed to measure what's working, adapt when conditions change, and grow when the moment arrives. That's why we measure every month, why we build governance from day one, and why we design for doors—the right to evolve without tearing down the foundation.
+              The difference isn&apos;t speed—it&apos;s sustainability. A project might earn money for one year. A company earns money for twenty years because it&apos;s designed to measure what&apos;s working, adapt when conditions change, and grow when the moment arrives. That&apos;s why we measure every month, why we build governance from day one, and why we design for doors—the right to evolve without tearing down the foundation.
             </p>
           </div>
         </div>

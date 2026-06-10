@@ -33,7 +33,7 @@ export function CaseStudyV2SectionEN() {
               Build. Measure. Doors.
             </h1>
             <p className="mt-8 text-lg leading-8 text-[#E2E6E9]/92">
-              Land and a tariff window became a company worth $350M. The story of what we build, how we know it's working, and why it's designed to grow.
+              Land and a tariff window became a company worth $350M. The story of what we build, how we know it&apos;s working, and why it&apos;s designed to grow.
             </p>
           </div>
         </section>
@@ -58,14 +58,14 @@ export function CaseStudyV2SectionEN() {
               Your energy potential has a structure waiting.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#E2E6E9]/90">
-              Whether you're a developer, landowner, institution, or capital provider, we build companies that measure honestly and grow sustainably.
+              Whether you&apos;re a developer, landowner, institution, or capital provider, we build companies that measure honestly and grow sustainably.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
               <a
                 href="/en/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-trinomio-cyan px-6 py-3 font-semibold text-black transition hover:bg-trinomio-cyan/90"
               >
-                Let's talk
+                Let&apos;s talk
                 <span>→</span>
               </a>
               <a

@@ -61,7 +61,7 @@ export function CaseStudyNarrativeEN() {
         <div className="rounded-lg border border-white/12 bg-white/[0.035] p-6 text-sm leading-7 text-[#E2E6E9]/90">
           <p>
             <span className="font-semibold text-white">The potential is not technical.</span>{" "}
-            It's institutional: Are there actors, regulation, and demand ready to make this work{" "}
+            It&apos;s institutional: Are there actors, regulation, and demand ready to make this work{" "}
             <em>right now</em>?
           </p>
           <p className="mt-3">
@@ -117,7 +117,7 @@ export function CaseStudyNarrativeEN() {
               className="rounded-lg border border-white/10 bg-white/[0.045] p-6"
             >
               <p className="text-sm font-semibold text-white">
-                {section.actor}'s position: {section.position}
+                {section.actor}&apos;s position: {section.position}
               </p>
               <ul className="mt-3 space-y-2">
                 {section.issues.map((issue) => (
@@ -146,7 +146,7 @@ export function CaseStudyNarrativeEN() {
       <section className="space-y-6">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#609DFF]">
-            Trinomio's Intervention
+            Trinomio&apos;s Intervention
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-white">
             Firm Layer Architecture
@@ -385,7 +385,7 @@ export function CaseStudyNarrativeEN() {
             The Guayabo Signal
           </p>
           <h2 className="mt-4 text-3xl font-semibold text-white">
-            This isn't about one solar farm. It's about the institutional pattern.
+            This isn&apos;t about one solar farm. It&apos;s about the institutional pattern.
           </h2>
 
           <div className="mt-8 space-y-3">
@@ -394,7 +394,7 @@ export function CaseStudyNarrativeEN() {
               "Converted to brownfield asset (PPA + DSCR + bankability)",
               "Converted to capital instrument (Project Finance debt + platform equity)",
               "Ready to aggregate into portfolio (FICR, securitization, refinance)",
-            ].map((step, i) => (
+            ].map((step) => (
               <p key={step} className="text-sm leading-6 text-[#E2E6E9]/90 flex gap-3">
                 <span className="font-semibold text-trinomio-green">✓</span>
                 {step}

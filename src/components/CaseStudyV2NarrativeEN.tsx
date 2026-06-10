@@ -73,10 +73,10 @@ export function CaseStudyV2NarrativeEN() {
 
         <div className="rounded-lg border border-trinomio-cyan/30 bg-trinomio-cyan/5 p-6">
           <p className="text-sm font-semibold text-white">
-            We didn't ask: "Can we build solar here?" (obvious yes)
+            We didn&apos;t ask: &quot;Can we build solar here?&quot; (obvious yes)
           </p>
           <p className="mt-3 text-sm leading-6 text-[#E2E6E9]/90">
-            We asked: <span className="font-semibold">"Can we build a company that earns money for twenty years, where every actor trusts the numbers and knows their place?"</span>
+            We asked: <span className="font-semibold">&quot;Can we build a company that earns money for twenty years, where every actor trusts the numbers and knows their place?&quot;</span>
           </p>
         </div>
 
@@ -154,7 +154,7 @@ export function CaseStudyV2NarrativeEN() {
 
         <div className="rounded-lg border-2 border-[#609DFF]/40 bg-white/[0.055] p-6">
           <p className="text-sm font-semibold text-white">
-            Result: <span className="text-[#609DFF]">Everyone trusts the numbers because they're real and current.</span>
+            Result: <span className="text-[#609DFF]">Everyone trusts the numbers because they&apos;re real and current.</span>
           </p>
         </div>
       </section>
@@ -291,7 +291,7 @@ export function CaseStudyV2NarrativeEN() {
               "↓ MEASURE every day (real numbers, not guesses)",
               "↓ Design for doors (flexibility, optionality, growth)",
               "↓ Worth more money (because it can adapt and survive)",
-            ].map((step, i) => (
+            ].map((step) => (
               <p key={step} className="text-sm leading-6 text-[#E2E6E9]/90 font-semibold">
                 {step}
               </p>
@@ -299,7 +299,7 @@ export function CaseStudyV2NarrativeEN() {
           </div>
 
           <p className="mt-8 border-t border-white/10 pt-6 text-base leading-7 text-[#E2E6E9]/90">
-            <span className="font-semibold text-white">Guayabo proved:</span> When you build a company instead of a project, measure instead of guess, and design instead of lock, everyone wins. This pattern repeats. It scales. It's the future of energy finance.
+            <span className="font-semibold text-white">Guayabo proved:</span> When you build a company instead of a project, measure instead of guess, and design instead of lock, everyone wins. This pattern repeats. It scales. It&apos;s the future of energy finance.
           </p>
         </div>
       </section>

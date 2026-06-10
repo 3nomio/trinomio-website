@@ -120,7 +120,7 @@ export function EngagementPlaybook() {
         <div className="relative mb-12 flex items-start justify-between">
           <div className="absolute left-[12%] right-[12%] top-12 h-px bg-[linear-gradient(90deg,var(--cyan),#609DFF,var(--green),transparent)]" />
 
-          {phases.map((phase, index) => {
+          {phases.map((phase) => {
             const colors = colorClasses[phase.color];
             const isExpanded = expanded === phase.id;
 
@@ -214,7 +214,7 @@ export function EngagementPlaybook() {
 
                       {/* Why It Matters */}
                       <p className="text-sm italic leading-6 text-[#E2E6E9]/80">
-                        "{phase.whyMatters}"
+                        &quot;{phase.whyMatters}&quot;
                       </p>
                     </div>
                   </div>
@@ -314,7 +314,7 @@ export function EngagementPlaybook() {
 
                   {/* Why It Matters */}
                   <p className="text-xs italic leading-5 text-[#E2E6E9]/75">
-                    "{phase.whyMatters}"
+                    &quot;{phase.whyMatters}&quot;
                   </p>
                 </div>
               )}

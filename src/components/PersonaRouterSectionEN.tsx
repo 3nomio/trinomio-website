@@ -28,9 +28,9 @@ export function PersonaRouterSectionEN() {
               <span className="block font-semibold text-white mb-3">
                 Your role shapes your pathway.
               </span>
-              Whether you're building projects, monetizing assets, acquiring portfolios, or
+              Whether you&apos;re building projects, monetizing assets, acquiring portfolios, or
               providing capital, Trinomio works as the institutional layer that connects your
-              constraints to market-ready solutions. Find yourself above, and let's move
+              constraints to market-ready solutions. Find yourself above, and let&apos;s move
               from potential to scale.
             </p>
           </div>

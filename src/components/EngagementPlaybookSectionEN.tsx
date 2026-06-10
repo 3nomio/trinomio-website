@@ -29,7 +29,7 @@ export function EngagementPlaybookSectionEN() {
               <span className="block font-semibold text-white mb-3">
                 Each phase is concrete. Each outcome is verifiable.
               </span>
-              We don't structure strategies; we structure enterprises that convert energy
+              We don&apos;t structure strategies; we structure enterprises that convert energy
               potential into assets that banks, SAFIs, FICR, and investors can trust. Time,
               team, and cost vary based on your starting point—but the flow is always the
               same: signal → structure → scale.

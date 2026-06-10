@@ -60,7 +60,7 @@ export function CaseStudySectionEN() {
               Ready to convert your energy potential?
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#E2E6E9]/90">
-              Whether you're a developer, landowner, institution, or capital provider, Trinomio
+              Whether you&apos;re a developer, landowner, institution, or capital provider, Trinomio
               helps structure energy into institutional assets ready for capital markets.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
