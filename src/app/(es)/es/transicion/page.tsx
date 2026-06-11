@@ -56,6 +56,45 @@ const transitionSequence = [
   "disciplina de capital",
 ] as const;
 
+const costaRicaSignals = [
+  {
+    signal: "Ley 10086",
+    role: "Base BTM vigente",
+    reading:
+      "Permite estructurar generación distribuida detrás del medidor como punto de partida operativo, sin depender de una reforma mayor para iniciar.",
+  },
+  {
+    signal: "Expediente 23414",
+    role: "Opcionalidad FTM",
+    reading:
+      "No debe modelarse como ingreso base. Debe preservarse mediante cláusulas de pivote, gobierno de EE y arquitectura preparada para migrar cuando exista mercado.",
+  },
+  {
+    signal: "Cooperativas distribuidoras",
+    role: "Contraparte crítica",
+    reading:
+      "Controlan medición, reconocimiento operativo, facturación y relación territorial. La bancabilidad depende de alineación, no solo de ingeniería.",
+  },
+  {
+    signal: "T-SD y bloques horarios",
+    role: "Proxy de valor",
+    reading:
+      "La tarifa y su estructura horaria son el lenguaje inicial para aproximar valor económico antes de que existan señales nodales o spot más precisas.",
+  },
+  {
+    signal: "BESS",
+    role: "Función de flexibilidad",
+    reading:
+      "Su valor depende de reconocimiento regulatorio, medición horaria y contrato capaz de capturar reducción de demanda, arbitraje o resiliencia.",
+  },
+  {
+    signal: "BCR / FICR",
+    role: "Canal de capital",
+    reading:
+      "La oportunidad se vuelve escalable cuando el flujo puede entrar a crédito senior, equity institucional y eventual agregación de portafolio.",
+  },
+] as const;
+
 function SignalList({ items }: { items: readonly string[] }) {
   const className =
     "border border-white/10 bg-white/[0.035] px-4 py-3 text-sm text-[#E2E6E9]/90 transition hover:border-trinomio-cyan/40 hover:text-white";
@@ -171,6 +210,44 @@ export default function TransitionPage() {
                 complementa con la Capa Empresa que convierte excedente
                 energético en flujos legibles para el capital institucional.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy-deep px-5 py-24 sm:px-8 lg:py-32">
+          <div className="adaptive-grid absolute inset-0 opacity-36" />
+          <div className="orbital-field absolute -left-28 top-24 size-96 rounded-full opacity-16" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Mapa de señales"
+              title="La oportunidad costarricense se lee por señales institucionales, no por una sola narrativa."
+              description="Cada señal cumple un papel diferente: algunas habilitan ejecución inmediata, otras preservan opcionalidad, otras definen contraparte, precio, flexibilidad o acceso a capital. La inteligencia está en saber qué señal usar para cada decisión."
+            />
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {costaRicaSignals.map((item, index) => (
+                <article
+                  className="diagram-card group relative min-h-72 overflow-hidden p-6 transition hover:-translate-y-0.5 hover:border-trinomio-cyan/45"
+                  key={item.signal}
+                >
+                  <div className="orbital-field absolute -right-20 -top-20 size-52 rounded-full opacity-18 transition group-hover:opacity-28" />
+                  <div className="relative flex items-start justify-between gap-4">
+                    <p className="text-sm text-trinomio-cyan">
+                      0{index + 1}
+                    </p>
+                    <p className="max-w-[10rem] text-right text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-green">
+                      {item.role}
+                    </p>
+                  </div>
+                  <h2 className="relative mt-8 text-3xl font-semibold leading-tight text-white">
+                    {item.signal}
+                  </h2>
+                  <p className="relative mt-5 text-sm leading-6 text-[#E2E6E9]/86">
+                    {item.reading}
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
         </section>

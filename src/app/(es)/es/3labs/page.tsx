@@ -69,6 +69,36 @@ const efiLevels = [
   },
 ] as const;
 
+const labDeliverables = [
+  {
+    lab: "Sentir",
+    question: "¿Dónde existe una señal accionable?",
+    deliverables: [
+      "Mapa de tierra, carga, red y contraparte",
+      "Lectura regulatoria y tarifaria",
+      "Filtro de oportunidad por régimen",
+    ],
+  },
+  {
+    lab: "Dimensionar",
+    question: "¿La señal soporta flujo bancable?",
+    deliverables: [
+      "Modelo energético P50 / P90",
+      "Sensibilidad T-SD, TOD, CAPEX y O&M",
+      "Ruta preliminar EFI → DSCR",
+    ],
+  },
+  {
+    lab: "Rebalancear",
+    question: "¿Qué arquitectura permite financiar y escalar?",
+    deliverables: [
+      "Diseño EE / SPV y gobierno",
+      "EaaS-PPA y waterfall preliminar",
+      "Paquete BCR / FICR / inversionista",
+    ],
+  },
+] as const;
+
 function OrbitalLabs() {
   return (
     <div className="mt-14">
@@ -269,6 +299,49 @@ export default function ThreeLabsPage() {
               Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
               <span className="text-trinomio-cyan">←</span> Capital
             </p>
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32">
+          <div className="adaptive-grid absolute inset-0 opacity-30" />
+          <div className="orbital-field absolute -right-24 top-20 size-96 rounded-full opacity-18" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Entregables"
+              title="Cada Lab produce decisiones, no solo análisis."
+              description="La función de 3Labs es convertir datos dispersos en criterios de acción: qué profundizar, qué descartar, qué estructurar y qué presentar a una contraparte de capital."
+            />
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
+              {labDeliverables.map((item, index) => (
+                <article
+                  className="diagram-card relative flex min-h-[30rem] flex-col overflow-hidden p-6"
+                  key={item.lab}
+                >
+                  <div className="orbital-field absolute -right-24 -top-24 size-64 rounded-full opacity-16" />
+                  <p className="relative text-sm text-trinomio-cyan">
+                    0{index + 1}
+                  </p>
+                  <h2 className="relative mt-7 text-4xl font-semibold text-white">
+                    {item.lab}
+                  </h2>
+                  <p className="relative mt-4 text-base font-semibold leading-7 text-trinomio-green">
+                    {item.question}
+                  </p>
+                  <ul className="relative mt-8 grid gap-3">
+                    {item.deliverables.map((deliverable) => (
+                      <li
+                        className="border border-white/10 bg-white/[0.035] px-4 py-3 text-sm leading-6 text-[#E2E6E9]/88"
+                        key={deliverable}
+                      >
+                        {deliverable}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

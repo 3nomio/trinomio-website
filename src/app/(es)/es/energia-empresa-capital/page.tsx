@@ -1,5 +1,6 @@
 import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNavigation";
 import { EcosystemArchitectureMap } from "@/components/EcosystemArchitectureMap";
+import { FirmConversionLayer } from "@/components/FirmConversionLayer";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { InstitutionalTraction } from "@/components/InstitutionalTraction";
@@ -235,6 +236,10 @@ export default function EnergyFirmCapitalPage() {
             <DiagramNavigation links={frameworkLinks.proof} />
           </div>
         </section>
+
+        <OrbitalDivider />
+
+        <FirmConversionLayer />
 
         <OrbitalDivider />
 

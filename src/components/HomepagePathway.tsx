@@ -7,22 +7,21 @@ const pathwayCopy = {
     eyebrow: "Ruta de transformación",
     title: "Del potencial energético estratégico al activo bancable",
     description:
-      "Una ruta institucional para convertir potencial energético en activos ejecutables, financiables y escalables.",
+      "Una ruta institucional para convertir valor energético en flujos medibles, reconocidos, contratados y financiables.",
     thesis: "Energía → Empresa ← Capital",
     thesisCopy:
-      "La empresa es la capa gobernada de ejecución donde potencial energético, disciplina de capital y gobernanza se convierten en arquitectura financiable.",
+      "La empresa es la capa gobernada que preserva valor energético y lo convierte en obligaciones contractuales, flujos controlados y revenue bancable.",
     operatingCopy:
-      "El capital no financia papel. Financia estructuras gobernadas capaces de ejecutar, monitorear y proteger flujos de caja.",
+      "El capital no financia potencial técnico. Financia estructuras gobernadas capaces de ejecutar, monitorear y proteger flujos de caja.",
     capitalCopy:
       "Detrás de esta ruta operan herramientas como Project Finance, vehículos temáticos de inversión, securitización y mercado de capitales.",
     governanceTitle: "Capital → Empresa",
     governanceSteps: [
-      "Disciplina de Capital",
-      "Requisitos de Estructuración",
-      "Gobernanza y Ejecución",
-      "Contratos, Riesgos y Controles",
-      "Flujo de Caja Bancable",
-      "Escalabilidad vía Mercado de Capitales",
+      "Medición",
+      "Reconocimiento Regulatorio",
+      "Captura Contractual",
+      "Validación de Crédito",
+      "Formación de Capital",
     ],
     primaryCta: "Estructure su oportunidad energética",
     secondaryCta: "Convierta potencial energético en activos bancables",
@@ -32,17 +31,17 @@ const pathwayCopy = {
       {
         title: "Potencial Energético Estratégico",
         description:
-          "Terrenos, industrias, zonas francas, Solar-UPS, pequeña hidro, eficiencia y excedentes energéticos con potencial de convertirse en valor.",
+          "Terrenos, industrias, zonas francas, Solar-UPS, BESS, pequeña hidro, eficiencia y excedentes energéticos con potencial de convertirse en valor económico.",
       },
       {
-        title: "Estructuración Trinomio 3-Syst",
+        title: "Capa Empresa",
         description:
-          "Convertimos ese potencial en una arquitectura gobernada, con contratos, riesgos, ejecución y flujo de caja financiable.",
+          "Medimos, reconocemos, contratamos y gobernamos ese valor para convertirlo en obligaciones de pago, cascadas de flujo y estructuras auditables.",
       },
       {
-        title: "Activos Bancables y Escalables",
+        title: "Flujos Bancables y Escalables",
         description:
-          "La oportunidad pasa de proyecto aislado a activo energético financiable, con capacidad de atraer capital y escalar hacia nuevas oportunidades de inversión.",
+          "La oportunidad pasa de proyecto aislado a Empresa Estructurada con flujo probado, capacidad de atraer capital y ruta de agregación de portafolio.",
       },
     ],
   },
@@ -50,22 +49,21 @@ const pathwayCopy = {
     eyebrow: "Transformation pathway",
     title: "From Strategic Energy Potential to Bankable Assets",
     description:
-      "An institutional route for converting energy potential into executable, financeable, and scalable assets.",
+      "An institutional route for converting energy value into measured, recognized, contracted, and financeable cash flows.",
     thesis: "Energy → Firm ← Capital",
     thesisCopy:
-      "The firm is the governed execution layer where energy potential, capital discipline, and governance become financeable architecture.",
+      "The firm is the governed layer that preserves energy value and converts it into contractual obligations, controlled cash flows, and bankable revenue.",
     operatingCopy:
-      "Capital does not finance paper. It finances governed structures capable of executing, monitoring, and protecting cash flows.",
+      "Capital does not finance technical potential. It finances governed structures capable of executing, monitoring, and protecting cash flows.",
     capitalCopy:
       "Behind this pathway are tools such as Project Finance, thematic investment vehicles, securitization, and capital-market instruments.",
     governanceTitle: "Capital → Firm",
     governanceSteps: [
-      "Capital Discipline",
-      "Structuring Requirements",
-      "Governance & Execution Layer",
-      "Contracts, Risks & Controls",
-      "Bankable Cash Flow",
-      "Capital-Market Scalability",
+      "Metering",
+      "Regulatory Recognition",
+      "Contractual Capture",
+      "Credit Validation",
+      "Capital Formation",
     ],
     primaryCta: "Explore the Costa Rica opportunity",
     secondaryCta: "Discuss a structured opportunity",
@@ -75,17 +73,17 @@ const pathwayCopy = {
       {
         title: "Strategic Energy Potential",
         description:
-          "Land, industries, free zones, Solar-UPS, small hydro, efficiency, and energy surplus with potential to become value.",
+          "Land, industries, free zones, Solar-UPS, BESS, small hydro, efficiency, and energy surplus with potential to become economic value.",
       },
       {
-        title: "Trinomio 3-Syst Structuring",
+        title: "Firm Layer Structuring",
         description:
-          "We convert that potential into a governed architecture with contracts, risk allocation, execution capacity, and financeable cash flow.",
+          "We measure, recognize, contract, and govern that value so it becomes payment obligations, controlled waterfalls, and auditable structures.",
       },
       {
-        title: "Bankable and Scalable Assets",
+        title: "Bankable and Scalable Cash Flows",
         description:
-          "The opportunity moves from an isolated project into a financeable energy asset capable of attracting capital and scaling into new investment opportunities.",
+          "The opportunity moves from an isolated project into a structured company with tested cash flow, capital access, and a path to portfolio aggregation.",
       },
     ],
   },

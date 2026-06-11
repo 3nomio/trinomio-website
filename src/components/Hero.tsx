@@ -19,13 +19,14 @@ export function Hero() {
             </p>
             <h1 className="text-[clamp(2.35rem,8.5vw,3.5rem)] font-semibold leading-[1.04] text-white sm:text-[clamp(3.25rem,6vw,4.75rem)] sm:leading-[1.02] lg:text-[clamp(3.7rem,5.1vw,5.35rem)]">
               <span className="block">
-                Convertimos potencial energético estratégico
+                Convertimos valor energético
               </span>
-              <span className="block">en activos bancables.</span>
+              <span className="block">en infraestructura bancable.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-[#E2E6E9]/92 sm:text-lg sm:leading-8">
-              Trinomio traduce funciones energéticas y disciplina de capital en
-              arquitectura gobernada, financiable y escalable.
+              Trinomio estructura proyectos de energía distribuida desde
+              potencial técnico hacia flujos gobernados, contractuales y
+              probados por crédito que el capital institucional puede financiar.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/es/contacto#escribanos">
@@ -82,9 +83,9 @@ export function Hero() {
         <div className="grid gap-6 pb-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:pb-16">
           <div className="border-l border-trinomio-cyan/40 pl-5">
             <p className="max-w-xl text-base leading-7 text-[#E2E6E9]/86">
-              Trinomio organiza energía física, Capa Empresa y disciplina de
-              capital para mover oportunidades desde potencial energético hacia
-              activos estructurados, financiables y escalables.
+              La energía crea valor físico. La Capa Empresa lo mide, reconoce,
+              contrata, gobierna y convierte en flujo de caja bancable antes de
+              llevarlo a capital.
             </p>
           </div>
           <div className="diagram-card grid overflow-hidden backdrop-blur md:grid-cols-3">

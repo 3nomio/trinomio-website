@@ -22,12 +22,13 @@ export default function EnglishHome() {
           Energy → Firm ← Capital
         </p>
         <h1 className="mt-8 text-4xl font-semibold leading-tight sm:text-6xl">
-          Costa Rica&apos;s energy transition is a capital-structuring opportunity.
+          Turn Costa Rican energy value into bankable infrastructure.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#E2E6E9]/90">
-          Trinomio helps international partners convert long-term PPA and EaaS
-          cash flows into structured, bankable investment assets with a pathway
-          toward refinancing, pooling, securitization, and capital recycling.
+          Trinomio helps international partners convert distributed energy
+          potential into governed, contractual, credit-tested cash flows with a
+          pathway toward refinancing, pooling, securitization, and capital
+          recycling.
         </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
           <ButtonLink href="/en/costa-rica-opportunity">

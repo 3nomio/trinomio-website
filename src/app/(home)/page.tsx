@@ -23,9 +23,9 @@ export default function Home() {
         <LanguageGatewayDiagram />
 
         <p className="mt-7 max-w-2xl text-base font-semibold leading-7 text-white sm:text-lg">
-          Strategic energy potential into bankable assets.
+          Energy value into bankable infrastructure.
           <span className="block text-[#E2E6E9]/86">
-            Potencial energético estratégico en activos bancables.
+            Valor energético en infraestructura bancable.
           </span>
         </p>
 
