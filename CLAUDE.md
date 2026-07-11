@@ -22,7 +22,8 @@ differentiated value emerges; the **Operating System** explains *how* Trinomio
 captures it. The chain runs: structural forces → systemic risks → risk pricing →
 `ΔTech, ΔReg, ΔCapital` adjustments → capital reallocation → localized
 time-and-place value `P(n,t)` → **Sense → Size → Transform** → enterprise (EE) →
-projects (EP/SPVs) → **FICR** portfolio → learning/redeployment → compounded value.
+SPV project vehicles → **FICR** selection → **EP (Empresa Promovida)** →
+learning/redeployment → compounded value (MOC at Y10).
 Recurring terms you will see in content, components, and data:
 
 - **Energía → Empresa ← Capital** — the core doctrine; the firm ("Empresa") is the
@@ -39,10 +40,13 @@ Recurring terms you will see in content, components, and data:
   time `t`. **EFI** = `MEV / LCOE` (operating-surplus signal; `EFI > 1` precedes the
   bankability and `ROIC > WACC` tests). **D = 0** — the convergence objective (no
   valuable function unmonetized, no material risk unallocated).
-- **EP** (Energy Project), **FICR** (portfolio layer), **3Labs**, **EFI**,
-  **SANSES (EE#1)**, **HoldCo**, **PVGO**, **MOC** (compounded at Y10) —
-  Trinomio-specific frameworks/entities. Preserve their exact spelling and casing.
-  When in doubt about a term, check `src/lib/glossary.ts` (the source of truth).
+- **EP (Empresa Promovida)** — an EE once FICR selects it (lifecycle: `(0→1) ≈ EE`
+  formation, `(1→7)/Y10 ≈ EP` compounding hold). Supersedes the older *Empresa de
+  Portafolio* label for the same concept.
+- **FICR** (portfolio/vehicle layer), **3Labs**, **EFI**, **SANSES (EE#1)**,
+  **HoldCo**, **PVGO**, **MOC** (compounded at Y10) — Trinomio-specific
+  frameworks/entities. Preserve their exact spelling and casing. When in doubt about
+  a term, check `src/lib/glossary.ts` (the source of truth).
 
 ## Tech Stack
 
