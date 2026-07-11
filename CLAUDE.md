@@ -17,18 +17,32 @@ authenticated app surface — all content is code or Markdown, rendered statical
 
 ### Domain vocabulary (for accurate copy and naming)
 
-The strategic model runs: structural forces → systemic risks → risk pricing →
-`ΔTech, ΔReg, ΔCapital` adjustments → capital reallocation → an energy–capital
-paradigm shift → localized time-and-place value `P(n,t)` → enterprise formation.
+Two canonical documents define the strategic model. The **Manifesto** explains *why*
+differentiated value emerges; the **Operating System** explains *how* Trinomio
+captures it. The chain runs: structural forces → systemic risks → risk pricing →
+`ΔTech, ΔReg, ΔCapital` adjustments → capital reallocation → localized
+time-and-place value `P(n,t)` → **Sense → Size → Transform** → enterprise (EE) →
+projects (EP/SPVs) → **FICR** portfolio → learning/redeployment → compounded value.
 Recurring terms you will see in content, components, and data:
 
 - **Energía → Empresa ← Capital** — the core doctrine; the firm ("Empresa") is the
   adaptive unit between energy functions and capital.
-- **EE (Empresa Estructurada)** — the structured firm; the flexible unit of value
-  creation. **SPV** — the rigid financing container subordinate to the EE.
-- **EFI**, **SANSES (EE#1)**, **3Labs**, **HoldCo**, **FICR**, **PVGO**, **MOC**,
-  **P(n,t)** — Trinomio-specific frameworks/entities. Preserve their exact spelling
-  and casing. When in doubt about a term, check `src/lib/glossary.ts`.
+- **EE (Empresa Estructurada)** — the structured firm; the flexible value-creation
+  unit that holds learning, contracts, and PVGO. **SPV** — the rigid, ring-fenced
+  project-finance container subordinate to the EE (capital flows
+  `Capital → EE/HoldCo → SPV`).
+- **Sense → Size → Transform** — the repeatable Operating System methodology: sense
+  where a `P(n,t)` differential opens, size whether it is material/financeable
+  (seven-instrument dashboard, capital-allocation lens), and transform it into an
+  executable enterprise architecture.
+- **P(n,t)** — localized marginal economic value of an energy function at node `n`,
+  time `t`. **EFI** = `MEV / LCOE` (operating-surplus signal; `EFI > 1` precedes the
+  bankability and `ROIC > WACC` tests). **D = 0** — the convergence objective (no
+  valuable function unmonetized, no material risk unallocated).
+- **EP** (Energy Project), **FICR** (portfolio layer), **3Labs**, **EFI**,
+  **SANSES (EE#1)**, **HoldCo**, **PVGO**, **MOC** (compounded at Y10) —
+  Trinomio-specific frameworks/entities. Preserve their exact spelling and casing.
+  When in doubt about a term, check `src/lib/glossary.ts` (the source of truth).
 
 ## Tech Stack
 
