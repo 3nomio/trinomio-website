@@ -1,8 +1,20 @@
-import { EngagementPlaybookV2EN } from "./EngagementPlaybookV2EN";
+import Link from "next/link";
+import { ButtonLink } from "./ButtonLink";
 import { OrbitalDivider } from "./OrbitalDivider";
 import { SectionHeading } from "./SectionHeading";
+import { threeLabsCopy } from "./ThreeLabsMethod";
+
+// One line per step, taken from the approved 3Labs method text.
+const stepLines = {
+  sense: "Sensing tells us which assets are worth forming, and when.",
+  size: "Only opportunities whose energy value covers their cost move forward.",
+  transform:
+    "We form an Energy Enterprise: an energy company structured to be financeable.",
+} as const;
 
 export function EngagementPlaybookV2SectionEN() {
+  const { hero, method, labs } = threeLabsCopy.en;
+
   return (
     <>
       <OrbitalDivider />
@@ -14,23 +26,37 @@ export function EngagementPlaybookV2SectionEN() {
         <div className="orbital-field absolute left-[-12rem] top-1/2 size-96 rounded-full opacity-16" />
         <div className="relative mx-auto max-w-7xl">
           <SectionHeading
+            description={`${hero.intro} ${method.description}`}
             eyebrow="How we work"
-            title="Build companies. Measure every day. Design with doors."
-            description="Three phases. One approach. We convert energy potential into lasting companies that adapt, measure, and grow."
+            title={method.title}
           />
 
-          <div className="mt-16">
-            <EngagementPlaybookV2EN />
+          <div className="mt-14 grid gap-5 lg:grid-cols-3">
+            {labs.map((lab, index) => (
+              <Link
+                className="diagram-card relative block overflow-hidden p-6 transition hover:border-trinomio-cyan/45"
+                href={`/en/3labs#${lab.id}`}
+                key={lab.id}
+              >
+                <div className="orbital-field absolute -right-20 -top-20 size-56 rounded-full opacity-16" />
+                <p className="relative text-sm text-trinomio-cyan">
+                  0{index + 1}
+                </p>
+                <h3 className="relative mt-6 text-3xl font-semibold text-white">
+                  {lab.title}
+                </h3>
+                <p className="relative mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/78">
+                  {lab.subtitle}
+                </p>
+                <p className="relative mt-5 text-base leading-7 text-[#E2E6E9]/90">
+                  {stepLines[lab.id as keyof typeof stepLines]}
+                </p>
+              </Link>
+            ))}
           </div>
 
-          {/* Bottom explanation */}
-          <div className="mt-16 rounded-lg border border-white/10 bg-white/[0.045] p-6 sm:p-8">
-            <p className="text-base leading-7 text-[#E2E6E9]/90">
-              <span className="block font-semibold text-white mb-3">
-                Others build projects and guess once. We build companies, measure every day, and design them with doors to the future.
-              </span>
-              The difference isn&apos;t speed—it&apos;s sustainability. A project might earn money for one year. A company earns money for twenty years because it&apos;s designed to measure what&apos;s working, adapt when conditions change, and grow when the moment arrives. That&apos;s why we measure every month, why we build governance from day one, and why we design for doors—the right to evolve without tearing down the foundation.
-            </p>
+          <div className="mt-10">
+            <ButtonLink href="/en/3labs">Read the 3Labs method -&gt;</ButtonLink>
           </div>
         </div>
       </section>

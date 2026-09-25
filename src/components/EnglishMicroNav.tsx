@@ -2,7 +2,7 @@ import { Logo } from "@/components/Logo";
 import Link from "next/link";
 
 type EnglishMicroNavProps = {
-  active?: "home" | "opportunity" | "insights" | "contact" | "synthesis";
+  active?: "home" | "opportunity" | "3labs" | "insights" | "contact" | "synthesis";
 };
 
 export function EnglishMicroNav({ active = "home" }: EnglishMicroNavProps) {
@@ -33,6 +33,13 @@ export function EnglishMicroNav({ active = "home" }: EnglishMicroNavProps) {
             href="/en/costa-rica-opportunity"
           >
             Costa Rica Opportunity
+          </Link>
+          <Link
+            aria-current={active === "3labs" ? "page" : undefined}
+            className="border border-white/10 bg-white/[0.035] px-3 py-2 transition hover:border-trinomio-cyan/45 hover:text-trinomio-cyan aria-[current=page]:border-trinomio-cyan/40 aria-[current=page]:bg-white/[0.075] aria-[current=page]:text-white"
+            href="/en/3labs"
+          >
+            3Labs
           </Link>
           <Link
             aria-current={active === "insights" ? "page" : undefined}
