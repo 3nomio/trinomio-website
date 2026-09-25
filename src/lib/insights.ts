@@ -8,6 +8,8 @@ export type Insight = {
   date: string;
   author: string;
   coverImage: string;
+  coverImageAlt: string;
+  coverAspectRatio: "16:9" | "3:2";
   slug: string;
   content: string;
   readingTime: number;
@@ -87,6 +89,8 @@ function parseInsight(fileName: string): Insight {
     date: requiredField(frontmatter, "date", fileName),
     author: requiredField(frontmatter, "author", fileName),
     coverImage: requiredField(frontmatter, "coverImage", fileName),
+    coverImageAlt: frontmatter["coverImageAlt"] ?? `Portada del insight: ${frontmatter.title}`,
+    coverAspectRatio: frontmatter["coverAspectRatio"] === "3:2" ? "3:2" : "16:9",
     slug: requiredField(frontmatter, "slug", fileName),
     content,
     readingTime: estimateReadingTime(content),

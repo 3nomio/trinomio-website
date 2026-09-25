@@ -28,7 +28,7 @@ function formatDate(date: string) {
 }
 
 function InlineText({ text }: { text: string }) {
-  const parts = text.split(/(\*\*.*?\*\*|\[[^\]]+\]\((?:<[^>]+>|[^)]+)\))/g);
+  const parts = text.split(/(\*\*.*?\*\*|\*[^*]+\*|\[[^\]]+\]\((?:<[^>]+>|[^)]+)\))/g);
 
   return (
     <>
@@ -41,6 +41,10 @@ function InlineText({ text }: { text: string }) {
               {part.slice(2, -2)}
             </strong>
           );
+        }
+
+        if (part.startsWith("*") && part.endsWith("*")) {
+          return <em key={`${part}-${index}`}>{part.slice(1, -1)}</em>;
         }
 
         if (linkMatch) {
@@ -102,6 +106,10 @@ function ArticleBody({ content }: { content: string }) {
               ) : null}
             </figure>
           );
+        }
+
+        if (trimmed === "---") {
+          return <hr className="border-white/15" key={`divider-${index}`} />;
         }
 
         if (trimmed.startsWith("## ")) {
@@ -215,10 +223,10 @@ export function InsightArticlePage({
                 </div>
               </div>
               <figure className="mt-16 overflow-hidden border border-white/12 bg-white/[0.035] shadow-[0_28px_90px_rgba(0,0,0,0.34)]">
-                <div className="relative aspect-[16/9] w-full">
+                <div className={`relative w-full ${insight.coverAspectRatio === "3:2" ? "aspect-[3/2]" : "aspect-[16/9]"}`}>
                   <Image
-                    alt={`Portada del insight: ${insight.title}`}
-                    className="object-cover"
+                    alt={insight.coverImageAlt}
+                    className={insight.coverAspectRatio === "3:2" ? "object-contain" : "object-cover"}
                     fill
                     priority
                     sizes="(max-width: 768px) calc(100vw - 2.5rem), (max-width: 1280px) calc(100vw - 4rem), 1280px"
