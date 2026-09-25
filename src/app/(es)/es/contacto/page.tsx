@@ -42,7 +42,7 @@ const contactRoutes = [
   {
     audience: "Aliados técnicos, legales o estratégicos",
     purpose:
-      "Para colaborar en empresas estructuradas, SPVs, contratos, seguridad jurídica y plataformas de transición energética.",
+      "Para colaborar en empresas energéticas, SPVs, contratos, seguridad jurídica y plataformas de transición energética.",
   },
 ] as const;
 

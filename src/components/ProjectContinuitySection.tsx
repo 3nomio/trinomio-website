@@ -7,7 +7,7 @@ const continuitySteps = [
   },
   {
     title: "EE aditiva",
-    text: "La Empresa Estructurada no reemplaza el proyecto; agrega Capa Empresa.",
+    text: "La Empresa Energética no reemplaza el proyecto; agrega Capa Empresa.",
   },
   {
     title: "Gobierno y capital",
@@ -86,7 +86,7 @@ export function ProjectContinuitySection({
               Capa añadida
             </p>
             <GlossaryTermLink className="mt-4 block text-4xl font-semibold text-[#F5F0F0]">
-              Empresa Estructurada
+              Empresa Energética
             </GlossaryTermLink>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">

@@ -41,7 +41,7 @@ const pathwayCopy = {
       {
         title: "Flujos Bancables y Escalables",
         description:
-          "La oportunidad pasa de proyecto aislado a Empresa Estructurada con flujo probado, capacidad de atraer capital y ruta de agregación de portafolio.",
+          "La oportunidad pasa de proyecto aislado a Empresa Energética con flujo probado, capacidad de atraer capital y ruta de agregación de portafolio.",
       },
     ],
   },
@@ -83,7 +83,7 @@ const pathwayCopy = {
       {
         title: "Bankable and Scalable Cash Flows",
         description:
-          "The opportunity moves from an isolated project into a structured company with tested cash flow, capital access, and a path to portfolio aggregation.",
+          "The opportunity moves from an isolated project into an Energy Enterprise with tested cash flow, capital access, and a path to portfolio aggregation.",
       },
     ],
   },

@@ -11,7 +11,7 @@ export const pillars = [
     title: "Empresa",
     eyebrow: "Unidad de traducción",
     description:
-      "Empresas Estructuradas, Capa Activo, contratos, gobernanza y disciplina de flujos convierten excedente energético en estructuras financiables.",
+      "Empresas Energéticas, Capa Activo, contratos, gobernanza y disciplina de flujos convierten excedente energético en estructuras financiables.",
   },
   {
     title: "Capital",
@@ -45,21 +45,20 @@ export const metrics = [
 export const labs = [
   {
     title: "Sentir",
-    label: "Señal de Transición",
-    description:
-      "Leer tierra, carga, red, resiliencia, energía excedente y señales regulatorias como potencial energético estratégico estructurable.",
+    label: "Leer lo que todavía no tiene precio",
+    description: "Sentir nos dice qué activos conviene formar y cuándo.",
   },
   {
     title: "Dimensionar",
-    label: "Excedente Operativo",
+    label: "Darle medida a lo que se sintió",
     description:
-      "Traducir productividad energética, EFI, riesgo y economía empresarial en una función techno-económica validable.",
+      "Solo avanzan las oportunidades cuyo valor energético cubre su costo.",
   },
   {
-    title: "Rebalancear",
-    label: "Arquitectura de Inversión",
+    title: "Transformar",
+    label: "Convertir la medida en empresa",
     description:
-      "Conectar bancabilidad, vehículos de inversión, portafolios, reservas e instrumentos financieros para pasar de proyecto financiable a escalabilidad.",
+      "Formamos una Empresa Energética: una empresa energética estructurada para ser financiable.",
   },
 ] as const;
 
@@ -74,7 +73,7 @@ export const collaborationAreas = [
   {
     title: "Estructuración Energía → Empresa ← Capital",
     forWhom:
-      "Para oportunidades energéticas que deben convertirse en Empresas Estructuradas.",
+      "Para oportunidades energéticas que deben convertirse en Empresas Energéticas.",
     outcome:
       "Organiza activos, contratos, operación, gobierno, flujos y disciplina de capital para pasar de potencial energético estratégico a activo bancable.",
   },

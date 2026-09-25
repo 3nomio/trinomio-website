@@ -10,10 +10,6 @@ type Persona = {
   yourProblem: string[];
   theValueAdd: string;
   threeThings: string[];
-  example: {
-    text: string;
-    link: string;
-  };
 };
 
 const personas: Persona[] = [
@@ -31,14 +27,10 @@ const personas: Persona[] = [
     theValueAdd:
       "We combine your projects into one company. Bankers see a company with real data, not a pitch. Cheaper debt. Faster second project.",
     threeThings: [
-      "BUILD: Three projects become one company (not separate bets)",
-      "MEASURE: Banks see real monthly data and trust it",
-      "DOORS: Second project costs 40% less to finance because the first proved the company works",
+      "Three projects become one company (not separate bets)",
+      "Banks see real monthly data and trust it",
+      "Second project costs 40% less to finance because the first proved the company works",
     ],
-    example: {
-      text: "Guayabo developer: Built 1 project → joined a company → financed next 3 at half the cost",
-      link: "/en/cases/guayabo",
-    },
   },
   {
     id: "landowner",
@@ -54,14 +46,10 @@ const personas: Persona[] = [
     theValueAdd:
       "We structure a company that keeps you as owner. Real income every month. In 5 years, you choose: refinance, sell, or hold longer.",
     threeThings: [
-      "BUILD: Company structure keeps you as owner (you don't sell)",
-      "MEASURE: Real monthly income (not a promise, real numbers)",
-      "DOORS: Year 5, you have options (refinance, sell, or keep it)",
+      "Company structure keeps you as owner (you don't sell)",
+      "Real monthly income (not a promise, real numbers)",
+      "Year 5, you have options (refinance, sell, or keep it)",
     ],
-    example: {
-      text: "Guayabo landowner: Contributed land → gets 12–15% annual return on land value → retains ownership",
-      link: "/en/cases/guayabo",
-    },
   },
   {
     id: "institution",
@@ -77,14 +65,10 @@ const personas: Persona[] = [
     theValueAdd:
       "We deliver pre-built companies. Each one arrives with real data, clear reporting, proven measurement. You acquire institutions that can grow.",
     threeThings: [
-      "BUILD: We deliver companies (not raw projects you have to finish)",
-      "MEASURE: Each one has real monthly reporting (you always know the truth)",
-      "DOORS: One company becomes five → five become a portfolio → portfolio is legible to refinance or expand",
+      "We deliver companies (not raw projects you have to finish)",
+      "Each one has real monthly reporting (you always know the truth)",
+      "One company becomes five → five become a portfolio → portfolio is legible to refinance or expand",
     ],
-    example: {
-      text: "Costa Rica cooperative: Acquired 5 pre-structured companies → integrated them → portfolio earning real money",
-      link: "/en/cases/guayabo",
-    },
   },
   {
     id: "capital",
@@ -100,14 +84,10 @@ const personas: Persona[] = [
     theValueAdd:
       "We build companies with real governance. Monthly measurement. Clear security. One company becomes a portfolio. Portfolio is legible to refinance, securitize, or exit.",
     threeThings: [
-      "BUILD: Companies with governance (not just technical assets)",
-      "MEASURE: Monthly reporting to you (you always know if it's working)",
-      "DOORS: One → five → fifty. Portfolio is legible to FICR, refinance, or sale",
+      "Companies with governance (not just technical assets)",
+      "Monthly reporting to you (you always know if it's working)",
+      "One → five → fifty. Portfolio is legible to FICR, refinance, or sale",
     ],
-    example: {
-      text: "Regional bank: Financed first structured company → saw the data → financed 10 more → now manages $50M portfolio",
-      link: "/en/cases/guayabo",
-    },
   },
 ];
 
@@ -217,20 +197,6 @@ export function PersonaRouterV2EN() {
                   </ul>
                 </div>
 
-                <div className="h-px bg-white/10" />
-
-                {/* Example */}
-                <div>
-                  <p className={`text-xs font-semibold uppercase tracking-[0.18em] ${colors.accent}`}>
-                    Real example
-                  </p>
-                  <a
-                    href={persona.example.link}
-                    className={`mt-3 inline-block text-xs font-semibold ${colors.accent} transition hover:underline`}
-                  >
-                    → {persona.example.text}
-                  </a>
-                </div>
               </div>
             )}
           </div>

@@ -55,15 +55,15 @@ const valueArchitectureLayers = [
 const labs = [
   {
     title: "Sentir",
-    text: "detecta la Señal de Transición.",
+    text: "lee lo que todavía no tiene precio.",
   },
   {
     title: "Dimensionar",
-    text: "construye la Capa Empresa.",
+    text: "le da medida a lo que se sintió.",
   },
   {
-    title: "Rebalancear",
-    text: "guía la migración del capital.",
+    title: "Transformar",
+    text: "convierte la medida en empresa.",
   },
 ] as const;
 
@@ -252,7 +252,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Arquitectura operativa"
               title="La arquitectura operativa detrás del modelo"
-              description="Project Finance, HoldCo, Empresas Estructuradas y SPVs siguen siendo relevantes: son la primera capa de bankability que ordena propiedad, contratos, riesgo, DSCR, CAFDS, seguridad y captura de flujo antes de escalar hacia portafolio."
+              description="Project Finance, HoldCo, Empresas Energéticas y SPVs siguen siendo relevantes: son la primera capa de bankability que ordena propiedad, contratos, riesgo, DSCR, CAFDS, seguridad y captura de flujo antes de escalar hacia portafolio."
             />
             <EcosystemArchitectureMap />
             <DiagramNavigation links={frameworkLinks.proof} />
@@ -302,7 +302,7 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Creación de Valor"
-              title="De infraestructura dispersa a Empresa Estructurada."
+              title="De infraestructura dispersa a Empresa Energética."
             />
             <TerritorialTransitionCard />
             <RelatedFrameworks links={frameworkLinks.transition} />
@@ -317,7 +317,7 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Conexión con 3Labs"
-              title="Sentir, Dimensionar y Rebalancear convierten doctrina en capacidad operativa."
+              title="Sentir, Dimensionar y Transformar convierten doctrina en capacidad operativa."
             />
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
               {labs.map((lab, index) => (

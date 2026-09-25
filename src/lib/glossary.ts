@@ -151,14 +151,22 @@ export const glossaryTerms = [
       "El SPV captura y ring-fencea flujos de caja de proyecto mediante contratos, garantías, IRR, NPV, CAFDS y DSCR. Es una capa esencial de Project Finance; la firma crea valor adaptativo al conectar esa bankability con portafolios, FICR e instrumentos de mercado de capitales.",
   },
   {
-    term: "EE / Empresa Estructurada",
+    term: "EE / Empresa Energética",
     slug: "empresa-estructurada",
     category: "Marcos Trinomio",
     definition:
-      "Empresa Estructurada: unidad empresarial organizada con gobierno, contratos, medición, asignación de riesgos y reporting, diseñada para convertir oportunidades energéticas en flujos gobernados y vehículos financiables.",
+      "Empresa Energética: una empresa energética estructurada para ser financiable. Tiene modelo de negocio, contratos, derechos, medición y gobierno, de modo que el capital puede entenderla, medirla y financiarla.",
     trinomioLens:
       "La EE es donde la oportunidad energética se convierte en una unidad institucionalmente legible: define el perímetro empresarial que permite traducir activos distribuidos, operación, contratos, riesgo y disciplina de capital.",
-    aliases: ["Capa Empresa", "Empresa Estructurada", "EE"],
+    aliases: ["Capa Empresa", "Empresa Energética", "Empresas Energéticas", "EE"],
+  },
+  {
+    term: "Empresa Estructurada",
+    slug: "empresa-estructurada-nombre-anterior",
+    category: "Marcos Trinomio",
+    definition:
+      "Nombre anterior de la EE, usado hasta septiembre de 2026. Desde entonces, EE significa Empresa Energética: una empresa energética estructurada para ser financiable. Ver EE / Empresa Energética.",
+    aliases: ["Empresas Estructuradas"],
   },
   {
     term: "Gobierno operativo",
@@ -492,13 +500,14 @@ export const glossaryTerms = [
     aliases: ["alianzas"],
   },
   {
-    term: "Detectar-Dimensionar-Rebalancear (Sense-Size-Rebalance)",
+    term: "Sentir-Dimensionar-Transformar (Sense-Size-Transform)",
     slug: "sense-size-rebalance",
     category: "Marcos Trinomio",
     definition:
-      "Secuencia operativa de Trinomio para detectar señales de transición, dimensionar estructuras de empresa y activos, y reasignar capital hacia mejores posiciones ajustadas por riesgo.",
+      "Método de 3Labs, el laboratorio de Trinomio. Sentir es leer lo que todavía no tiene precio; Dimensionar es darle medida a lo que se sintió; Transformar es convertir esa medida en una Empresa Energética que el capital puede financiar.",
     trinomioLens:
-      "Detectar-Dimensionar-Rebalancear es el ciclo de gestión detrás de Energía → Empresa ← Capital. Mantiene la estrategia vinculada a señales observables de transición, excedente operativo, formación de empresas invertibles y disciplina de capital.",
+      "No es una secuencia que termina. Es un ciclo: lo que se aprende al construir vuelve al laboratorio y afina lo que se siente después. Hasta septiembre de 2026 el tercer paso se llamaba Rebalancear.",
+    aliases: ["Sentir, Dimensionar y Transformar", "Detectar-Dimensionar-Rebalancear", "Sense-Size-Rebalance"],
   },
   {
     term: "Energía → Empresa ← Capital",

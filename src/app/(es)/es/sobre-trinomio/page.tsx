@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 };
 
 const labs = [
-  { title: "Sentir", text: "Detectamos tierra, carga, Solar-UPS, small hydro, BESS, DERs y señales regulatorias antes de que sean activos financiables." },
-  { title: "Dimensionar", text: "Convertimos oportunidad greenfield en función techno-económica, excedente operativo y Empresa Estructurada." },
-  { title: "Rebalancear", text: "Conectamos Project Finance, FICR, portafolio e instrumentos financieros para escalar la transición." },
+  { title: "Sentir", text: "Leer lo que todavía no tiene precio. Sentir nos dice qué activos conviene formar y cuándo." },
+  { title: "Dimensionar", text: "Darle medida a lo que se sintió. Solo avanzan las oportunidades cuyo valor energético cubre su costo." },
+  { title: "Transformar", text: "Convertir la medida en empresa. Formamos una Empresa Energética: una empresa energética estructurada para ser financiable." },
 ] as const;
 
 const riskSignals = [

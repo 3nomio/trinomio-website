@@ -10,8 +10,10 @@ import { PillarCard } from "@/components/PillarCard";
 import { ProjectContinuitySection } from "@/components/ProjectContinuitySection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { AudienceSection } from "@/components/AudienceSection";
+import { ButtonLink } from "@/components/ButtonLink";
 import { CollaborationAreas } from "@/components/CollaborationAreas";
 import { TerritorialTransitionCard } from "@/components/TerritorialTransitionCard";
+import { threeLabsCopy } from "@/components/ThreeLabsMethod";
 import { labs, pillars } from "@/lib/content";
 import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNavigation";
 import { getSpanishInsights } from "@/lib/insights";
@@ -84,7 +86,7 @@ export default function SpanishHome() {
             <div className="mt-6 grid gap-5 md:grid-cols-3">
               {[
                 "El potencial estratégico revela recurso, demanda, resiliencia o energía excedente.",
-                "La Empresa Estructurada traduce excedente operativo en contratos, vehículo de proyecto y reporting.",
+                "La Empresa Energética traduce excedente operativo en contratos, vehículo de proyecto y reporting.",
                 "La bancabilidad disciplina el activo individual; los mercados de capital crean escala.",
               ].map((item, index) => (
                 <p
@@ -108,7 +110,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Para desarrolladores, generadores y propietarios"
               title="Su oportunidad no desaparece dentro de la estructura."
-              description="La Empresa Estructurada es una capa institucional aditiva: conserva el proyecto y le suma gobierno, financiamiento, intermediación de mercado y escala."
+              description="La Empresa Energética es una capa institucional aditiva: conserva el proyecto y le suma gobierno, financiamiento, intermediación de mercado y escala."
             />
             <ProjectContinuitySection simplified />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -126,7 +128,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Tracción institucional"
               title="El marco Energía → Empresa ← Capital ya se aplica en estructuras reales."
-              description="Trinomio trabaja en la conversión de oportunidades energéticas en Empresa Estructurada, Capa Empresa y Capa Capital bajo criterios institucionales de bancabilidad."
+              description="Trinomio trabaja en la conversión de oportunidades energéticas en Empresa Energética, Capa Empresa y Capa Capital bajo criterios institucionales de bancabilidad."
             />
             <InstitutionalTraction />
             <RelatedFrameworks links={frameworkLinks.proof} />
@@ -195,8 +197,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="3Labs"
-              title="Capacidades dinámicas para finanzas energéticas adaptativas."
-              description="Sentir, Dimensionar y Rebalancear describen cómo una oportunidad energética pasa de potencial estratégico a función validada, bancabilidad, arquitectura de inversión y escalabilidad de transición."
+              title={threeLabsCopy.es.method.title}
+              description={`${threeLabsCopy.es.hero.intro} ${threeLabsCopy.es.method.description}`}
             />
             <div className="diagram-stage relative mt-14 p-5 md:hidden">
               <div className="adaptive-grid absolute inset-0 opacity-24" />
@@ -282,6 +284,9 @@ export default function SpanishHome() {
                 </div>
               ))}
             </div>
+            <div className="mt-10">
+              <ButtonLink href="/es/3labs">Leer el método 3Labs -&gt;</ButtonLink>
+            </div>
           </div>
         </section>
 
@@ -366,7 +371,7 @@ export default function SpanishHome() {
             <SectionHeading
               eyebrow="Contacto"
               title="Estructure su oportunidad energética."
-              description="Para convertir tierra, carga, resiliencia, energía excedente o presión de crecimiento en activos bancables, Empresas Estructuradas y plataformas de transición financiables."
+              description="Para convertir tierra, carga, resiliencia, energía excedente o presión de crecimiento en activos bancables, Empresas Energéticas y plataformas de transición financiables."
             />
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>

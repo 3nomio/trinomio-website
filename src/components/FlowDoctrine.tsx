@@ -13,7 +13,7 @@ const doctrineDetails = [
   {
     label: "Traducción",
     metric: "EE",
-    text: "Empresa Estructurada con propiedad, contratos, operación, riesgo y flujos auditables.",
+    text: "Empresa Energética con propiedad, contratos, operación, riesgo y flujos auditables.",
     href: "/es/energia-empresa-capital#empresa",
     ariaLabel: "Explorar la capa Empresa como unidad de traducción",
   },

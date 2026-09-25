@@ -315,7 +315,7 @@ export default function TransitionPage() {
             <SectionHeading
               eyebrow="Rol de Trinomio"
               title="Trinomio mueve oportunidades desde greenfield energético hasta activos bancables."
-              description="Ahí la oportunidad energética se convierte en Empresa Estructurada, y la empresa traduce excedente operativo en flujos capaces de dialogar con Project Finance, FICR, bancos, SAFIs, inversionistas y mercados de capital."
+              description="Ahí la oportunidad energética se convierte en Empresa Energética, y la empresa traduce excedente operativo en flujos capaces de dialogar con Project Finance, FICR, bancos, SAFIs, inversionistas y mercados de capital."
             />
             <div className="diagram-stage relative overflow-hidden p-6">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
@@ -493,13 +493,13 @@ export default function TransitionPage() {
             <SectionHeading
               eyebrow="Respuesta institucional"
               title="EE, Project Finance y FICR cierran el circuito."
-              description="La transición no se financia con proyectos aislados. Se financia cuando la Empresa Estructurada convierte excedente operativo en activo bancable, Project Finance crea la primera capa de disciplina y el FICR escala esa bancabilidad hacia portafolio e intermediación de capital."
+              description="La transición no se financia con proyectos aislados. Se financia cuando la Empresa Energética convierte excedente operativo en activo bancable, Project Finance crea la primera capa de disciplina y el FICR escala esa bancabilidad hacia portafolio e intermediación de capital."
             />
             <div className="mt-14 grid gap-5 lg:grid-cols-3">
               {[
                 {
                   eyebrow: "01 — EE",
-                  label: "Empresa Estructurada",
+                  label: "Empresa Energética",
                   text: "Vehículo con gobierno, contratos, medición, asignación de riesgos y reporting. Convierte función energética en unidad techno-económica comprensible para bancos, SAFIs e inversionistas.",
                 },
                 {
