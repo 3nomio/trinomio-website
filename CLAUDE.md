@@ -1,6 +1,6 @@
 # Claude Instructions
 
-This repository is the private Trinomio institutional website. Use `00_System_Architecture/PROJECT_MAP.md` as the authoritative project map before making changes.
+This repository is the Trinomio institutional website. The GitHub repository is public: never commit internal notes, drafts, counterparty details or local paths. Use `00_System_Architecture/PROJECT_MAP.md` as the authoritative project map before making changes.
 
 ## Operating Protocol
 

@@ -1,6 +1,6 @@
 # Agent Instructions
 
-This repository is the private Trinomio institutional website. Treat `00_System_Architecture/PROJECT_MAP.md` as the primary map for structure, risks, commands, and editing boundaries.
+This repository is the Trinomio institutional website. The GitHub repository is public: never commit internal notes, drafts, counterparty details or local paths. Treat `00_System_Architecture/PROJECT_MAP.md` as the primary map for structure, risks, commands, and editing boundaries.
 
 ## Required Workflow
 
