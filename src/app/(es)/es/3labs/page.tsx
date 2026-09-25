@@ -12,90 +12,93 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "3Labs | Trinomio",
   description:
-    "3Labs es el sistema operativo de Trinomio para convertir señales de transición en empresas estructuradas, flujos gobernados y decisiones de capital.",
+    "3Labs es el laboratorio donde Trinomio lee las oportunidades de la transición energética, les da medida y las convierte en empresas que el capital puede financiar.",
 };
 
-const labs = [
+type Lab = {
+  id: string;
+  title: string;
+  subtitle: string;
+  paragraphs: readonly string[];
+  closing: string;
+  panelLabel: string;
+  cues?: readonly string[];
+  example?: readonly string[];
+};
+
+const labs: readonly Lab[] = [
   {
+    id: "sentir",
     title: "SENTIR",
-    subtitle: "Detectar señales de transición",
-    copy: "Identificamos cambios en tecnología, regulación, tarifas, demanda energética, resiliencia y riesgos extra-financieros que pueden modificar la economía de una oportunidad.",
-    output: "Resultado: oportunidades y riesgos identificados para decidir dónde profundizar análisis, estructuración o alianzas.",
+    subtitle: "Leer lo que todavía no tiene precio",
+    paragraphs: [
+      "Antes de que una oportunidad aparezca en un contrato o en una tarifa, ya se está formando. Se forma en proyectos de ley, en cambios tecnológicos, en la preocupación pública y en las tensiones de la geopolítica.",
+      "Sentir es leer esas fuerzas a tiempo. Nos preguntamos cuáles podrían incorporarse a la estructura actual del sistema eléctrico y cuáles podrían cambiarla por completo.",
+    ],
+    closing:
+      "El resultado no es una opinión: es una dirección. Sentir nos dice qué activos conviene formar y cuándo.",
+    panelLabel: "Dónde se forma una oportunidad",
     cues: [
-      "tecnología",
-      "regulación",
-      "tarifas",
-      "demanda energética",
-      "resiliencia",
-      "riesgos extra-financieros",
+      "proyectos de ley",
+      "cambios tecnológicos",
+      "preocupación pública",
+      "geopolítica",
     ],
   },
   {
+    // Keeps the #efi anchor used by links across the site.
+    id: "efi",
     title: "DIMENSIONAR",
-    subtitle: "Convertir señales en magnitudes económicas",
-    copy: "Traducimos la oportunidad en flujos de caja, riesgos, contratos, bancabilidad, P50 / P90, DSCR y sensibilidad tarifaria para saber si puede volverse estructurable.",
-    output: "Resultado: oportunidad cuantificada, comparable y preparada para una tesis de Empresa Estructurada.",
-    cues: [
-      "flujos de caja",
-      "riesgos",
-      "contratos",
-      "bancabilidad",
-      "P50 / P90",
-      "DSCR",
-      "sensibilidad tarifaria",
+    subtitle: "Darle medida a lo que se sintió",
+    paragraphs: [
+      "Una dirección todavía no es un negocio. Dimensionar es trazarle límites: separar lo que genera ingreso de lo que solo promete, medir el riesgo y decidir qué tamaño puede sostener.",
+      "Dimensionar también es recombinar. A veces el valor aparece cuando unimos piezas que por separado son débiles.",
+    ],
+    closing:
+      "Solo avanzan las oportunidades cuyo valor energético cubre su costo. Las demás se quedan en el laboratorio.",
+    panelLabel: "Un ejemplo",
+    example: [
+      "El sol produce más en los años secos. El agua de una pequeña central hidroeléctrica produce más en los años lluviosos.",
+      "Cada activo por separado tiene un flujo de caja que sube y baja. Juntos, sus altibajos se compensan y el flujo combinado se vuelve más estable.",
+      "Un flujo más estable permite sostener más deuda con la misma seguridad. Así, los mismos activos pueden financiar más.",
     ],
   },
   {
-    title: "REBALANCEAR",
-    subtitle: "Ajustar arquitectura empresarial y financiera",
-    copy: "Ordenamos Project Finance, Capa Empresa, SPV, FICR, deuda, alianzas, gobierno y reporting para conectar bankability de proyecto con intermediación de mercado de capitales.",
-    output: "Resultado: estructura preparada para discusión con bancos, SAFIs, FICR, inversionistas, cooperativas y socios estratégicos.",
-    cues: ["Project Finance", "Capa Empresa", "SPV", "FICR", "deuda", "gobierno", "reporting"],
+    id: "transformar",
+    title: "TRANSFORMAR",
+    subtitle: "Convertir la medida en empresa",
+    paragraphs: [
+      "Transformar es actuar. Formamos una Empresa Energética: una empresa energética estructurada para ser financiable. Tiene modelo de negocio, contratos, derechos, medición y gobierno, de modo que el capital puede entenderla, medirla y financiarla.",
+      "Luego la empresa construye su primer activo, prueba su flujo de caja y accede a financiamiento de mercado. El capital que se libera vuelve a trabajar en el siguiente activo o en una nueva Empresa Energética.",
+    ],
+    closing:
+      "Cada ciclo deja aprendizaje. Ese aprendizaje regresa al laboratorio y mejora lo que sentimos y dimensionamos después.",
+    panelLabel: "Qué tiene una Empresa Energética",
+    cues: ["modelo de negocio", "contratos", "derechos", "medición", "gobierno"],
+  },
+];
+
+const roles = [
+  {
+    name: "Trinomio · 3Labs",
+    role: "El laboratorio",
+    text: "Diseña la arquitectura Energía → Empresa ← Capital y el método.",
+  },
+  {
+    name: "Aureon Nexus",
+    role: "La vasija",
+    text: "Opera lo que el laboratorio diseña: forma las Empresas Energéticas, tiene los contratos y lleva los activos a operación.",
   },
 ] as const;
 
-const efiLevels = [
+const practice = [
   {
-    level: "Micro",
-    text: "función energética con excedente operativo",
+    name: "Coopesantos",
+    text: "Contrato de compra de energía firmado, en proceso hacia su fecha de operación comercial (COD).",
   },
   {
-    level: "Meso",
-    text: "estructura empresarial y flujo bancable",
-  },
-  {
-    level: "Macro",
-    text: "disciplina de capital y repetición de plataforma",
-  },
-] as const;
-
-const labDeliverables = [
-  {
-    lab: "Sentir",
-    question: "¿Dónde existe una señal accionable?",
-    deliverables: [
-      "Mapa de tierra, carga, red y contraparte",
-      "Lectura regulatoria y tarifaria",
-      "Filtro de oportunidad por régimen",
-    ],
-  },
-  {
-    lab: "Dimensionar",
-    question: "¿La señal soporta flujo bancable?",
-    deliverables: [
-      "Modelo energético P50 / P90",
-      "Sensibilidad T-SD, TOD, CAPEX y O&M",
-      "Ruta preliminar EFI → DSCR",
-    ],
-  },
-  {
-    lab: "Rebalancear",
-    question: "¿Qué arquitectura permite financiar y escalar?",
-    deliverables: [
-      "Diseño EE / SPV y gobierno",
-      "EaaS-PPA y waterfall preliminar",
-      "Paquete BCR / FICR / inversionista",
-    ],
+    name: "Nuevas Empresas Energéticas",
+    text: "Hemos iniciado relaciones para formarlas y con instituciones financieras consolidadas de Costa Rica.",
   },
 ] as const;
 
@@ -107,32 +110,30 @@ function OrbitalLabs() {
         <div className="relative">
           <div className="accent-callout border p-5 text-center backdrop-blur">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
-              Capa Empresa
+              Ciclo 3Labs
             </p>
             <p className="mt-3 text-xl font-semibold leading-tight text-white">
-              capacidad institucional
+              lo aprendido vuelve al laboratorio
             </p>
           </div>
           <div className="mx-auto my-4 h-8 w-px bg-trinomio-cyan/38" />
           <div className="grid gap-4">
             {labs.map((lab, index) => (
-              <article
-                className="diagram-card p-5"
+              <a
+                className="diagram-card block p-5"
+                href={`#${lab.id}`}
                 key={lab.title}
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
                   0{index + 1}
                 </p>
-                <h2 className="mt-3 text-2xl font-semibold text-white">
+                <h3 className="mt-3 text-2xl font-semibold text-white">
                   {lab.title}
-                </h2>
+                </h3>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/78">
                   {lab.subtitle}
                 </p>
-                <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/88">
-                  {lab.copy}
-                </p>
-              </article>
+              </a>
             ))}
           </div>
         </div>
@@ -151,10 +152,10 @@ function OrbitalLabs() {
               <div className="orbital-field absolute left-1/2 top-1/2 size-56 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-16" />
               <div className="relative">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
-                  Capa Empresa
+                  Ciclo 3Labs
                 </p>
                 <p className="mt-3 text-2xl font-semibold leading-tight text-white">
-                  capacidad institucional
+                  lo aprendido vuelve al laboratorio
                 </p>
               </div>
             </div>
@@ -174,79 +175,93 @@ function LabOrbitNode({
 }: {
   className?: string;
   index: number;
-  lab: (typeof labs)[number];
+  lab: Lab;
 }) {
   return (
-    <article
-      className={`diagram-card relative z-20 min-h-44 p-5 text-center ${className}`}
+    <a
+      className={`diagram-card relative z-20 block min-h-44 p-5 text-center ${className}`}
+      href={`#${lab.id}`}
     >
       <p className="text-xs text-trinomio-cyan">0{index + 1}</p>
-      <h2 className="mt-4 text-2xl font-semibold text-white">{lab.title}</h2>
+      <h3 className="mt-4 text-2xl font-semibold text-white">{lab.title}</h3>
       <p className="mt-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/78">
         {lab.subtitle}
       </p>
-    </article>
+    </a>
   );
 }
 
-function LabSection({
-  title,
-  subtitle,
-  copy,
-  output,
-  cues,
-  index,
-}: {
-  title: string;
-  subtitle: string;
-  copy: string;
-  output: string;
-  cues: readonly string[];
-  index: number;
-}) {
+function LabSection({ lab, index }: { lab: Lab; index: number }) {
   return (
-    <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
+    <section
+      className="institutional-section relative scroll-mt-24 overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32"
+      id={lab.id}
+    >
       <div className="orbital-field orbital-drift absolute right-[-10rem] top-16 size-96 rounded-full opacity-20" />
-          <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.78fr_1fr] lg:items-center">
+      <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.78fr_1fr] lg:items-center">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-trinomio-green">
-            Lab 0{index + 1}
+            Paso 0{index + 1}
           </p>
-          <h2 className="mt-4 text-5xl font-semibold text-white">{title}</h2>
+          <h2 className="mt-4 text-5xl font-semibold text-white">{lab.title}</h2>
           <p className="mt-3 text-sm uppercase tracking-[0.18em] text-trinomio-cyan">
-            {subtitle}
+            {lab.subtitle}
           </p>
-          <p className="mt-8 max-w-2xl text-xl leading-8 text-[#E2E6E9]/92">
-            {copy}
-          </p>
+          {lab.paragraphs.map((paragraph, paragraphIndex) => (
+            <p
+              className={`${paragraphIndex === 0 ? "mt-8" : "mt-5"} max-w-2xl text-xl leading-8 text-[#E2E6E9]/92`}
+              key={paragraph}
+            >
+              {paragraph}
+            </p>
+          ))}
           <p className="mt-6 max-w-2xl border-l border-trinomio-green/55 pl-4 text-base leading-7 text-trinomio-cyan-soft/90">
-            {output}
+            {lab.closing}
           </p>
         </div>
         <div className="flow-card relative overflow-hidden border p-6">
           <div className="adaptive-grid absolute inset-0 opacity-45" />
           <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-72 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-28" />
-          <div className="relative grid gap-3 md:grid-cols-2">
-            {cues.map((cue) => {
-              const glossaryTerm = getGlossaryTermByLabel(cue);
-              const className =
-                "flow-card cta-card border px-4 py-5 text-sm font-semibold uppercase tracking-[0.12em] text-[#E2E6E9]/92";
+          <div className="relative">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
+              {lab.panelLabel}
+            </p>
+            {lab.cues ? (
+              <div className="mt-5 grid gap-3 md:grid-cols-2">
+                {lab.cues.map((cue) => {
+                  const glossaryTerm = getGlossaryTermByLabel(cue);
+                  const className =
+                    "flow-card cta-card border px-4 py-5 text-sm font-semibold uppercase tracking-[0.12em] text-[#E2E6E9]/92";
 
-              return glossaryTerm ? (
-                <Link
-                  aria-label={`Ver ${cue} en el glosario`}
-                  className={className}
-                  href={getGlossaryHref(glossaryTerm.slug)}
-                  key={cue}
-                >
-                  {cue}
-                </Link>
-              ) : (
-                <span className={className} key={cue}>
-                  {cue}
-                </span>
-              );
-            })}
+                  return glossaryTerm ? (
+                    <Link
+                      aria-label={`Ver ${cue} en el glosario`}
+                      className={className}
+                      href={getGlossaryHref(glossaryTerm.slug)}
+                      key={cue}
+                    >
+                      {cue}
+                    </Link>
+                  ) : (
+                    <span className={className} key={cue}>
+                      {cue}
+                    </span>
+                  );
+                })}
+              </div>
+            ) : null}
+            {lab.example ? (
+              <ol className="mt-5 grid gap-3">
+                {lab.example.map((step) => (
+                  <li
+                    className="border border-white/10 bg-white/[0.035] px-4 py-4 text-base leading-7 text-[#E2E6E9]/90"
+                    key={step}
+                  >
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            ) : null}
           </div>
         </div>
       </div>
@@ -269,17 +284,14 @@ export default function ThreeLabsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-trinomio-green">
               3Labs
             </p>
-            <p className="mt-5 max-w-4xl text-xl leading-8 text-[#E2E6E9]/92">
-              Sistema operativo para traducir Energía → Empresa ← Capital.
-            </p>
             <h1 className="mt-10 max-w-6xl text-[clamp(2.5rem,10.8vw,3.25rem)] font-semibold leading-[1.04] sm:text-7xl sm:leading-[1.02] lg:text-8xl">
-              3Labs: capacidades para convertir señales de transición en
-              empresas estructuradas
+              3Labs: el laboratorio de Trinomio
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
-              Trinomio combina lectura estratégica, análisis financiero y
-              arquitectura empresarial para transformar oportunidades
-              energéticas en decisiones de estructuración, inversión y capital.
+              La transición energética abre oportunidades antes de que tengan
+              precio, contrato o regla. 3Labs es el laboratorio donde Trinomio
+              las lee, les da medida y las convierte en empresas que el capital
+              puede financiar.
             </p>
           </div>
         </section>
@@ -289,9 +301,9 @@ export default function ThreeLabsPage() {
         <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
-              eyebrow="Sistema 3Labs"
-              title="3Labs no es una unidad de investigación aislada. Es el sistema operativo que permite traducir Energía → Empresa ← Capital."
-              description="Cada capacidad convierte señales externas en decisiones institucionales: qué oportunidad observar, cómo cuantificar su excedente operativo y qué arquitectura necesita para satisfacer disciplina de capital."
+              eyebrow="Método"
+              title="Nuestro método tiene tres pasos: Sentir, Dimensionar y Transformar."
+              description="No es una secuencia que termina. Es un ciclo: lo que aprendemos al construir vuelve al laboratorio y afina lo que sentimos después."
             />
             <OrbitalLabs />
             <DiagramNavigation links={frameworkLinks.labs} />
@@ -304,106 +316,92 @@ export default function ThreeLabsPage() {
 
         <OrbitalDivider />
 
+        {labs.map((lab, index) => (
+          <LabSection index={index} key={lab.id} lab={lab} />
+        ))}
+
+        <OrbitalDivider />
+
         <section className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32">
           <div className="adaptive-grid absolute inset-0 opacity-30" />
           <div className="orbital-field absolute -right-24 top-20 size-96 rounded-full opacity-18" />
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
-              eyebrow="Entregables"
-              title="Cada Lab produce decisiones, no solo análisis."
-              description="La función de 3Labs es convertir datos dispersos en criterios de acción: qué profundizar, qué descartar, qué estructurar y qué presentar a una contraparte de capital."
+              eyebrow="Laboratorio y vasija"
+              title="Quién diseña y quién opera"
             />
-            <div className="mt-14 grid gap-5 lg:grid-cols-3">
-              {labDeliverables.map((item, index) => (
+            <div className="mt-12 grid gap-5 lg:grid-cols-2">
+              {roles.map((item, index) => (
                 <article
-                  className="diagram-card relative flex min-h-[30rem] flex-col overflow-hidden p-6"
-                  key={item.lab}
+                  className="diagram-card relative overflow-hidden p-6"
+                  key={item.name}
                 >
                   <div className="orbital-field absolute -right-24 -top-24 size-64 rounded-full opacity-16" />
                   <p className="relative text-sm text-trinomio-cyan">
                     0{index + 1}
                   </p>
-                  <h2 className="relative mt-7 text-4xl font-semibold text-white">
-                    {item.lab}
-                  </h2>
-                  <p className="relative mt-4 text-base font-semibold leading-7 text-trinomio-green">
-                    {item.question}
+                  <h3 className="relative mt-6 text-3xl font-semibold text-white">
+                    {item.name}
+                  </h3>
+                  <p className="relative mt-3 text-base font-semibold leading-7 text-trinomio-green">
+                    {item.role}
                   </p>
-                  <ul className="relative mt-8 grid gap-3">
-                    {item.deliverables.map((deliverable) => (
-                      <li
-                        className="border border-white/10 bg-white/[0.035] px-4 py-3 text-sm leading-6 text-[#E2E6E9]/88"
-                        key={deliverable}
-                      >
-                        {deliverable}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <OrbitalDivider />
-
-        {labs.map((lab, index) => (
-          <LabSection
-            copy={lab.copy}
-            cues={lab.cues}
-            index={index}
-            key={lab.title}
-            output={lab.output}
-            subtitle={lab.subtitle}
-            title={lab.title}
-          />
-        ))}
-
-        <OrbitalDivider />
-
-        <section
-          className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32"
-          id="efi"
-        >
-          <div className="orbital-field orbital-drift absolute -right-24 -top-24 size-80 rounded-full opacity-20" />
-          <div className="relative mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="EFI"
-              title="EFI ayuda a decidir cuándo una señal puede convertirse en oportunidad estructurable."
-              description="EFI identifica excedente operativo: cuándo una función energética crea más valor marginal del que cuesta entregar. Luego 3Labs prueba si ese excedente puede sostener WACC, DSCR, tenor y bankability."
-            />
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
-              {efiLevels.map((item, index) => (
-                <article
-                  className="flow-card relative overflow-hidden border p-6 backdrop-blur"
-                  key={item.level}
-                >
-                  <div className="orbital-field orbital-drift absolute -right-14 -top-14 size-36 rounded-full opacity-20" />
-                  <p className="relative text-sm text-trinomio-cyan">
-                    0{index + 1}
-                  </p>
-                  <h2 className="relative mt-8 text-3xl font-semibold text-white">
-                    {item.level}
-                  </h2>
                   <p className="relative mt-4 text-base leading-7 text-[#E2E6E9]/90">
                     {item.text}
                   </p>
                 </article>
               ))}
             </div>
-            <RelatedFrameworks links={frameworkLinks.labs} />
+            <div className="mt-10 grid max-w-4xl gap-5 text-lg leading-8 text-[#E2E6E9]/90">
+              <p>
+                El método de 3Labs se aplica en Aureon Nexus y está disponible
+                para otros vehículos de estructuración del mercado de capitales
+                orientados a la transición energética.
+              </p>
+              <p className="border-l border-trinomio-green/55 pl-4 text-base leading-7 text-trinomio-cyan-soft/90">
+                Declaramos nuestras relaciones de forma abierta. Trinomio asesora
+                en el diseño de instrumentos de inversión para la transición
+                energética, y esos instrumentos pueden invertir en empresas que
+                Aureon Nexus forma. Ni Trinomio ni Aureon Nexus administran
+                fondos ni actúan como fiduciarios.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
-          <div className="orbital-field orbital-drift absolute left-1/2 top-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-24" />
-          <div className="relative mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              El valor de 3Labs está en reducir la distancia entre señales de
-              transición y decisiones financiables. Donde otros ven tendencias,
-              Trinomio busca formar empresas, flujos y vehículos capaces de
-              sostener capital.
-            </h2>
+        <OrbitalDivider />
+
+        <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
+          <div className="orbital-field orbital-drift absolute -right-24 -top-24 size-80 rounded-full opacity-20" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Aplicado en estructuras reales"
+              title="El método en práctica"
+              description="El método no es solo una teoría: está aplicado en estructuras reales."
+            />
+            <div className="mt-12 grid gap-5 lg:grid-cols-2">
+              {practice.map((item, index) => (
+                <article
+                  className="flow-card relative overflow-hidden border p-6 backdrop-blur"
+                  key={item.name}
+                >
+                  <div className="orbital-field orbital-drift absolute -right-14 -top-14 size-36 rounded-full opacity-20" />
+                  <p className="relative text-sm text-trinomio-cyan">
+                    0{index + 1}
+                  </p>
+                  <h3 className="relative mt-6 text-3xl font-semibold text-white">
+                    {item.name}
+                  </h3>
+                  <p className="relative mt-4 text-base leading-7 text-[#E2E6E9]/90">
+                    {item.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+            <p className="mt-8 text-base leading-7 text-[#E2E6E9]/82">
+              Actualizaremos esta sección a medida que cada estructura alcance
+              su siguiente etapa.
+            </p>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>
         </section>
