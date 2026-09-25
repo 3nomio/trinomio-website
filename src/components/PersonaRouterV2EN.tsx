@@ -29,7 +29,7 @@ const personas: Persona[] = [
     threeThings: [
       "Three projects become one company (not separate bets)",
       "Banks see real monthly data and trust it",
-      "Each project should cost less than the last: under Wright's Law, cost falls with every doubling of projects built, and a proven first project makes the next easier to finance",
+      "Second project benefits from the first: learning lowers its cost, and a proven track record makes it easier to finance",
     ],
   },
   {
