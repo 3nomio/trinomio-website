@@ -17,12 +17,12 @@ type LogoProps = {
 export function Logo({
   ariaCurrent,
   className,
-  height = 60,
+  height = 97,
   href = "/es",
   imageClassName = "h-auto w-[120px] max-w-full object-contain",
   priority = false,
   showBackCue = false,
-  width = 120,
+  width = 360,
 }: LogoProps) {
   return (
     <Link
@@ -61,7 +61,10 @@ export function Logo({
         className={imageClassName}
         height={height}
         priority={priority}
-        sizes={`${width}px`}
+        // Largest rendered width across the site (home hero ~352px), so
+        // high-density screens get a sharp file instead of an upscaled one.
+        sizes="360px"
+        quality={90}
         src={TRINOMIO_LOGO_SRC}
         width={width}
       />
