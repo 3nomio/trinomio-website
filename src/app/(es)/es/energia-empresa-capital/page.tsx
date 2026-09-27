@@ -368,7 +368,7 @@ export default function EnergyFirmCapitalPage() {
             <h2 className="text-4xl font-semibold leading-tight text-white sm:text-6xl">
               Project Finance puede hacer bancable un activo. Trinomio ayuda a
               convertir ese activo en parte de una clase financiable para
-              bancos, SAFIs, FICR, inversionistas y mercados de capital.
+              bancos, gestores regulados, FICR, inversionistas y mercados de capital.
             </h2>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>
