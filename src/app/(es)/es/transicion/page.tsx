@@ -114,6 +114,17 @@ const regulatoryRoutes = [
   },
 ] as const;
 
+const signalToPosition = [
+  {
+    signal: "Demanda alta, energía costosa y batería disponible.",
+    position: "Descargar la batería y reducir la compra a la red.",
+  },
+  {
+    signal: "Demanda baja, excedente solar y bajo valor de la energía.",
+    position: "Cargar la batería o desplazar consumo.",
+  },
+] as const;
+
 function SignalList({ items }: { items: readonly string[] }) {
   const className =
     "border border-white/10 bg-white/[0.035] px-4 py-3 text-sm text-[#E2E6E9]/90 transition hover:border-trinomio-cyan/40 hover:text-white";
@@ -294,6 +305,45 @@ export default function TransitionPage() {
                 pregunta será la misma: ¿cómo pasa una capacidad física nueva a
                 convertirse en un servicio que alguien puede solicitar, medir y
                 pagar?
+              </p>
+              <h3 className="mt-6 text-2xl font-semibold text-white">
+                De la señal a la posición
+              </h3>
+              <p className="text-lg leading-8 text-[#E2E6E9]/90">
+                En cada lugar y momento, el sistema revela una señal: cuánta
+                energía se necesita, cuánto vale, qué tan cargada está la red y
+                cuánta energía hay disponible o almacenada. Cada recurso
+                interpreta esa señal dentro de sus propias restricciones
+                técnicas, contractuales y regulatorias, y elige una posición:
+                generar, cargar, descargar, comprar, vender, recortar o
+                flexibilizar su consumo.
+              </p>
+              <div className="grid gap-4 md:grid-cols-2">
+                {signalToPosition.map((item) => (
+                  <div
+                    className="flow-card border p-5 text-sm leading-6"
+                    key={item.signal}
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
+                      Señal
+                    </p>
+                    <p className="mt-2 text-[#E2E6E9]/90">{item.signal}</p>
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-green">
+                      Posición
+                    </p>
+                    <p className="mt-2 text-[#E2E6E9]/90">{item.position}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-lg leading-8 text-[#E2E6E9]/90">
+                La tecnología, incluida la inteligencia artificial aplicada a la
+                energía, mejora esa decisión más rápido de lo que cambian las
+                reglas. Las capacidades estarán listas antes de que la regulación
+                las reconozca; la vasija debe estarlo también. La relación entre
+                señal y posición es la misma bajo cualquier ruta legislativa: lo
+                que cambia es quién toma la decisión, sea un prosumidor, un
+                agregador, una empresa distribuidora o un futuro operador de la
+                red de distribución.
               </p>
               <p className="border-l border-trinomio-green/55 pl-4 text-base leading-7 text-trinomio-cyan-soft/90">
                 Nuestra tarea es preparar la vasija: empresas que actúan hoy con
