@@ -1,3 +1,4 @@
+import { CapitalLayerDiagram } from "@/components/CapitalLayerDiagram";
 import { DiagramNavigation, RelatedFrameworks } from "@/components/ContextualNavigation";
 import { EcosystemArchitectureMap } from "@/components/EcosystemArchitectureMap";
 import { FirmConversionLayer } from "@/components/FirmConversionLayer";
@@ -49,25 +50,6 @@ const valueArchitectureLayers = [
     text: "Project Finance bankability, FICR, portafolio, deuda, titularización e instrumentos programables futuros.",
     terms: ["Project Finance", "SPV", "FICR", "WACC", "DSCR"],
     href: "#capa-capital",
-  },
-] as const;
-
-const capitalStages = [
-  {
-    title: "Entrada",
-    text: "El capital entra por la puerta que corresponde a su perfil: capital estratégico a nivel de empresa, con gobierno y participación en el crecimiento; capital financiero a nivel de activo, protegido por estructuras fiduciarias; vehículos regulados de inversión, como fondos de capital de riesgo (FICR), titularización y vehículos tipo REIT; y deuda senior con gestión del riesgo de tasa.",
-  },
-  {
-    title: "Centro de gravedad",
-    text: "La Empresa Energética no es un conducto: une el mercado de la energía con el mercado de capitales y los mantiene unidos.",
-  },
-  {
-    title: "Liquidez",
-    text: "Distribuciones durante la tenencia, titularización de flujos sazonados, vehículos tipo REIT, venta o salida a bolsa de la empresa, y traspasos secundarios.",
-  },
-  {
-    title: "Reciclaje",
-    text: "El capital realizado vuelve a trabajar en nuevos activos y nuevas Empresas Energéticas.",
   },
 ] as const;
 
@@ -252,25 +234,7 @@ export default function EnergyFirmCapitalPage() {
               title="La capa de capital: más que un fondo"
               description="El capital no llega por una sola vía ni se queda para siempre. Entra, se mantiene, se realiza y vuelve a trabajar."
             />
-            <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-              {capitalStages.map((stage, index) => (
-                <article
-                  className="diagram-card relative flex flex-col overflow-hidden p-6"
-                  key={stage.title}
-                >
-                  <div className="orbital-field absolute -right-20 -top-20 size-52 rounded-full opacity-16" />
-                  <p className="relative text-sm text-trinomio-cyan">
-                    0{index + 1}
-                  </p>
-                  <h3 className="relative mt-6 text-2xl font-semibold text-white">
-                    {stage.title}
-                  </h3>
-                  <p className="relative mt-4 text-sm leading-6 text-[#E2E6E9]/88">
-                    {stage.text}
-                  </p>
-                </article>
-              ))}
-            </div>
+            <CapitalLayerDiagram />
             <p className="mt-10 max-w-4xl text-sm leading-6 text-[#E2E6E9]/70">
               Estructuras sujetas al marco legal y regulatorio aplicable. Este
               contenido no constituye una oferta ni una solicitud de inversión.
