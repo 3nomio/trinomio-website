@@ -293,7 +293,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Para desarrolladores, generadores y propietarios"
               title="La oportunidad energética conserva su origen económico, pero gana forma institucional."
-              description="La EE agrega gobierno, contratos, reporting y rutas de capital sobre el proyecto; no sustituye el SPV ni borra la lógica de Project Finance. La vuelve legible para bancos, SAFIs, FICR, inversionistas y aliados estratégicos."
+              description="La EE agrega gobierno, contratos, reporting y rutas de capital sobre el proyecto; no sustituye el SPV ni borra la lógica de Project Finance. La vuelve legible para bancos, gestores regulados, FICR, inversionistas y aliados estratégicos."
             />
             <ProjectContinuitySection />
             <RelatedFrameworks links={frameworkLinks.proof} />
