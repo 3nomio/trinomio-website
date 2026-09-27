@@ -63,7 +63,7 @@ export const threeLabsCopy: Record<"es" | "en", ThreeLabsCopy> = {
         title: "SENTIR",
         subtitle: "Leer lo que todavía no tiene precio",
         paragraphs: [
-          "Antes de que una oportunidad aparezca en un contrato o en una tarifa, ya se está formando. Se forma en proyectos de ley, en cambios tecnológicos, en la preocupación pública y en las tensiones de la geopolítica.",
+          "Antes de que una oportunidad aparezca en un contrato o en una tarifa, ya se está formando. Se forma en proyectos de ley, en cambios tecnológicos, en el cambio climático, en la preocupación pública y en las tensiones de la geopolítica.",
           "Sentir es leer esas fuerzas a tiempo. Nos preguntamos cuáles podrían incorporarse a la estructura actual del sistema eléctrico y cuáles podrían cambiarla por completo.",
         ],
         closing:
@@ -72,6 +72,7 @@ export const threeLabsCopy: Record<"es" | "en", ThreeLabsCopy> = {
         cues: [
           "proyectos de ley",
           "cambios tecnológicos",
+          "cambio climático",
           "preocupación pública",
           "geopolítica",
         ],
@@ -169,7 +170,7 @@ export const threeLabsCopy: Record<"es" | "en", ThreeLabsCopy> = {
         title: "SENSE",
         subtitle: "Reading what has no price yet",
         paragraphs: [
-          "Before an opportunity shows up in a contract or a tariff, it is already forming. It forms in draft laws, in technological change, in public concern and in the pressures of geopolitics.",
+          "Before an opportunity shows up in a contract or a tariff, it is already forming. It forms in draft laws, in technological change, in climate change, in public concern and in the pressures of geopolitics.",
           "Sensing means reading those forces in time. We ask which of them could fit into the current structure of the electricity system, and which could change it altogether.",
         ],
         closing:
@@ -178,6 +179,7 @@ export const threeLabsCopy: Record<"es" | "en", ThreeLabsCopy> = {
         cues: [
           "draft laws",
           "technological change",
+          "climate change",
           "public concern",
           "geopolitics",
         ],

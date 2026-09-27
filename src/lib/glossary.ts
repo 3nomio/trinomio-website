@@ -535,7 +535,7 @@ export const glossaryTerms = [
     definition:
       "Marco legal costarricense asociado con recursos energéticos distribuidos y la apertura de nuevos arreglos para generación distribuida y participación de mercado relacionada.",
     trinomioLens:
-      "Ley 10086 abre rutas para DER y participación distribuida, pero no reemplaza la necesidad de Capa Empresa, contratos, medición, riesgo asignado y disciplina de capital.",
+      "Ley 10086 abre rutas para DER y participación distribuida, pero no reemplaza la necesidad de Capa Empresa, contratos, medición, riesgo asignado y disciplina de capital.",    aliases: ["Ley 10.086"],
   },
   {
     term: "Expediente 23414",
@@ -545,6 +545,17 @@ export const glossaryTerms = [
       "Expediente legislativo costarricense relevante para la modernización del mercado eléctrico, los recursos distribuidos y el diseño institucional de rutas de transición.",
     trinomioLens:
       "Trinomio lo trata como señal de cambio de régimen, no solo como referencia legal. La modernización requiere contratos, instituciones de financiamiento, compresión de riesgo y arquitectura bancable antes de debilitar ICE, cooperativas, comparadores, comunidades o inversionistas.",
+    aliases: ["Expediente 23.414", "23.414"],
+  },
+  {
+    term: "Expediente 25781",
+    slug: "expediente-25781",
+    category: "Regulación y Diseño de Mercado",
+    definition:
+      "Proyecto de Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional. Mantiene al operador del sistema dentro de la estructura actual, con desconcentración técnica, y propone instrumentos de eficiencia, seguridad energética y respuesta de la demanda.",
+    trinomioLens:
+      "Trinomio lo lee junto con el expediente 23.414 como una de dos rutas posibles, sin tomar partido. Cualquiera que sea la arquitectura final, la oportunidad exige empresas capaces de medir, verificar y contratar servicios energéticos nuevos.",
+    aliases: ["Expediente 25.781", "25.781"],
   },
   {
     term: "Combustión térmica",
