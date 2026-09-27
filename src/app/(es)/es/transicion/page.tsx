@@ -637,7 +637,7 @@ export default function TransitionPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Respuesta institucional"
-              title="EE, Project Finance y FICR cierran el circuito."
+              title="EE, Project Finance y mercados de capital cierran el circuito."
               description="La transición no se financia con proyectos aislados. Se financia cuando la Empresa Energética convierte excedente operativo en activo bancable, Project Finance crea la primera capa de disciplina y el FICR escala esa bancabilidad hacia portafolio e intermediación de capital."
             />
             <div className="mt-14 grid gap-5 lg:grid-cols-3">
@@ -653,9 +653,9 @@ export default function TransitionPage() {
                   text: "SPV, contratos, DSCR, CAFDS, asignación de riesgo y disciplina de lenders. Hace bancable el activo individual antes de que el capital institucional pueda escalar la estructura.",
                 },
                 {
-                  eyebrow: "03 — FICR",
+                  eyebrow: "03 — Mercados de capital",
                   label: "Escala de capital",
-                  text: "Vehículo regulado de capital de riesgo que agrupa EEs bancables en portafolio, comprime riesgo para el inversionista institucional y crea el puente hacia mercados de capital.",
+                  text: "Capital estratégico y financiero, vehículos regulados como fondos de capital de riesgo (FICR), titularización y vehículos tipo REIT, y deuda senior. Agrupan EEs bancables, comprimen riesgo y abren rutas de liquidez y reciclaje.",
                 },
               ].map((item) => (
                 <article

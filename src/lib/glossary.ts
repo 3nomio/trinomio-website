@@ -214,7 +214,7 @@ export const glossaryTerms = [
     definition:
       "Vehículo de mercado de capitales utilizado para agrupar, gobernar y desplegar capital de riesgo en empresas, proyectos o programas de inversión estructurada elegibles.",
     trinomioLens:
-      "En la arquitectura de Trinomio, el FICR conecta oportunidades estructuradas con raíces de mercado de capitales. Captura beneficios de aprendizaje y compresión de riesgo generados por la firma o GP, pero no es la fuente de aprendizaje técnico.",
+      "En la arquitectura de Trinomio, el FICR conecta oportunidades estructuradas con raíces de mercado de capitales. Captura beneficios de aprendizaje y compresión de riesgo generados por la firma o GP, pero no es la fuente de aprendizaje técnico. Es uno de varios instrumentos de la capa de capital, junto con titularización, vehículos tipo REIT, capital estratégico y deuda senior.",
   },
   {
     term: "Financiamiento de Proyectos (Project Finance)",
@@ -273,6 +273,32 @@ export const glossaryTerms = [
     category: "Finanzas y Capital",
     definition:
       "Proceso de transformar derechos sobre flujos de caja o activos en instrumentos financieros negociables o suscribibles bajo una estructura de mercado de capitales.",
+  },
+  {
+    term: "Vehículo tipo REIT",
+    slug: "vehiculo-tipo-reit",
+    category: "Finanzas y Capital",
+    definition:
+      "Vehículo de inversión que mantiene activos reales generadores de ingreso, como infraestructura de energía distribuida, y distribuye a sus inversionistas ingreso recurrente más el valor de los activos que posee.",
+    aliases: ["REIT", "vehículos tipo REIT"],
+  },
+  {
+    term: "Reciclaje de capital",
+    slug: "reciclaje-de-capital",
+    category: "Finanzas y Capital",
+    definition:
+      "Proceso por el cual el capital realizado mediante distribuciones, titularización, venta o traspaso se redespliega en nuevos activos y nuevas Empresas Energéticas.",
+    trinomioLens:
+      "El reciclaje cierra el ciclo de la capa de capital: entrada, tenencia, liquidez y vuelta al trabajo.",
+    aliases: ["reciclaje"],
+  },
+  {
+    term: "Graduación de la EE",
+    slug: "graduacion-ee",
+    category: "Finanzas y Capital",
+    definition:
+      "Momento en que una Empresa Energética madura lo suficiente para que sus inversionistas realicen su participación mediante venta estratégica o salida a bolsa.",
+    aliases: ["graduación"],
   },
   {
     term: "Bonos",
