@@ -41,7 +41,7 @@ const copy = {
       "Cascada de pagos controlada",
       "Flujo probado por credito",
       "Perfil de contraparte distribuidora",
-      "Paquete compatible con BCR y FICR",
+      "Paquete compatible con crédito senior y vehículos regulados",
     ],
   },
   en: {
@@ -80,7 +80,7 @@ const copy = {
       "Controlled payment waterfall",
       "Credit-tested cash flow",
       "Distributor counterparty profile",
-      "BCR and FICR compatible package",
+      "Senior credit and regulated-vehicle compatible package",
     ],
   },
 } as const;

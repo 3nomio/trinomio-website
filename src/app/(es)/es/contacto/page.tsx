@@ -25,9 +25,9 @@ const contactRoutes = [
       "Su cooperativa tiene la concesión, la carga y los socios. Trinomio estructura la EE para que usted no cargue el CAPEX ni la deuda — energía limpia a precio conocido por 20 años, sin exposición de balance. Su rol como proveedor energético queda intacto.",
   },
   {
-    audience: "SAFIs, bancos e inversionistas",
+    audience: "Gestores regulados, bancos e inversionistas",
     purpose:
-      "El flujo de proyectos de transición energética no llega estructurado a SUGEVAL. Trinomio lo resuelve — EEs con DSCR probado, contrapartes cooperativas reguladas, gobernanza EFI continua y portafolio FICR-listo. Flujos contratados, contrapartes creíbles, reportes que sus LPs pueden leer.",
+      "El flujo de proyectos de transición energética no llega estructurado a la autoridad supervisora del mercado de capitales. Trinomio lo resuelve — EEs con DSCR probado, contrapartes cooperativas reguladas, gobernanza EFI continua y portafolio compatible con vehículos regulados de inversión. Flujos contratados, contrapartes creíbles, reportes que sus LPs pueden leer.",
   },
   {
     audience: "Empresas y off-takers",
@@ -70,11 +70,11 @@ export default function ContactPage() {
               Convirtamos presión energética en activos bancables
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/90">
-              Trinomio conversa con cooperativas eléctricas, SAFIs, bancos,
-              inversionistas, empresas y aliados estratégicos que buscan
+              Trinomio conversa con cooperativas eléctricas, gestores regulados,
+              bancos, inversionistas, empresas y aliados estratégicos que buscan
               estructurar tierra, carga, Solar-UPS, small hydro, BESS, DERs,
               eficiencia o energía excedente mediante Capa Empresa, Project
-              Finance, FICR y flujos bancables.
+              Finance, vehículos regulados de inversión y flujos bancables.
             </p>
           </div>
         </section>
@@ -129,7 +129,7 @@ export default function ContactPage() {
 
               <article className="flow-card border border-trinomio-green/24 bg-white/[0.045] p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-trinomio-green">
-                  SAFIs / Bancos / Inversionistas
+                  Gestores regulados / Bancos / Inversionistas
                 </p>
                 <h2 className="mt-6 text-2xl font-semibold leading-tight text-white">
                   El flujo no llega estructurado.<br />Trinomio lo resuelve.
@@ -137,13 +137,14 @@ export default function ContactPage() {
                 <p className="mt-5 text-sm leading-7 text-[#E2E6E9]/86">
                   La transición energética en Costa Rica es la mayor oportunidad
                   de despliegue de capital de la próxima década. El problema: el
-                  flujo de proyectos no llega estructurado a SUGEVAL.
+                  flujo de proyectos no llega estructurado para revisión del
+                  mercado de capitales.
                 </p>
                 <ul className="mt-6 space-y-3">
                   {[
                     "EEs con DSCR probado y gobernanza EFI continua",
                     "Contrapartes cooperativas reguladas y creíbles",
-                    "Portafolio FICR-listo, reportes que sus LPs pueden leer",
+                    "Portafolio compatible con vehículos regulados de inversión",
                   ].map((point) => (
                     <li
                       className="flex items-start gap-3 text-sm leading-6 text-[#E2E6E9]/88"
@@ -157,7 +158,7 @@ export default function ContactPage() {
                 <div className="mt-8 border-t border-white/10 pt-6">
                   <a
                     className="inline-flex text-sm font-semibold text-white transition hover:text-trinomio-green"
-                    href="mailto:oscar@3nomio.com?subject=SAFI%20-%20Portafolio%20FICR"
+                    href="mailto:oscar@3nomio.com?subject=Capital%20regulado%20-%20Portafolio%20energetico"
                   >
                     Escribir a Trinomio{" "}
                     <span className="ml-2 text-trinomio-green">→</span>
@@ -297,7 +298,7 @@ export default function ContactPage() {
             <SectionHeading
               eyebrow="Áreas de colaboración"
               title="Cinco formas de pasar de oportunidad a activo bancable."
-              description="Trinomio puede participar desde diagnóstico greenfield hasta estructuración EE / SPV, Project Finance, FICR, gobierno de riesgos y preparación de equipos."
+              description="Trinomio puede participar desde diagnóstico greenfield hasta estructuración EE / SPV, Project Finance, vehículos regulados de inversión, gobierno de riesgos y preparación de equipos."
             />
             <CollaborationAreas />
             <RelatedFrameworks links={frameworkLinks.doctrine} />

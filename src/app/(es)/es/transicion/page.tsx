@@ -88,7 +88,7 @@ const costaRicaSignals = [
       "Su valor depende de reconocimiento regulatorio, medición horaria y contrato capaz de capturar reducción de demanda, arbitraje o resiliencia.",
   },
   {
-    signal: "BCR / FICR",
+    signal: "Crédito senior / vehículo regulado",
     role: "Canal de capital",
     reading:
       "La oportunidad se vuelve escalable cuando el flujo puede entrar a crédito senior, equity institucional y eventual agregación de portafolio.",
@@ -278,7 +278,7 @@ export default function TransitionPage() {
                   {
                     eyebrow: "Capital",
                     title: "Project Finance y FICR habilitan escala.",
-                    text: "Bancos, SAFIs, FICR e inversionistas necesitan información, trazabilidad, disciplina de caja y portafolio.",
+                    text: "Bancos, gestores regulados, FICR e inversionistas necesitan información, trazabilidad, disciplina de caja y portafolio.",
                   },
                 ].map((item, index) => (
                   <article
@@ -315,7 +315,7 @@ export default function TransitionPage() {
             <SectionHeading
               eyebrow="Rol de Trinomio"
               title="Trinomio mueve oportunidades desde greenfield energético hasta activos bancables."
-              description="Ahí la oportunidad energética se convierte en Empresa Energética, y la empresa traduce excedente operativo en flujos capaces de dialogar con Project Finance, FICR, bancos, SAFIs, inversionistas y mercados de capital."
+              description="Ahí la oportunidad energética se convierte en Empresa Energética, y la empresa traduce excedente operativo en flujos capaces de dialogar con Project Finance, FICR, bancos, gestores regulados, inversionistas y mercados de capital."
             />
             <div className="diagram-stage relative overflow-hidden p-6">
               <div className="conversion-rail absolute left-[8%] right-[8%] top-1/2 hidden md:block" />
@@ -500,7 +500,7 @@ export default function TransitionPage() {
                 {
                   eyebrow: "01 — EE",
                   label: "Empresa Energética",
-                  text: "Vehículo con gobierno, contratos, medición, asignación de riesgos y reporting. Convierte función energética en unidad techno-económica comprensible para bancos, SAFIs e inversionistas.",
+                  text: "Vehículo con gobierno, contratos, medición, asignación de riesgos y reporting. Convierte función energética en unidad techno-económica comprensible para bancos, gestores regulados e inversionistas.",
                 },
                 {
                   eyebrow: "02 — Project Finance",
@@ -552,14 +552,14 @@ export default function TransitionPage() {
                 },
                 {
                   audience: "Desarrolladores y generadores",
-                  text: "Activos u oportunidades que necesitan contratos, vehículos de proyecto y rutas de capital para volverse bancables ante bancos, SAFIs e inversionistas.",
+                  text: "Activos u oportunidades que necesitan contratos, vehículos de proyecto y rutas de capital para volverse bancables ante bancos, gestores regulados e inversionistas.",
                 },
                 {
                   audience: "Grandes consumidores y off-takers",
                   text: "La energía afecta costo, continuidad y competitividad. EaaS, PPA y resiliencia pueden convertirse en flujos contractuales gobernados y financiables.",
                 },
                 {
-                  audience: "Inversionistas, SAFIs y bancos",
+                  audience: "Inversionistas, gestores regulados y bancos",
                   text: "El capital busca estructuras con gobierno, información, contratos y protección suficientes para suscribir riesgo. Project Finance y FICR organizan esa exposición.",
                 },
               ].map((item, index) => (

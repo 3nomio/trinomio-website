@@ -174,7 +174,7 @@ export default function AboutTrinomioPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Para quién trabajamos"
-              title="Cooperativas, SAFIs, bancos, inversionistas, off-takers y socios estratégicos."
+              title="Cooperativas, gestores regulados, bancos, inversionistas, off-takers y socios estratégicos."
               description="Trinomio trabaja con instituciones, operadores y propietarios de activos que necesitan convertir señales energéticas en estructuras gobernables, financiables y escalables."
             />
             <AudienceSection />

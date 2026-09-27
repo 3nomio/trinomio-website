@@ -544,7 +544,7 @@ export const glossaryTerms = [
     definition:
       "Expediente legislativo costarricense relevante para la modernización del mercado eléctrico, los recursos distribuidos y el diseño institucional de rutas de transición.",
     trinomioLens:
-      "Trinomio lo trata como señal de cambio de régimen, no solo como referencia legal. La modernización requiere contratos, instituciones de financiamiento, compresión de riesgo y arquitectura bancable antes de debilitar ICE, cooperativas, comparadores, comunidades o inversionistas.",
+      "Trinomio lo trata como señal de cambio de régimen, no solo como referencia legal. La modernización requiere contratos, instituciones de financiamiento, compresión de riesgo y arquitectura bancable antes de debilitar operadores públicos, cooperativas, comparadores, comunidades o inversionistas.",
   },
   {
     term: "Combustión térmica",
