@@ -57,7 +57,7 @@ export function Hero() {
               <Image
                 alt="Trinomio"
                 className="relative h-auto max-h-full w-full max-w-full object-contain drop-shadow-[0_0_42px_rgba(23,215,255,0.24)]"
-                height={240}
+                height={112}
                 priority
                 src={TRINOMIO_LOGO_SRC}
                 width={480}

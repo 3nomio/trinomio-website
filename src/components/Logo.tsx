@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const TRINOMIO_LOGO_SRC = "/logos/trinomio-logo-transparent.png";
+// Dark-background versions: "NOMI" and the spiral use a lighter blue so the
+// whole wordmark stays legible on the navy site. The compact version drops the
+// tagline for small placements (header, footer).
+export const TRINOMIO_LOGO_SRC = "/logos/trinomio-logo-dark-bg.png";
+export const TRINOMIO_LOGO_COMPACT_SRC = "/logos/trinomio-logo-compact-dark-bg.png";
+
+const logoVariants = {
+  full: { src: TRINOMIO_LOGO_SRC, width: 360, height: 84 },
+  compact: { src: TRINOMIO_LOGO_COMPACT_SRC, width: 360, height: 57 },
+} as const;
 
 type LogoProps = {
   ariaCurrent?: "page";
@@ -11,19 +20,23 @@ type LogoProps = {
   height?: number;
   href?: string;
   showBackCue?: boolean;
+  variant?: keyof typeof logoVariants;
   width?: number;
 };
 
 export function Logo({
   ariaCurrent,
   className,
-  height = 60,
+  height,
   href = "/es",
   imageClassName = "h-auto w-[120px] max-w-full object-contain",
   priority = false,
   showBackCue = false,
-  width = 120,
+  variant = "full",
+  width,
 }: LogoProps) {
+  const logo = logoVariants[variant];
+
   return (
     <Link
       className={[
@@ -59,11 +72,14 @@ export function Logo({
       <Image
         alt="Trinomio"
         className={imageClassName}
-        height={height}
+        height={height ?? logo.height}
         priority={priority}
-        sizes={`${width}px`}
-        src={TRINOMIO_LOGO_SRC}
-        width={width}
+        // Largest rendered width across the site (home hero ~352px), so
+        // high-density screens get a sharp file instead of an upscaled one.
+        sizes="360px"
+        quality={90}
+        src={logo.src}
+        width={width ?? logo.width}
       />
     </Link>
   );
