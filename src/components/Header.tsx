@@ -51,9 +51,10 @@ export function Header({ navItems }: HeaderProps) {
             isHomeActive &&
               "border-trinomio-cyan/45 bg-white/[0.095] shadow-[inset_0_-1px_0_rgba(23,215,255,0.5)]",
           )}
-          imageClassName="h-auto w-[112px] max-w-full object-contain sm:w-[120px]"
+          imageClassName="h-auto w-[132px] max-w-full object-contain sm:w-[148px]"
           priority
           showBackCue
+          variant="compact"
         />
         <nav
           aria-label="Navegación principal"

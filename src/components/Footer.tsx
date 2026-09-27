@@ -15,7 +15,8 @@ export function Footer({ locale = "es" }: FooterProps) {
         <Logo
           className="rounded-full bg-white/[0.03] p-1.5 ring-1 ring-white/10"
           href={isEnglish ? "/en" : "/es"}
-          imageClassName="h-8 w-auto"
+          imageClassName="h-7 w-auto"
+          variant="compact"
         />
         <div className="flex flex-col gap-3 sm:items-end">
           <p className="uppercase tracking-[0.18em]">

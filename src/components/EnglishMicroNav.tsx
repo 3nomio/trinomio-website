@@ -13,7 +13,8 @@ export function EnglishMicroNav({ active = "home" }: EnglishMicroNavProps) {
           ariaCurrent={active === "home" ? "page" : undefined}
           className="shrink-0 px-2.5 py-2"
           href="/en"
-          imageClassName="h-auto w-[112px] max-w-full object-contain sm:w-[120px]"
+          imageClassName="h-auto w-[132px] max-w-full object-contain sm:w-[148px]"
+          variant="compact"
           priority
         />
         <nav
