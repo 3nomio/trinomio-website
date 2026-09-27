@@ -288,7 +288,7 @@ export const glossaryTerms = [
     definition:
       "Costo promedio ponderado de capital (WACC): retorno requerido combinado entre deuda y capital accionario, ponderado por la estructura de capital.",
     trinomioLens:
-      "En 3-Syst, WACC funciona como señal de disciplina de capital: el excedente operativo debe sostener ese umbral junto con DSCR, tenor, riesgo y bancabilidad para convertirse en valor financiable.",
+      "En Energía → Empresa ← Capital, WACC funciona como señal de disciplina de capital: el excedente operativo debe sostener ese umbral junto con DSCR, tenor, riesgo y bancabilidad para convertirse en valor financiable.",
   },
   {
     term: "PVGO",

@@ -33,7 +33,7 @@ export function Hero() {
                 Estructure su oportunidad energética
               </ButtonLink>
               <ButtonLink href="/es/energia-empresa-capital" variant="secondary">
-                Explore el modelo 3-Syst
+                Explore Energía → Empresa ← Capital
               </ButtonLink>
             </div>
           </div>

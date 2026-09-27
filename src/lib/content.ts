@@ -30,7 +30,7 @@ export const metrics = [
   },
   {
     value: "02",
-    label: "Estructuración 3-Syst",
+    label: "Empresa Energética",
     description: "De excedente operativo a estructura financiable, contratos y flujos bancables.",
     href: "/es/energia-empresa-capital",
   },

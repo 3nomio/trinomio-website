@@ -18,7 +18,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Energía → Empresa ← Capital | Trinomio",
   description:
-    "Trinomio convierte oportunidades energéticas greenfield en activos brownfield bancables mediante 3-Syst, Project Finance y FICR.",
+    "Trinomio convierte oportunidades energéticas greenfield en activos brownfield bancables mediante la Empresa Energética, Project Finance y FICR.",
 };
 
 const valueArchitectureLayers = [
@@ -30,7 +30,7 @@ const valueArchitectureLayers = [
     href: "#cadena-valor",
   },
   {
-    title: "3-Syst structuring",
+    title: "Empresa Energética",
     eyebrow: "Capa Empresa",
     text: "Gobierno, contratos, medición, asignación de riesgos, EE / SPV y disciplina operativa.",
     terms: ["gobierno", "contratos", "estrategia", "medición", "riesgo"],
@@ -191,7 +191,7 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.75fr_1fr]">
             <SectionHeading
               eyebrow="Cadena de valor"
-              title="Greenfield Opportunity → 3-Syst Structuring → Brownfield Asset → Project Finance → FICR"
+              title="Oportunidad greenfield → Empresa Energética → Activo brownfield → Project Finance → FICR"
               description="El valor comercial aparece cuando una función energética deja de ser una oportunidad aislada y entra en una arquitectura con gobierno, contratos, información verificable, Project Finance y disciplina de mercado de capitales."
             />
             <div className="diagram-stage relative overflow-hidden p-6">
