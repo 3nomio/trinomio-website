@@ -264,34 +264,27 @@ export default function SpanishHome() {
           <div className="orbital-field absolute -left-24 top-20 size-80 rounded-full opacity-18" />
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
-              eyebrow="Para quién trabajamos"
+              eyebrow="Con quién y cómo trabajamos"
               title="Instituciones y propietarios que necesitan convertir presión energética en activos bancables."
               description="Trinomio trabaja con actores que enfrentan tierra, carga, resiliencia, regulación, inversión o capital y necesitan estructurarlos como Capa Empresa antes de escalar hacia vehículos de inversión y mercados de capital."
             />
             <AudienceSection />
+            <div className="scroll-mt-24 pt-20" id="areas-colaboracion">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-trinomio-cyan">
+                Formas concretas de trabajar con Trinomio
+              </h3>
+              <p className="mt-4 max-w-3xl text-base leading-7 text-[#E2E6E9]/90 sm:text-lg">
+                Cada colaboración parte de una pregunta institucional: cómo leer
+                la transición, cómo estructurar potencial energético estratégico
+                y cómo moverlo hacia activos bancables y escalables.
+              </p>
+              <CollaborationAreas />
+            </div>
             <RelatedFrameworks links={primaryLoopLinks} />
           </div>
         </section>
 
         <OrbitalDivider />
-
-        <section
-          className="institutional-section relative overflow-hidden bg-trinomio-navy-deep px-5 py-24 sm:px-8 lg:py-32"
-          id="areas-colaboracion"
-        >
-          <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,var(--cyan),var(--electric-blue),transparent)]" />
-          <div className="relative mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Áreas de colaboración"
-              title="Formas concretas de trabajar con Trinomio."
-              description="Cada colaboración parte de una pregunta institucional: cómo leer la transición, cómo estructurar potencial energético estratégico y cómo moverlo hacia activos bancables y escalables."
-            />
-            <CollaborationAreas />
-          </div>
-        </section>
-
-        <OrbitalDivider />
-
 
         <section
           className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32"
