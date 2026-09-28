@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Logo } from "@/components/Logo";
 import { OrbitalDivider } from "@/components/OrbitalDivider";
 import { ScrollNavigation } from "@/components/ScrollNavigation";
+import { RegulatoryFramework } from "@/components/RegulatoryFramework";
 import { SectionHeading } from "@/components/SectionHeading";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import type { Metadata } from "next";
@@ -92,36 +93,6 @@ const costaRicaSignals = [
     role: "Canal de capital",
     reading:
       "La oportunidad se vuelve escalable cuando el flujo puede entrar a crédito senior, equity institucional y eventual agregación de portafolio.",
-  },
-] as const;
-
-const regulatoryRoutes = [
-  {
-    bill: "Expediente 23.414",
-    name: "Ley de Armonización del Sistema Eléctrico Nacional",
-    summary:
-      "Propone un Mercado Eléctrico Nacional y un ente coordinador, ECOSEN, con funciones de operación del sistema y del mercado. Contempla agentes que podrían agregar demanda, además de contratos y transacciones de ocasión sujetos a reglas y regulación.",
-    source:
-      "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2025/10/23414_Dictamen_TEXTO_ACTUALIZADO.pdf",
-  },
-  {
-    bill: "Expediente 25.781",
-    name: "Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional",
-    summary:
-      "Mantiene al DOCSE como operador del sistema dentro del ICE, con desconcentración técnica, y propone instrumentos de eficiencia y seguridad energética. Contempla programas voluntarios de respuesta de la demanda cuyas reducciones verificables podrían recibir compensaciones aprobadas por ARESEP.",
-    source:
-      "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2026/09/25781.pdf",
-  },
-] as const;
-
-const signalToPosition = [
-  {
-    signal: "Demanda alta, energía costosa y batería disponible.",
-    position: "Descargar la batería y reducir la compra a la red.",
-  },
-  {
-    signal: "Demanda baja, excedente solar y bajo valor de la energía.",
-    position: "Cargar la batería o desplazar consumo.",
   },
 ] as const;
 
@@ -253,109 +224,7 @@ export default function TransitionPage() {
         >
           <div className="orbital-field orbital-drift absolute right-[-10rem] top-16 size-96 rounded-full opacity-18" />
           <div className="relative mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Marco regulatorio"
-              title="Lo que ya rige y lo que se discute"
-              description="Costa Rica no parte de cero. Un marco de varias leyes energéticas ya está vigente, y la Ley 10.086 es hoy el principal cauce del cambio tecnológico: habilita recursos energéticos distribuidos, y ARESEP avanza con rapidez en su implementación. La reforma del reglamento AR-RT-POASEN, vigente desde junio de 2026, ya incorpora recursos distribuidos, almacenamiento y agregadores."
-            />
-            <p className="mt-8 max-w-3xl text-base leading-7 text-[#E2E6E9]/90 sm:text-lg">
-              Al mismo tiempo, la Asamblea Legislativa discute dos proyectos de
-              ley que proponen rutas distintas. La Asamblea decidirá qué
-              arquitectura adopta el país, y es probable que tome elementos de
-              ambos.
-            </p>
-            <div className="mt-12 grid gap-5 lg:grid-cols-2">
-              {regulatoryRoutes.map((route, index) => (
-                <article
-                  className="diagram-card relative flex flex-col overflow-hidden p-6"
-                  key={route.bill}
-                >
-                  <div className="orbital-field absolute -right-20 -top-20 size-52 rounded-full opacity-18" />
-                  <p className="relative text-sm text-trinomio-cyan">
-                    0{index + 1}
-                  </p>
-                  <h2 className="relative mt-6 text-3xl font-semibold leading-tight text-white">
-                    {route.bill}
-                  </h2>
-                  <p className="relative mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-green">
-                    {route.name}
-                  </p>
-                  <p className="relative mt-5 text-sm leading-6 text-[#E2E6E9]/88">
-                    {route.summary}
-                  </p>
-                  <a
-                    className="relative mt-6 text-sm font-semibold text-trinomio-cyan transition hover:underline"
-                    href={route.source}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Consultar el texto legislativo →
-                  </a>
-                </article>
-              ))}
-            </div>
-            <div className="mt-10 grid max-w-4xl gap-5">
-              <h3 className="text-2xl font-semibold text-white">
-                Dos rutas, una misma pregunta
-              </h3>
-              <p className="text-lg leading-8 text-[#E2E6E9]/90">
-                No tomamos partido por uno de ellos. El cambio tecnológico y el
-                cambio climático ya están creando valor que la estructura
-                anterior no sabe reconocer. Cualquiera que sea la ruta, la
-                pregunta será la misma: ¿cómo pasa una capacidad física nueva a
-                convertirse en un servicio que alguien puede solicitar, medir y
-                pagar?
-              </p>
-              <h3 className="mt-6 text-2xl font-semibold text-white">
-                De la señal a la posición
-              </h3>
-              <p className="text-lg leading-8 text-[#E2E6E9]/90">
-                En cada lugar y momento, el sistema revela una señal: cuánta
-                energía se necesita, cuánto vale, qué tan cargada está la red y
-                cuánta energía hay disponible o almacenada. Cada recurso
-                interpreta esa señal dentro de sus propias restricciones
-                técnicas, contractuales y regulatorias, y elige una posición:
-                generar, cargar, descargar, comprar, vender, recortar o
-                flexibilizar su consumo.
-              </p>
-              <div className="grid gap-4 md:grid-cols-2">
-                {signalToPosition.map((item) => (
-                  <div
-                    className="flow-card border p-5 text-sm leading-6"
-                    key={item.signal}
-                  >
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
-                      Señal
-                    </p>
-                    <p className="mt-2 text-[#E2E6E9]/90">{item.signal}</p>
-                    <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-green">
-                      Posición
-                    </p>
-                    <p className="mt-2 text-[#E2E6E9]/90">{item.position}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-lg leading-8 text-[#E2E6E9]/90">
-                La tecnología, incluida la inteligencia artificial aplicada a la
-                energía, mejora esa decisión más rápido de lo que cambian las
-                reglas. Las capacidades estarán listas antes de que la regulación
-                las reconozca; la vasija debe estarlo también. La relación entre
-                señal y posición es la misma bajo cualquier ruta legislativa: lo
-                que cambia es quién toma la decisión, sea un prosumidor, un
-                agregador, una empresa distribuidora o un futuro operador de la
-                red de distribución.
-              </p>
-              <p className="border-l border-trinomio-green/55 pl-4 text-base leading-7 text-trinomio-cyan-soft/90">
-                Nuestra tarea es preparar la vasija: empresas que actúan hoy con
-                los derechos que la Ley 10.086 y su regulación ya reconocen, y
-                que tienen los contratos, los datos, la medición y el gobierno
-                necesarios para adaptarse cuando las nuevas reglas lleguen.
-              </p>
-              <p className="text-xs leading-5 text-[#E2E6E9]/70">
-                Ambos expedientes son propuestas sujetas a trámite y posibles
-                cambios. Textos consultados en septiembre de 2026.
-              </p>
-            </div>
+            <RegulatoryFramework />
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { CapitalLayerDiagram } from "@/components/CapitalLayerDiagram";
+import { RegulatoryFramework } from "@/components/RegulatoryFramework";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
 import { SectionHeading } from "@/components/SectionHeading";
 import type { Metadata } from "next";
@@ -122,6 +123,13 @@ export default function CostaRicaOpportunityPage() {
             more credible over time.
           </p>
         </div>
+      </section>
+
+      <section
+        className="relative z-10 mx-auto max-w-7xl scroll-mt-24 px-5 py-16 sm:px-8 lg:py-20"
+        id="regulatory-framework"
+      >
+        <RegulatoryFramework locale="en" />
       </section>
 
       <section className="relative z-10 border-y border-white/10 bg-white/[0.025] px-5 py-16 sm:px-8 lg:py-20">
