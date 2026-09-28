@@ -252,7 +252,7 @@ export default function EnergyFirmCapitalPage() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Arquitectura de Creación de Valor"
-              title="Solar es el primer caso incubado. La plataforma es más amplia."
+              title="Solar es el primer caso. La plataforma es más amplia."
               description="Trinomio estructura funciones energéticas financiables: solar, BESS, DERs, Solar-UPS, small hydro, autoconsumo, exceso a red, eficiencia, demanda gestionable y futuras estructuras de mercado."
             />
             <ValueCreationArchitecture />
@@ -311,7 +311,7 @@ export default function EnergyFirmCapitalPage() {
             <SectionHeading
               eyebrow="Tracción institucional"
               title="La tesis ya opera en estructuras concretas."
-              description="EE#1 comienza con solar porque es el primer caso incubado bajo la regulación actual BTM. BTM es el punto de acción actual, no la frontera permanente: la tesis está diseñada para DERs, BESS, VPPs, community energy, small hydro, Solar-UPS, eficiencia y futuras estructuras de mercado."
+              description="EE#1 comienza con solar porque es el primer caso estructurado bajo la regulación actual BTM. BTM es el punto de acción actual, no la frontera permanente: la tesis está diseñada para DERs, BESS, VPPs, community energy, small hydro, Solar-UPS, eficiencia y futuras estructuras de mercado."
             />
             <InstitutionalTraction />
             <RelatedFrameworks links={frameworkLinks.proof} />

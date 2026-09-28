@@ -159,13 +159,13 @@ export const institutionalAudiences = [
 
 export const institutionalTraction = [
   {
-    title: "SANSES - primera estructura en ejecución",
+    title: "SANSES: contrato firmado con Coopesantos",
     text:
-      "SANSES demuestra cómo una oportunidad solar puede convertirse en una estructura gobernada: contratos de servicio energético, vehículos de proyecto, gobernanza, bancabilidad y relación con una Entidad Distribuidora. Solar es el primer caso incubado, no el límite del modelo.",
+      "Contrato de compra de energía firmado, en proceso hacia su fecha de operación comercial (COD). SANSES muestra cómo una oportunidad solar se convierte en una estructura gobernada: contratos, vehículo de proyecto, gobierno y relación con una Entidad Distribuidora. Solar es el primer caso, no el límite del modelo.",
   },
   {
-    title: "Arquitectura de inversión en curso",
+    title: "Nuevas Empresas Energéticas",
     text:
-      "Trinomio participa actualmente en la estructuración de una arquitectura de inversión para descarbonización y energía distribuida de aproximadamente $100M USD, junto a una institución financiera reconocida regionalmente.",
+      "Hemos iniciado relaciones para formarlas y con instituciones financieras consolidadas de Costa Rica. Actualizaremos esta sección a medida que cada estructura alcance su siguiente etapa.",
   },
 ] as const;

@@ -15,18 +15,19 @@ const pathwayCopy = {
       "El capital no financia potencial técnico. Financia estructuras gobernadas capaces de ejecutar, monitorear y proteger flujos de caja.",
     capitalCopy:
       "Detrás de esta ruta operan herramientas como Project Finance, vehículos temáticos de inversión, securitización y mercado de capitales.",
-    governanceTitle: "Capital → Empresa",
+    governanceTitle: "Del presentimiento a la inversión",
     governanceSteps: [
-      "Medición",
-      "Reconocimiento Regulatorio",
-      "Captura Contractual",
-      "Validación de Crédito",
-      "Formación de Capital",
+      "Sentir: intuición",
+      "Dimensionar: hipótesis",
+      "Transformar: empresa",
+      "Primer proyecto",
+      "Evidencia",
+      "Capital",
     ],
     primaryCta: "Estructure su oportunidad energética",
     secondaryCta: "Convierta potencial energético en activos bancables",
     primaryHref: "/es/contacto#escribanos",
-    secondaryHref: "/es/energia-empresa-capital#capa-capital",
+    secondaryHref: "/es/energia-empresa-capital#mercados-de-capital",
     steps: [
       {
         title: "Potencial Energético Estratégico",

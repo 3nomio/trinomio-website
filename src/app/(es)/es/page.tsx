@@ -38,6 +38,109 @@ export default function SpanishHome() {
           <Hero />
         </div>
 
+        <section
+          className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32"
+          id="labs"
+        >
+          <div className="orbital-field absolute right-[-10rem] top-16 size-96 rounded-full opacity-24" />
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="3Labs"
+              title={threeLabsCopy.es.method.title}
+              description={`${threeLabsCopy.es.hero.intro} ${threeLabsCopy.es.method.description}`}
+            />
+            <div className="diagram-stage relative mt-14 p-5 md:hidden">
+              <div className="adaptive-grid absolute inset-0 opacity-24" />
+              <div className="relative">
+                <div className="accent-callout border p-5 text-center backdrop-blur">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
+                    3Labs
+                  </p>
+                  <p className="mt-3 text-xl font-semibold leading-tight text-white">
+                    Señal de Transición → Capa Empresa ← capital
+                  </p>
+                </div>
+                <div className="mx-auto my-4 h-8 w-px bg-trinomio-cyan/38" />
+                <div className="grid gap-4">
+                  {labs.map((lab, index) => (
+                    <article
+                      className="diagram-card p-5"
+                      key={lab.title}
+                    >
+                      <div className="flex items-center justify-between gap-4">
+                        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
+                          0{index + 1}
+                        </p>
+                        <p className="text-right text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/72">
+                          {lab.label}
+                        </p>
+                      </div>
+                      <h3 className="mt-4 text-2xl font-semibold text-white">
+                        {lab.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/88">
+                        {lab.description}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="diagram-stage relative mt-14 hidden overflow-hidden p-8 md:block">
+              <div className="adaptive-grid absolute inset-0 opacity-30" />
+              <div className="orbit-map orbital-drift relative mx-auto max-w-2xl" />
+              <div className="absolute inset-8">
+                <div className="accent-callout absolute left-1/2 top-1/2 w-48 -translate-x-1/2 -translate-y-1/2 border p-5 text-center backdrop-blur">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
+                    3Labs
+                  </p>
+                  <p className="mt-3 text-2xl font-semibold text-white">
+                    Señal de Transición → Capa Empresa ← capital
+                  </p>
+                </div>
+                {labs.map((lab, index) => {
+                  const positions = [
+                    "left-1/2 top-[10%]",
+                    "left-[18%] top-[72%]",
+                    "left-[82%] top-[72%]",
+                  ];
+
+                  return (
+                    <article
+                      className={`orbit-node diagram-card absolute w-56 p-5 ${positions[index]}`}
+                      key={lab.title}
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
+                        {lab.label}
+                      </p>
+                      <h3 className="mt-4 text-2xl font-semibold text-white">
+                        {lab.title}
+                      </h3>
+                    </article>
+                  );
+                })}
+              </div>
+            </div>
+            <DiagramNavigation links={frameworkLinks.labs} />
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {labs.map((lab, index) => (
+                <div
+                  className="flow-card border p-5 text-sm leading-6 text-[#E2E6E9]/86"
+                  key={lab.title}
+                >
+                  <span className="text-trinomio-cyan">0{index + 1}</span>{" "}
+                  {lab.description}
+                </div>
+              ))}
+            </div>
+            <div className="mt-10">
+              <ButtonLink href="/es/3labs">Leer el método 3Labs -&gt;</ButtonLink>
+            </div>
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
         <HomepagePathway />
 
         <section
@@ -189,108 +292,6 @@ export default function SpanishHome() {
 
         <OrbitalDivider />
 
-        <section
-          className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32"
-          id="labs"
-        >
-          <div className="orbital-field absolute right-[-10rem] top-16 size-96 rounded-full opacity-24" />
-          <div className="relative mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="3Labs"
-              title={threeLabsCopy.es.method.title}
-              description={`${threeLabsCopy.es.hero.intro} ${threeLabsCopy.es.method.description}`}
-            />
-            <div className="diagram-stage relative mt-14 p-5 md:hidden">
-              <div className="adaptive-grid absolute inset-0 opacity-24" />
-              <div className="relative">
-                <div className="accent-callout border p-5 text-center backdrop-blur">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
-                    3Labs
-                  </p>
-                  <p className="mt-3 text-xl font-semibold leading-tight text-white">
-                    Señal de Transición → Capa Empresa ← capital
-                  </p>
-                </div>
-                <div className="mx-auto my-4 h-8 w-px bg-trinomio-cyan/38" />
-                <div className="grid gap-4">
-                  {labs.map((lab, index) => (
-                    <article
-                      className="diagram-card p-5"
-                      key={lab.title}
-                    >
-                      <div className="flex items-center justify-between gap-4">
-                        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
-                          0{index + 1}
-                        </p>
-                        <p className="text-right text-xs font-semibold uppercase tracking-[0.14em] text-[#E2E6E9]/72">
-                          {lab.label}
-                        </p>
-                      </div>
-                      <h3 className="mt-4 text-2xl font-semibold text-white">
-                        {lab.title}
-                      </h3>
-                      <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/88">
-                        {lab.description}
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="diagram-stage relative mt-14 hidden overflow-hidden p-8 md:block">
-              <div className="adaptive-grid absolute inset-0 opacity-30" />
-              <div className="orbit-map orbital-drift relative mx-auto max-w-2xl" />
-              <div className="absolute inset-8">
-                <div className="accent-callout absolute left-1/2 top-1/2 w-48 -translate-x-1/2 -translate-y-1/2 border p-5 text-center backdrop-blur">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
-                    3Labs
-                  </p>
-                  <p className="mt-3 text-2xl font-semibold text-white">
-                    Señal de Transición → Capa Empresa ← capital
-                  </p>
-                </div>
-                {labs.map((lab, index) => {
-                  const positions = [
-                    "left-1/2 top-[10%]",
-                    "left-[18%] top-[72%]",
-                    "left-[82%] top-[72%]",
-                  ];
-
-                  return (
-                    <article
-                      className={`orbit-node diagram-card absolute w-56 p-5 ${positions[index]}`}
-                      key={lab.title}
-                    >
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-trinomio-cyan">
-                        {lab.label}
-                      </p>
-                      <h3 className="mt-4 text-2xl font-semibold text-white">
-                        {lab.title}
-                      </h3>
-                    </article>
-                  );
-                })}
-              </div>
-            </div>
-            <DiagramNavigation links={frameworkLinks.labs} />
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {labs.map((lab, index) => (
-                <div
-                  className="flow-card border p-5 text-sm leading-6 text-[#E2E6E9]/86"
-                  key={lab.title}
-                >
-                  <span className="text-trinomio-cyan">0{index + 1}</span>{" "}
-                  {lab.description}
-                </div>
-              ))}
-            </div>
-            <div className="mt-10">
-              <ButtonLink href="/es/3labs">Leer el método 3Labs -&gt;</ButtonLink>
-            </div>
-          </div>
-        </section>
-
-        <OrbitalDivider />
 
         <section
           className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32"
@@ -357,8 +358,8 @@ export default function SpanishHome() {
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Sobre Trinomio"
-              title="Una plataforma institucional para incubar activos energéticos bancables."
-              description="Trinomio trabaja donde la energía distribuida, BTM, Solar-UPS, small hydro, BESS y eficiencia necesitan gobierno económico, operación, contratos, financiamiento y arquitectura de inversión."
+              title="Un laboratorio que diseña; una vasija que forma."
+              description="Trinomio, a través de 3Labs, es el laboratorio: diseña la arquitectura Energía → Empresa ← Capital y el método. Aureon Nexus es la vasija que opera lo que el laboratorio diseña: forma las Empresas Energéticas, tiene los contratos y lleva los activos a operación."
             />
           </div>
         </section>
