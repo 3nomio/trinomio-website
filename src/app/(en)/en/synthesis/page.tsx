@@ -138,7 +138,7 @@ export default function EnglishSynthesisPage() {
               <Logo
                 className="mb-8 rounded-full bg-white/[0.035] p-2 ring-1 ring-white/10"
                 href="/en"
-                imageClassName="h-12 w-auto sm:h-14"
+                imageClassName="h-14 w-auto sm:h-16"
                 priority
               />
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-trinomio-green">

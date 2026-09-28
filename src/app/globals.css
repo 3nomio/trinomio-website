@@ -105,10 +105,6 @@ dd {
   -webkit-font-smoothing: antialiased;
 }
 
-.trinomio-logo-link img {
-  filter: contrast(1.08) saturate(1.05);
-}
-
 .trinomio-logo-link:hover {
   background: rgba(96, 157, 255, 0.14);
   border-color: rgba(23, 215, 255, 0.54);
@@ -214,10 +210,6 @@ dd {
   pointer-events: none;
   position: absolute;
   z-index: -1;
-}
-
-.hero-logo-system {
-  filter: saturate(1.08);
 }
 
 .hero-logo-system::before,
