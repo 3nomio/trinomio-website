@@ -9,6 +9,7 @@ import { RegulatoryFramework } from "@/components/RegulatoryFramework";
 import { SectionHeading } from "@/components/SectionHeading";
 import { frameworkLinks, primaryLoopLinks, spanishNav } from "@/lib/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Transición Energética | Trinomio",
@@ -212,6 +213,12 @@ export default function TransitionPage() {
                 complementa con la Capa Empresa que convierte excedente
                 energético en flujos legibles para el capital institucional.
               </p>
+              <Link
+                className="mt-4 inline-flex text-sm font-semibold text-trinomio-cyan transition hover:text-white"
+                href="/es/sector-energetico"
+              >
+                Ver la tesis para distribuidoras y cooperativas -&gt;
+              </Link>
             </div>
           </div>
         </section>

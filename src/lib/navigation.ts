@@ -124,8 +124,13 @@ export const audienceLoops = [
   },
   {
     match: "Entidades Distribuidoras",
-    label: "Ver ejecución SANSES",
-    href: "/es/energia-empresa-capital#sanses-ee",
+    label: "Ver la tesis para distribuidoras",
+    href: "/es/sector-energetico",
+  },
+  {
+    match: "Utilities y operadores energéticos",
+    label: "Ver la tesis para el sector",
+    href: "/es/sector-energetico",
   },
   {
     match: "Generadores privados",
