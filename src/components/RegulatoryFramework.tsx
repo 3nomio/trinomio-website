@@ -57,12 +57,12 @@ const frameworkCopy = {
     eyebrow: "Regulatory framework",
     title: "What is in force and what is being debated",
     description:
-      "Costa Rica is not starting from zero. A framework of several energy laws is already in force, and Law 10.086 is today the main channel for technological change: it enables distributed energy resources, and ARESEP, the regulator, is moving quickly to implement it. The reform of the AR-RT-POASEN regulation, in force since June 2026, already incorporates distributed resources, storage and aggregators.",
+      "Costa Rica is not starting from zero. A framework of several energy laws is already in force, and Law No. 10086 is today the main channel for technological change: it enables distributed energy resources, and ARESEP, the regulator, is moving quickly to implement it. The reform of the AR-RT-POASEN regulation, in force since June 2026, already incorporates distributed resources, storage and aggregators.",
     debate:
       "At the same time, the Legislative Assembly is debating two bills that propose different routes. The Assembly will decide which architecture the country adopts, and it is likely to take elements from both.",
     routes: [
       {
-        bill: "Bill 23.414",
+        bill: "Bill No. 23414",
         name: "National Electricity System Harmonisation Act (Ley de Armonización del Sistema Eléctrico Nacional)",
         summary:
           "Proposes a National Electricity Market and a coordinating body, ECOSEN, with system- and market-operation functions. It provides for agents that could aggregate demand, as well as contracts and spot transactions subject to rules and regulation.",
@@ -70,7 +70,7 @@ const frameworkCopy = {
           "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2025/10/23414_Dictamen_TEXTO_ACTUALIZADO.pdf",
       },
       {
-        bill: "Bill 25.781",
+        bill: "Bill No. 25781",
         name: "Energy Security and National Electricity System Modernisation Act (Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional)",
         summary:
           "Keeps DOCSE as system operator within ICE, with technical deconcentration, and proposes energy-efficiency and energy-security instruments. It provides for voluntary demand-response programmes whose verifiable reductions could receive compensation approved by ARESEP.",
@@ -100,7 +100,7 @@ const frameworkCopy = {
     aiText:
       "Technology, including artificial intelligence applied to energy, improves that decision faster than the rules change. The capabilities will be ready before regulation recognises them; the vessel must be ready too. The relation between signal and position is the same under either legislative route: what changes is who makes the decision, whether a prosumer, an aggregator, a distribution company or a future distribution-system operator.",
     vesselText:
-      "Our task is to prepare the vessel: enterprises that act today with the rights that Law 10.086 and its regulation already recognise, and that have the contracts, data, measurement and governance needed to adapt when the new rules arrive.",
+      "Our task is to prepare the vessel: enterprises that act today with the rights that Law No. 10086 and its regulation already recognise, and that have the contracts, data, measurement and governance needed to adapt when the new rules arrive.",
     note: "Both bills are proposals still going through the legislative process and may change. Texts consulted in September 2026.",
   },
 } as const;
