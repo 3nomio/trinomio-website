@@ -1,5 +1,6 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
+import { Footer } from "@/components/Footer";
 import { HomepagePathway } from "@/components/HomepagePathway";
 import { EngagementPlaybookV2SectionEN } from "@/components/EngagementPlaybookV2SectionEN";
 import { PersonaRouterV2SectionEN } from "@/components/PersonaRouterV2SectionEN";
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 
 export default function EnglishHome() {
   return (
+    <>
     <main className="relative overflow-hidden bg-trinomio-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_24%,rgba(23,215,255,0.15),transparent_30rem),radial-gradient(circle_at_72%_70%,rgba(96,157,255,0.18),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
       <div className="orbital-field absolute left-1/2 top-1/2 size-[42rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-26" />
@@ -43,5 +45,7 @@ export default function EnglishHome() {
       <EngagementPlaybookV2SectionEN />
       <PersonaRouterV2SectionEN />
     </main>
+    <Footer locale="en" />
+    </>
   );
 }

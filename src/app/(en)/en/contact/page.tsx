@@ -1,5 +1,6 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
+import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 
 export default function EnglishContactPage() {
   return (
+    <>
     <main className="relative min-h-svh overflow-hidden bg-trinomio-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_24%_14%,rgba(23,215,255,0.14),transparent_30rem),radial-gradient(circle_at_78%_18%,rgba(96,157,255,0.16),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
       <EnglishMicroNav active="contact" />
@@ -154,5 +156,7 @@ export default function EnglishContactPage() {
         </nav>
       </section>
     </main>
+    <Footer locale="en" />
+    </>
   );
 }

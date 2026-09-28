@@ -2,6 +2,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { CapitalLayerDiagram } from "@/components/CapitalLayerDiagram";
 import { RegulatoryFramework } from "@/components/RegulatoryFramework";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
+import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/SectionHeading";
 import type { Metadata } from "next";
 
@@ -43,6 +44,7 @@ const structuringSteps = [
 
 export default function CostaRicaOpportunityPage() {
   return (
+    <>
     <main className="relative overflow-hidden bg-trinomio-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_8%,rgba(23,215,255,0.13),transparent_28rem),radial-gradient(circle_at_78%_18%,rgba(96,157,255,0.14),transparent_34rem),linear-gradient(180deg,var(--navy),var(--navy-deep))]" />
       <EnglishMicroNav active="opportunity" />
@@ -229,5 +231,7 @@ export default function CostaRicaOpportunityPage() {
         </div>
       </section>
     </main>
+    <Footer locale="en" />
+    </>
   );
 }
