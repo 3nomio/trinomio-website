@@ -2,32 +2,98 @@
 // Energética holds the two markets together, liquidity is realised and the
 // capital is recycled. Public-safe: no counterparties, figures or mechanisms.
 
-const capitalIn = [
-  {
-    label: "Capital estratégico",
-    detail: "a nivel de empresa, con gobierno y participación en el crecimiento",
+const diagramCopy = {
+  es: {
+    description:
+      "El capital entra por cuatro vías, la Empresa Energética une el mercado de la energía con el mercado de capitales, la liquidez se realiza por cinco rutas y el capital realizado vuelve a trabajar en nuevos activos y nuevas Empresas Energéticas.",
+    entry: {
+      title: "Entrada",
+      caption: "El capital entra por la puerta que corresponde a su perfil.",
+    },
+    capitalIn: [
+      {
+        label: "Capital estratégico",
+        detail: "a nivel de empresa, con gobierno y participación en el crecimiento",
+      },
+      {
+        label: "Capital financiero",
+        detail: "a nivel de activo, protegido por estructuras fiduciarias",
+      },
+      {
+        label: "Vehículos regulados de inversión",
+        detail: "fondos de capital de riesgo (FICR), titularización y vehículos tipo REIT",
+      },
+      { label: "Deuda senior", detail: "con gestión del riesgo de tasa" },
+    ],
+    energy: { label: "Energía", detail: "recurso físico que la empresa convierte" },
+    centre: {
+      step: "02 · Centro de gravedad",
+      title: "Empresa Energética",
+      text: "No es un conducto: une el mercado de la energía con el mercado de capitales y los mantiene unidos.",
+    },
+    loop: ["Energía", "Empresa", "Capital"],
+    liquidity: {
+      title: "Liquidez",
+      caption: "El capital se realiza por varias rutas.",
+    },
+    liquidityOut: [
+      "Distribuciones durante la tenencia",
+      "Titularización de flujos sazonados",
+      "Vehículos tipo REIT",
+      "Venta o salida a bolsa de la empresa",
+      "Traspasos secundarios",
+    ],
+    recycling: {
+      label: "04 · Reciclaje.",
+      text: "El capital realizado vuelve a trabajar en nuevos activos y nuevas Empresas Energéticas.",
+    },
   },
-  {
-    label: "Capital financiero",
-    detail: "a nivel de activo, protegido por estructuras fiduciarias",
+  en: {
+    description:
+      "Capital enters through four routes, the Energy Enterprise joins the energy market and the capital market, liquidity is realised through five routes, and realised capital goes back to work in new assets and new Energy Enterprises.",
+    entry: {
+      title: "Entry",
+      caption: "Capital enters through the door that fits its profile.",
+    },
+    capitalIn: [
+      {
+        label: "Strategic capital",
+        detail: "at enterprise level, with governance and a share in growth",
+      },
+      {
+        label: "Financial capital",
+        detail: "at asset level, protected by fiduciary structures",
+      },
+      {
+        label: "Regulated investment vehicles",
+        detail: "venture-capital funds (FICR), securitization and REIT-type vehicles",
+      },
+      { label: "Senior debt", detail: "with interest-rate risk management" },
+    ],
+    energy: { label: "Energy", detail: "the physical resource the enterprise converts" },
+    centre: {
+      step: "02 · Centre of gravity",
+      title: "Energy Enterprise",
+      text: "It is not a conduit: it joins the energy market and the capital market and holds them together.",
+    },
+    loop: ["Energy", "Firm", "Capital"],
+    liquidity: {
+      title: "Liquidity",
+      caption: "Capital is realised through several routes.",
+    },
+    liquidityOut: [
+      "Distributions during the holding period",
+      "Securitization of seasoned cash flows",
+      "REIT-type vehicles",
+      "Sale or listing of the enterprise",
+      "Secondary transfers",
+    ],
+    recycling: {
+      label: "04 · Recycling.",
+      text: "Realised capital goes back to work in new assets and new Energy Enterprises.",
+    },
   },
-  {
-    label: "Vehículos regulados de inversión",
-    detail: "fondos de capital de riesgo (FICR), titularización y vehículos tipo REIT",
-  },
-  {
-    label: "Deuda senior",
-    detail: "con gestión del riesgo de tasa",
-  },
-] as const;
-
-const liquidityOut = [
-  "Distribuciones durante la tenencia",
-  "Titularización de flujos sazonados",
-  "Vehículos tipo REIT",
-  "Venta o salida a bolsa de la empresa",
-  "Traspasos secundarios",
-] as const;
+} as const;
 
 function FlowArrow({ direction }: { direction: "right" | "left" | "down" }) {
   const symbol = direction === "down" ? "↓" : direction === "right" ? "→" : "←";
@@ -62,27 +128,29 @@ function ColumnHeading({
   );
 }
 
-export function CapitalLayerDiagram() {
+export function CapitalLayerDiagram({
+  locale = "es",
+}: {
+  locale?: keyof typeof diagramCopy;
+}) {
+  const copy = diagramCopy[locale];
+  const [energy, firm, capital] = copy.loop;
+
   return (
     <figure className="diagram-stage relative mt-12 overflow-hidden p-5 sm:p-8">
       <div className="adaptive-grid absolute inset-0 opacity-24" />
-      <figcaption className="sr-only">
-        El capital entra por cuatro vías, la Empresa Energética une el mercado
-        de la energía con el mercado de capitales, la liquidez se realiza por
-        cinco rutas y el capital realizado vuelve a trabajar en nuevos activos y
-        nuevas Empresas Energéticas.
-      </figcaption>
+      <figcaption className="sr-only">{copy.description}</figcaption>
 
       <div className="relative grid gap-5 lg:grid-cols-[1fr_auto_minmax(16rem,0.9fr)_auto_1fr] lg:items-center">
         {/* 01 Entrada */}
         <div className="grid gap-4">
           <ColumnHeading
-            caption="El capital entra por la puerta que corresponde a su perfil."
+            caption={copy.entry.caption}
             step="01"
-            title="Entrada"
+            title={copy.entry.title}
           />
           <ul className="grid gap-3">
-            {capitalIn.map((item) => (
+            {copy.capitalIn.map((item) => (
               <li className="flow-card border p-4" key={item.label}>
                 <p className="text-sm font-semibold text-white">{item.label}</p>
                 <p className="mt-1 text-xs leading-5 text-[#E2E6E9]/80">
@@ -104,28 +172,27 @@ export function CapitalLayerDiagram() {
         <div className="grid gap-3">
           <div className="border border-white/10 bg-white/[0.035] p-4 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-green">
-              Energía
+              {copy.energy.label}
             </p>
             <p className="mt-1 text-xs leading-5 text-[#E2E6E9]/80">
-              recurso físico que la empresa convierte
+              {copy.energy.detail}
             </p>
           </div>
           <FlowArrow direction="down" />
           <div className="accent-callout border p-6 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-trinomio-cyan">
-              02 · Centro de gravedad
+              {copy.centre.step}
             </p>
             <h3 className="mt-3 text-2xl font-semibold leading-tight text-white">
-              Empresa Energética
+              {copy.centre.title}
             </h3>
             <p className="mt-3 text-sm leading-6 text-[#E2E6E9]/88">
-              No es un conducto: une el mercado de la energía con el mercado de
-              capitales y los mantiene unidos.
+              {copy.centre.text}
             </p>
           </div>
           <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#E2E6E9]/70">
-            Energía <span className="text-trinomio-cyan">→</span> Empresa{" "}
-            <span className="text-trinomio-cyan">←</span> Capital
+            {energy} <span className="text-trinomio-cyan">→</span> {firm}{" "}
+            <span className="text-trinomio-cyan">←</span> {capital}
           </p>
         </div>
 
@@ -139,12 +206,12 @@ export function CapitalLayerDiagram() {
         {/* 03 Liquidez */}
         <div className="grid gap-4">
           <ColumnHeading
-            caption="El capital se realiza por varias rutas."
+            caption={copy.liquidity.caption}
             step="03"
-            title="Liquidez"
+            title={copy.liquidity.title}
           />
           <ul className="grid gap-3">
-            {liquidityOut.map((item) => (
+            {copy.liquidityOut.map((item) => (
               <li
                 className="flow-card border px-4 py-3 text-sm font-semibold text-white"
                 key={item}
@@ -165,9 +232,8 @@ export function CapitalLayerDiagram() {
           ↺
         </span>
         <p className="text-sm leading-6 text-[#E2E6E9]/90">
-          <span className="font-semibold text-white">04 · Reciclaje.</span> El
-          capital realizado vuelve a trabajar en nuevos activos y nuevas
-          Empresas Energéticas.
+          <span className="font-semibold text-white">{copy.recycling.label}</span>{" "}
+          {copy.recycling.text}
         </p>
       </div>
     </figure>

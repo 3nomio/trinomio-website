@@ -714,7 +714,7 @@ export const glossaryTerms = [
     slug: "arquitectura-bancable",
     category: "Conceptos box-key",
     definition:
-      "Estructura de contratos, gobierno, riesgos, garantías, información y flujos que permite a bancos, SAFIs, inversionistas o vehículos de capital evaluar y suscribir una oportunidad.",
+      "Estructura de contratos, gobierno, riesgos, garantías, información y flujos que permite a bancos, gestores regulados, inversionistas o vehículos de capital evaluar y suscribir una oportunidad.",
     trinomioLens:
       "La arquitectura bancable es la traducción pública de Energy → Firm ← Capital: la firma convierte excedente energético en flujo que puede satisfacer Project Finance primero y luego conectarse con FICR, portafolios e instrumentos de mercado de capitales.",
   },
@@ -723,7 +723,7 @@ export const glossaryTerms = [
     slug: "capital-institucional",
     category: "Conceptos box-key",
     definition:
-      "Capital administrado por bancos, fondos, inversionistas, SAFIs u otros actores con criterios formales de riesgo, gobierno, escala y trazabilidad.",
+      "Capital administrado por bancos, fondos, inversionistas, gestores regulados u otros actores con criterios formales de riesgo, gobierno, escala y trazabilidad.",
     trinomioLens:
       "Capital institucional no es el punto final de una cadena lineal. Es disciplina que entra desde el inicio mediante WACC, DSCR, tenor, covenants, apetito de riesgo y requisitos de bankability. Project Finance hace bancable el activo individual; los mercados de capital hacen escalable la transición.",
   },

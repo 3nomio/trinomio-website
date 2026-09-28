@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ButtonLink";
+import { CapitalLayerDiagram } from "@/components/CapitalLayerDiagram";
 import { EnglishMicroNav } from "@/components/EnglishMicroNav";
 import { SectionHeading } from "@/components/SectionHeading";
 import type { Metadata } from "next";
@@ -152,6 +153,22 @@ export default function CostaRicaOpportunityPage() {
             evaluated with stronger institutional evidence.
           </p>
         </div>
+      </section>
+
+      <section
+        className="relative z-10 mx-auto max-w-7xl scroll-mt-24 px-5 py-16 sm:px-8 lg:py-20"
+        id="capital-layer"
+      >
+        <SectionHeading
+          eyebrow="Capital layer"
+          title="The capital layer: more than a fund"
+          description="Capital does not arrive through a single route, nor does it stay forever. It enters, is held, is realised and goes back to work."
+        />
+        <CapitalLayerDiagram locale="en" />
+        <p className="mt-10 max-w-4xl text-sm leading-6 text-[#E2E6E9]/70">
+          Structures subject to the applicable legal and regulatory framework.
+          This content is not an offer or a solicitation of investment.
+        </p>
       </section>
 
       <section className="relative z-10 mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-20">
