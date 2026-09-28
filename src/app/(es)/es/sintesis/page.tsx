@@ -45,7 +45,7 @@ const diagramColumns = [
     items: [
       "Project Finance",
       "banca",
-      "SAFI / FICR",
+      "vehículos regulados de inversión",
       "mercados de capital",
       "escalabilidad",
     ],
@@ -56,7 +56,7 @@ const supportingBullets = [
   "La energía no se financia sola: debe organizarse como una función económica gobernada.",
   "La empresa convierte potencial físico en contratos, controles y flujos de caja.",
   "Project Finance crea la primera capa de bancabilidad.",
-  "FICR, SAFI y mercados de capital permiten escalar activos estructurados.",
+  "Los vehículos regulados de inversión (fondos de capital de riesgo como FICR, titularización, vehículos tipo REIT) y los mercados de capital permiten escalar activos estructurados.",
   "Trinomio estructura la traducción entre energía, empresa y capital.",
 ] as const;
 
