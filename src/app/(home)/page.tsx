@@ -13,11 +13,11 @@ export default function Home() {
       <section className="relative z-10 flex w-full max-w-6xl flex-col items-center text-center">
         <Logo
           className="rounded-full bg-white/[0.04] p-3 ring-1 ring-white/12"
-          height={371}
+          height={355}
           href="/"
           imageClassName="h-auto w-[min(82vw,18.5rem)] max-w-full sm:w-[22rem]"
           priority
-          width={1591}
+          width={1610}
         />
 
         <LanguageGatewayDiagram />

@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Dark-background versions: "NOMI" and the spiral use a lighter blue so the
-// whole wordmark stays legible on the navy site. The compact version drops the
-// tagline for small placements (header, footer).
-export const TRINOMIO_LOGO_SRC = "/logos/trinomio-logo-dark-bg.png";
-export const TRINOMIO_LOGO_COMPACT_SRC = "/logos/trinomio-logo-compact-dark-bg.png";
+// Vector logo, dark-background colours ("NOMI" and the spiral in a lighter blue
+// so the whole wordmark stays legible on the navy site). The compact version
+// drops the tagline for small placements (header, footer). SVGs are served as-is.
+export const TRINOMIO_LOGO_SRC = "/logos/trinomio-logo-full-dark.svg";
+export const TRINOMIO_LOGO_COMPACT_SRC = "/logos/trinomio-logo-compact-dark.svg";
 
 const logoVariants = {
-  full: { src: TRINOMIO_LOGO_SRC, width: 360, height: 84 },
-  compact: { src: TRINOMIO_LOGO_COMPACT_SRC, width: 360, height: 57 },
+  full: { src: TRINOMIO_LOGO_SRC, width: 1610, height: 355 },
+  compact: { src: TRINOMIO_LOGO_COMPACT_SRC, width: 1610, height: 275 },
 } as const;
 
 type LogoProps = {
@@ -74,10 +74,7 @@ export function Logo({
         className={imageClassName}
         height={height ?? logo.height}
         priority={priority}
-        // Largest rendered width across the site (home hero ~352px), so
-        // high-density screens get a sharp file instead of an upscaled one.
-        sizes="360px"
-        quality={90}
+        unoptimized
         src={logo.src}
         width={width ?? logo.width}
       />
