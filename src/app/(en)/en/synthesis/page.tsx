@@ -44,7 +44,7 @@ const diagramColumns = [
     items: [
       "Project Finance",
       "banks",
-      "SAFI / FICR",
+      "regulated investment vehicles",
       "capital markets",
       "scalability",
     ],
@@ -55,7 +55,7 @@ const supportingBullets = [
   "Energy does not finance itself — it must be organised as a governed economic function.",
   "The firm converts physical potential into contracts, controls, and cash flows.",
   "Project Finance creates the first layer of bankability.",
-  "FICR, SAFI, and capital markets allow structured assets to scale.",
+  "Regulated investment vehicles (venture-capital funds such as FICR, securitization, REIT-type vehicles) and capital markets allow structured assets to scale.",
   "Trinomio structures the translation between energy, firm, and capital.",
 ] as const;
 

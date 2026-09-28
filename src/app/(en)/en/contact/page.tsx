@@ -65,12 +65,13 @@ export default function EnglishContactPage() {
           <div className="mt-5 space-y-4">
             <div className="border-l-2 border-trinomio-cyan/40 pl-4">
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-trinomio-cyan">
-                Financial institutions / SAFIs
+                Financial institutions / regulated managers
               </p>
               <p className="mt-2 text-xs leading-5 text-[#E2E6E9]/82">
                 Energy transition deal flow that doesn&apos;t reach you
-                structured. Trinomio converts it into DSCR-tested, FICR-ready
-                portfolios with regulated cooperative counterparties.
+                structured. Trinomio designs it into DSCR-tested portfolios
+                ready for regulated investment vehicles, with regulated
+                cooperative counterparties.
               </p>
             </div>
             <div className="border-l-2 border-trinomio-green/40 pl-4">

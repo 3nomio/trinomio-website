@@ -28,7 +28,7 @@ export function PersonaRouterV2SectionEN() {
               <span className="block font-semibold text-white mb-3">
                 Your role shapes your pathway.
               </span>
-              Whether you&apos;re scaling projects, monetizing land, acquiring assets, or deploying capital, Trinomio works as the layer that builds companies, measures them every day, and designs them with doors. Find yourself above and see what changes for you.
+              Whether you&apos;re scaling projects, monetizing land, acquiring assets, or deploying capital, Trinomio designs the method (Sense, Size, Transform), and operating vehicles such as Aureon Nexus form the Energy Enterprises that hold the contracts and the assets. Find yourself above and see what changes for you.
             </p>
           </div>
         </div>

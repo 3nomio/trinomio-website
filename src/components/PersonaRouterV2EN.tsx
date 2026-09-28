@@ -21,14 +21,14 @@ const personas: Persona[] = [
     yourProblem: [
       "You build 3–10 projects per year",
       "Each one is a separate fight for money",
-      "Financing costs almost as much as the project itself",
+      "Financing costs weigh on every project",
       "Next project starts from zero",
     ],
     theValueAdd:
-      "We combine your projects into one company. Bankers see a company with real data, not a pitch. Cheaper debt. Faster second project.",
+      "Your projects can be organised into one Energy Enterprise. Lenders see a company with real data, not a pitch, and each proven project makes the next one easier to finance.",
     threeThings: [
       "Three projects become one company (not separate bets)",
-      "Banks see real monthly data and trust it",
+      "Lenders see real monthly data, not projections",
       "Second project benefits from the first: learning lowers its cost, and a proven track record makes it easier to finance",
     ],
   },
@@ -44,17 +44,17 @@ const personas: Persona[] = [
       "You want to stay owner, not sell and disappear",
     ],
     theValueAdd:
-      "We structure a company that keeps you as owner. Real income every month. In 5 years, you choose: refinance, sell, or hold longer.",
+      "The structure keeps you as owner and turns your land into a contracted energy income stream, reported every month. Over time, the options open up: refinance, sell or hold.",
     threeThings: [
       "Company structure keeps you as owner (you don't sell)",
-      "Real monthly income (not a promise, real numbers)",
-      "Year 5, you have options (refinance, sell, or keep it)",
+      "Income under contract, reported every month",
+      "Options over time: refinance, sell or hold",
     ],
   },
   {
     id: "institution",
     title: "For Institutions",
-    subtitle: "Pre-built companies. Not raw projects.",
+    subtitle: "Structured companies. Not raw projects.",
     color: "green",
     yourProblem: [
       "You see renewable opportunity in your territory",
@@ -63,17 +63,17 @@ const personas: Persona[] = [
       "You need institutional discipline (reporting, data, governance)",
     ],
     theValueAdd:
-      "We deliver pre-built companies. Each one arrives with real data, clear reporting, proven measurement. You acquire institutions that can grow.",
+      "Energy Enterprises are formed with governance, contracts, measurement and reporting from day one: designed through Trinomio's method and formed by operating vehicles such as Aureon Nexus.",
     threeThings: [
-      "We deliver companies (not raw projects you have to finish)",
-      "Each one has real monthly reporting (you always know the truth)",
-      "One company becomes five → five become a portfolio → portfolio is legible to refinance or expand",
+      "Companies with governance, not raw projects you have to finish",
+      "Monthly reporting from each enterprise",
+      "Enterprises can be aggregated into a portfolio that is legible to refinance or expand",
     ],
   },
   {
     id: "capital",
     title: "For Capital Providers",
-    subtitle: "Companies with doors. Portfolios with options.",
+    subtitle: "Governed companies. Portfolios with options.",
     color: "purple",
     yourProblem: [
       "You want energy deals (good risk-adjusted returns)",
@@ -82,11 +82,11 @@ const personas: Persona[] = [
       "No pathway from one deal to portfolio",
     ],
     theValueAdd:
-      "We build companies with real governance. Monthly measurement. Clear security. One company becomes a portfolio. Portfolio is legible to refinance, securitize, or exit.",
+      "Energy Enterprises with real governance, monthly measurement and clear security, designed to be aggregated into portfolios that can be refinanced, securitized or exited.",
     threeThings: [
       "Companies with governance (not just technical assets)",
       "Monthly reporting to you (you always know if it's working)",
-      "One → five → fifty. Portfolio is legible to FICR, refinance, or sale",
+      "A path from one enterprise to a portfolio: regulated investment vehicles, refinancing or sale",
     ],
   },
 ];

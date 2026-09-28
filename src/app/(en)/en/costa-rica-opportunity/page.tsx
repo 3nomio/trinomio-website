@@ -23,7 +23,7 @@ const audienceCards = [
     copy: "Institutions looking for disciplined pathways from transition need to bankable deployment.",
   },
   {
-    title: "Banks and SAFI/FICR actors",
+    title: "Banks and regulated investment vehicles",
     copy: "Credit and fund-vehicle readers focused on risk allocation, monitoring, refinancing, and pooling.",
   },
   {
@@ -109,7 +109,7 @@ export default function CostaRicaOpportunityPage() {
         <div className="space-y-5 text-base leading-7 text-[#E2E6E9]/88">
           <p>
             Costa Rica gives international developers, investors, DFIs, banks,
-            SAFI/FICR readers, and strategic energy partners a compact market
+            regulated fund managers, and strategic energy partners a compact market
             context for evaluating how energy-transition execution can connect
             to capital-market discipline.
           </p>
