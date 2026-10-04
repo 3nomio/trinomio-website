@@ -5,6 +5,7 @@ export const spanishNav = [
     mobileLabel: "E→E←C",
     href: "/es/energia-empresa-capital",
   },
+  { label: "EFI", href: "/es/efi" },
   { label: "3Labs", href: "/es/3labs" },
   { label: "Glosario", href: "/es/glosario" },
   { label: "Insights", href: "/es/insights" },
@@ -31,8 +32,8 @@ export const primaryLoopLinks = [
   },
   {
     label: "Explorar EFI",
-    href: "/es/3labs#efi",
-    meta: "Identificar excedente operativo",
+    href: "/es/efi",
+    meta: "La solución para empresas distribuidoras",
   },
   {
     label: "Ver ejecución SANSES",
@@ -86,8 +87,8 @@ export const frameworkLinks = {
   labs: [
     {
       label: "Explorar EFI",
-      href: "/es/3labs#efi",
-      meta: "Excedente operativo y señales de productividad",
+      href: "/es/efi",
+      meta: "Energy Finance Integration para distribuidoras y cooperativas",
     },
     primaryLoopLinks[1],
     {
@@ -139,7 +140,7 @@ export const audienceLoops = [
   },
   {
     match: "Grandes consumidores energéticos",
-    label: "Explorar EFI",
+    label: "Ver el método 3Labs",
     href: "/es/3labs#efi",
   },
 ] as const;

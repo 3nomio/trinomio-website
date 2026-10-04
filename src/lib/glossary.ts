@@ -360,9 +360,9 @@ export const glossaryTerms = [
     slug: "efi",
     category: "Marcos Trinomio",
     definition:
-      "Índice de productividad energía-finanzas: EFI(t,n) = MEV(t,n) / LCOE(t,n). Compara el valor económico marginal de una función energética con su costo nivelado de entrega.",
+      "Energy Finance Integration: la solución de Trinomio para empresas distribuidoras y cooperativas que une la física de sus plantas con los libros de la empresa. Su indicador central es el índice EFI = MEV / LCOE, que compara el valor económico marginal de una función energética con su costo nivelado de entrega.",
     trinomioLens:
-      "EFI > 1 indica excedente operativo. La creación de valor financiable comienza cuando ese excedente puede satisfacer WACC, DSCR, tenor, apetito de riesgo y bancabilidad.",
+      "Un índice EFI mayor que 1 indica excedente operativo. La creación de valor financiable comienza cuando ese excedente puede satisfacer WACC, DSCR, tenor, apetito de riesgo y bancabilidad.",
   },
   {
     term: "LCOE",
@@ -371,7 +371,7 @@ export const glossaryTerms = [
     definition:
       "Costo nivelado de entregar una función energética específica durante su vida útil, usualmente expresado por MWh o kWh.",
     trinomioLens:
-      "LCOE es el denominador de EFI. Bajo Wright's Law, la caída de costos solares y BESS puede mejorar el EFI incluso antes de que la firma estructure la oportunidad.",
+      "LCOE es el denominador del índice EFI. Bajo Wright's Law, la caída de costos solares y BESS puede mejorar el índice EFI incluso antes de que la firma estructure la oportunidad.",
   },
   {
     term: "Compresión de Riesgo",

@@ -44,6 +44,12 @@ const methodLinks = [
     href: "/es/energia-empresa-capital",
     cta: "Ver la arquitectura",
   },
+  {
+    title: "La solución: EFI — Energy Finance Integration",
+    text: "El servicio anual que une la física de sus plantas con los libros de su empresa: qué activos pagan su costo, cuánto puede crecer sin deuda nueva y cuánto vale adaptarse.",
+    href: "/es/efi",
+    cta: "Ver EFI",
+  },
 ] as const;
 
 const utilityValueProps = [
@@ -150,7 +156,7 @@ export default function EnergySectorThesisPage() {
               title="Diseñamos la empresa; no invertimos ni administramos fondos."
               description="Trinomio diseña el método y la arquitectura. Vehículos operativos como Aureon Nexus forman las Empresas Energéticas, tienen los contratos y llevan los activos a operación."
             />
-            <div className="mt-14 grid gap-5 lg:grid-cols-2">
+            <div className="mt-14 grid gap-5 lg:grid-cols-3">
               {methodLinks.map((item) => (
                 <Link
                   className="diagram-card group relative flex flex-col overflow-hidden p-6 transition hover:-translate-y-0.5 hover:border-trinomio-cyan/45"

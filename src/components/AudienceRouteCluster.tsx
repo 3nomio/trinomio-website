@@ -27,7 +27,7 @@ const audienceRoutes = [
     description:
       "Trinomio convierte demanda, resiliencia, continuidad y energía de calidad en lógica de cash-flow bancable.",
     href: "/es/3labs#efi",
-    cta: "Explorar EFI",
+    cta: "Ver el método 3Labs",
   },
   {
     label: "Aliados técnicos y legales",

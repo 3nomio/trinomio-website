@@ -418,11 +418,11 @@ export default function TransitionPage() {
             <SectionHeading
               eyebrow="Umbral de financiabilidad"
               title="La oportunidad cruza el umbral cuando puede producir flujo gobernado."
-              description="EFI identifica si una función energética crea excedente operativo. La oportunidad se vuelve financiable solo cuando ese excedente puede sostener contratos, trazabilidad y disciplina de capital."
+              description="El índice EFI, el indicador central de la solución EFI, identifica si una función energética crea excedente operativo. La oportunidad se vuelve financiable solo cuando ese excedente puede sostener contratos, trazabilidad y disciplina de capital."
             />
             <div className="accent-callout mt-10 border border-trinomio-cyan/30 bg-white/[0.04] p-6 backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
-                EFI = MEV / LCOE
+                Índice EFI = MEV / LCOE
               </p>
               <div className="mt-5 grid gap-6 md:grid-cols-3">
                 <div>

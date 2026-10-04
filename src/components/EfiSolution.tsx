@@ -26,7 +26,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 // Guardrails: no client names, every chart labelled illustrative,
 // cautious wording on bills and grid services, outside the securities perimeter.
 
-export type EfiLocale = "en";
+export type EfiLocale = "en" | "es";
 
 type Card = { title: string; text: string };
 
@@ -365,6 +365,271 @@ const content: Record<EfiLocale, EfiContent> = {
       button: "Talk to us",
       footerLine:
         "EFI — Energy Finance Integration is a Trinomio solution. The “Utility of the Future” concept originates in MIT's 2016 study of the same name. All figures on this page are illustrative.",
+    },
+  },
+  es: {
+    homeHref: "/es",
+    hero: {
+      eyebrow: "Trinomio · ESG–Energy Finance · EFI",
+      title: "Su ruta hacia la empresa eléctrica del futuro, medida en flujo de caja.",
+      subhead:
+        "EFI — Energy Finance Integration — une la física de sus plantas con los libros de su empresa. Muestra qué activos pagan su propio costo, cuánto puede crecer sin deuda nueva y cuánto vale adaptarse antes de que las reglas y el clima lo obliguen.",
+      primary: "Empezar con sus últimos cinco años",
+      secondary: "Ver cómo funciona",
+    },
+    track: {
+      eyebrow: "La ruta",
+      title: "Toda empresa eléctrica está en algún punto del camino. EFI le dice dónde y cuánto vale el trayecto.",
+      cards: [
+        {
+          title: "Dónde está.",
+          text: "Una lectura de su parque de generación, sus finanzas y su exposición al clima y a la regulación, construida a partir de sus propios estados financieros.",
+        },
+        {
+          title: "Hacia dónde debe ir.",
+          text: "La empresa eléctrica del futuro: una empresa cuyo valor proviene de estar disponible en el lugar y el momento correctos, no solo de vender kilovatios-hora.",
+        },
+        {
+          title: "Cuánto vale el trayecto.",
+          text: "El valor de adaptarse, en colones: cuánto vale su empresa si se rebalancea, frente a quedarse como está.",
+        },
+      ],
+      visual: {
+        title: "El camino hacia la empresa eléctrica del futuro",
+        milestones: [
+          "Parque actual",
+          "Mapa de caja por planta",
+          "Almacenamiento y solar en la mezcla",
+          "Remunerada por su flexibilidad",
+          "Empresa eléctrica del futuro",
+        ],
+        here: "Usted está aquí",
+        illustrative: "Ilustrativo. Los hitos y su orden dependen del régimen regulatorio.",
+        caption: "El destino es claro y la ruta se puede medir.",
+      },
+    },
+    questions: {
+      eyebrow: "Seis preguntas que EFI responde",
+      title: "Las preguntas que su junta directiva ya se está haciendo.",
+      items: [
+        {
+          title: "¿Cuáles de nuestras plantas se pagan solas y cuáles consumen caja?",
+          text: "Cada planta recibe dos libros: el efectivo que genera y la deuda que carga. Al netearlos aparecen las que aportan y las que drenan.",
+        },
+        {
+          title: "¿Cuánto podemos crecer sin contraer deuda nueva?",
+          text: "EFI proyecta diez años del efectivo que queda para invertir después del financiamiento.",
+        },
+        {
+          title: "¿Qué le hacen la solar, las baterías y los vehículos eléctricos más baratos a lo que ya tenemos?",
+          text: "Cambian tanto lo que cuesta una planta nueva como lo que ganan sus plantas existentes, hora por hora.",
+        },
+        {
+          title: "¿Qué pasa en un año seco?",
+          text: "Cuando su generación hidroeléctrica produce menos, la tarifa de generación que usted paga tiende a subir. EFI evalúa ambas cosas juntas.",
+        },
+        {
+          title: "¿Qué puede ganar el almacenamiento ahora que los servicios a la red se están tarifando?",
+          text: "EFI valora la reserva y la flexibilidad bajo las nuevas reglas, con las tarifas todavía en revisión.",
+        },
+        {
+          title: "¿Cómo cambian nuestra posición los nuevos proyectos de ley?",
+          text: "EFI corre su empresa bajo la ley vigente y bajo cada proyecto que está en la Asamblea Legislativa.",
+        },
+      ],
+      drains: {
+        title: "Plantas que aportan y plantas que drenan",
+        plants: ["Planta A", "Planta B", "Planta C", "Planta D", "Planta E", "Planta F"],
+        axis: "Caja neta tras la deuda propia de la planta, por año",
+        contributors: "Aporta caja",
+        drains: "Drena caja",
+        illustrative: "Ilustrativo",
+        caption: "Ilustrativo. Un parque que se ve sano en total puede esconder plantas que consumen caja.",
+      },
+      dryYear: {
+        title: "El apretón del año seco",
+        hydro: "Generación hidroeléctrica propia",
+        surcharge: "Recargo pagado en la tarifa de generación",
+        solar: "Generación solar",
+        dryYear: "Año seco",
+        yAxis: "Índice, año normal = 100",
+        xAxis: "Año",
+        illustrative: "Ilustrativo",
+        caption: "Ilustrativo. Los costos suben justo cuando cae la generación hidroeléctrica, y la solar cubre esa brecha.",
+      },
+    },
+    deliverables: {
+      eyebrow: "Lo que usted recibe",
+      title: "Una imagen clara, entregada cada año.",
+      items: [
+        { title: "Un mapa de caja de su parque", text: "Lo que aporta cada planta después de su propia deuda." },
+        {
+          title: "Un puntaje EFI para cada activo",
+          text: "Si se paga solo hoy, y si una planta nueva haría ya el mismo trabajo a menor costo.",
+        },
+        { title: "Un índice de preparación", text: "Dónde está su empresa en el camino hacia la empresa eléctrica del futuro." },
+        { title: "El valor de la adaptación", text: "Cuánto vale rebalancearse, en colones, frente a quedarse quieto." },
+        {
+          title: "Una ruta hacia el mercado de capitales",
+          text: "Qué flujos de caja pueden empaquetarse y financiarse, y en qué condiciones.",
+        },
+        {
+          title: "Una evaluación de riesgos lista para revelar",
+          text: "Riesgo climático y de transición, preparado conforme a las NIIF S1 y S2.",
+        },
+      ],
+    },
+    capital: {
+      eyebrow: "Del crecimiento orgánico al mercado de capitales",
+      title: "Primero medimos hasta dónde lo lleva su propio efectivo. Luego lo conectamos con capital para el resto.",
+      cards: [
+        {
+          title: "Medir la brecha.",
+          text: "Su tasa de crecimiento orgánico, la tasa que necesita y la distancia entre ambas.",
+        },
+        {
+          title: "Volver invertibles los flujos de caja.",
+          text: "EFI separa el flujo de caja de cada planta, lo somete a escenarios de producción conservadora y de años secos, y lo reporta con un solo método estándar.",
+        },
+        {
+          title: "Conectar con el capital.",
+          text: "Los inversionistas compran flujos de caja que pueden entender, probar y en los que pueden confiar. Un método común entre empresas eléctricas crea la uniformidad que necesita el financiamiento agrupado. Trinomio trabaja con emisores y gestores de fondos regulados para llegar a ellos.",
+        },
+      ],
+      gap: {
+        title: "La brecha de crecimiento",
+        organic: "Inversión financiada con caja propia",
+        needed: "Inversión necesaria para mantener la ruta",
+        gap: "Brecha por financiar",
+        yAxis: "Inversión por año, índice",
+        xAxis: "Año",
+        illustrative: "Ilustrativo",
+        caption: "Ilustrativo. La brecha se puede medir, y eso es lo que la vuelve financiable.",
+      },
+      flow: {
+        title: "De las plantas al capital",
+        steps: ["Sus plantas y sus libros", "EFI", "Proyectos financiables", "Capital institucional"],
+        caption: "EFI es el puente entre sus activos y los inversionistas que pueden financiarlos.",
+      },
+    },
+    how: {
+      eyebrow: "Cómo funciona",
+      title: "Sentir. Dimensionar. Transformar.",
+      steps: [
+        {
+          title: "Sentir",
+          text: "Leemos sus últimos cinco años de estados financieros y datos operativos, planta por planta.",
+        },
+        {
+          title: "Dimensionar",
+          text: "El motor simula su parque hora por hora, valora cada planta y proyecta diez años de caja bajo escenarios climáticos, tecnológicos y regulatorios.",
+        },
+        {
+          title: "Transformar",
+          text: "Convertimos los resultados en un plan de rebalanceo y en el financiamiento para ejecutarlo.",
+        },
+      ],
+      engine: {
+        title: "Dentro del motor",
+        energyLane: "Energía",
+        financeLane: "Finanzas",
+        energySteps: ["Datos", "Generación", "Despacho"],
+        financeSteps: ["Datos", "Deuda por planta"],
+        bypass: "pasa directo a la valoración",
+        merged: ["Valor por planta (EFI)", "Crecimiento orgánico a diez años", "Reportes"],
+        caption: "La energía y las finanzas se encuentran en un solo motor, algo que ninguna herramienta existente hace.",
+      },
+      note: "Construido en código abierto e inspeccionable. Modelos probados de solar, eólica y almacenamiento; la hidroeléctrica y el despacho los desarrolló Trinomio. La inteligencia artificial nos ayuda a construir y operar el motor; el criterio sigue siendo de las personas.",
+    },
+    esg: {
+      eyebrow: "ESG–Energy Finance",
+      title: "Tres fuerzas mueven su valor. Tres obligaciones las hacen visibles.",
+      forcesLabel: "Las fuerzas",
+      forces: [
+        {
+          title: "Cambio tecnológico",
+          text: "Solar, baterías y vehículos eléctricos más baratos, y una demanda más inteligente.",
+        },
+        { title: "Cambio regulatorio", text: "Nuevas leyes y nuevos precios para los servicios a la red." },
+        {
+          title: "Riesgo climático físico",
+          text: "Sequías y cambios en las lluvias sobre un parque basado en hidroelectricidad.",
+        },
+      ],
+      obligationsLabel: "Las obligaciones",
+      obligations: [
+        {
+          title: "NIIF S1 y S2",
+          text: "Revelación de sostenibilidad, adoptada en Costa Rica, con los primeros reportes en 2028 sobre datos de 2027.",
+        },
+        {
+          title: "Vida útil de los activos",
+          text: "La revisión anual, bajo las NIIF, de cuánto tiempo seguirá generando ingresos cada activo.",
+        },
+        {
+          title: "Acceso al financiamiento",
+          text: "Los bancos ahora deben evaluar el riesgo climático de su cartera de crédito.",
+        },
+      ],
+    },
+    rules: {
+      eyebrow: "Preparada para las nuevas reglas",
+      title: "Una empresa, tres reglamentos posibles. EFI corre los tres.",
+      regimes: [
+        {
+          title: "Ley 10.086 (el caso base actual)",
+          text: "Un precio nacional único, tarifas reguladas y, ahora, un fondo común para los servicios a la red.",
+        },
+        {
+          title: "Expediente 23.414 (un mercado eléctrico nacional)",
+          text: "Comercializadores, agregadores y grandes consumidores comprando en el mercado mayorista, lo que abre espacio al valor por lugar y por momento.",
+        },
+        {
+          title: "Expediente 25.781 (una planificación central fortalecida)",
+          text: "Un operador del sistema más fuerte dentro del ICE y límites mayores para las plantas privadas.",
+        },
+      ],
+      adaptation: {
+        title: "El valor de la adaptación",
+        regimes: [
+          { name: "Ley 10.086", note: "ley vigente" },
+          { name: "Exp. 23.414", note: "mercado nacional" },
+          { name: "Exp. 25.781", note: "plan central" },
+        ],
+        stay: "Valor de la empresa si se queda como está",
+        rebalance: "Valor de la empresa si se rebalancea",
+        adaptation: "Valor de adaptarse",
+        yAxis: "Valor de la empresa, índice",
+        illustrative: "Ilustrativo",
+        caption: "Ilustrativo. Adaptarse paga bajo cualquier reglamento, en distinta medida.",
+      },
+    },
+    rebalance: {
+      eyebrow: "El rebalanceo anual",
+      title: "No es un estudio aislado. Es un ciclo anual, como su auditoría.",
+      steps: [
+        { title: "Incorporar", text: "Sus datos, su parque, sus libros." },
+        { title: "Monitorear", text: "Clima, tecnología y regulación a lo largo del año." },
+        { title: "Rebalancear", text: "Qué conservar, agregar, refinanciar o retirar." },
+        { title: "Reportar", text: "A su junta directiva, a sus acreedores y en sus revelaciones." },
+      ],
+      restart: "Luego el ciclo comienza de nuevo.",
+      pricing:
+        "Una tarifa anual fijada según el tamaño y la complejidad del portafolio, con un alcance definido; las revisiones intermedias se cotizan por separado.",
+      ring: {
+        title: "El ciclo",
+        steps: ["Incorporar", "Monitorear", "Rebalancear", "Reportar"],
+        centre: "Cada año",
+        caption: "EFI sigue el ritmo del cambio en lugar de describir un solo momento.",
+      },
+    },
+    cta: {
+      eyebrow: "Empiece aquí",
+      title: "Empiece con sus últimos cinco años.",
+      copy: "Envíenos cinco años de estados financieros. Le mostraremos dónde está su empresa en el camino y cuánto vale el siguiente paso.",
+      button: "Conversemos",
+      footerLine:
+        "EFI — Energy Finance Integration es una solución de Trinomio. El concepto de la “empresa eléctrica del futuro” proviene del estudio Utility of the Future del MIT (2016). Todas las cifras de esta página son ilustrativas.",
     },
   },
 };
