@@ -24,6 +24,21 @@ const labs = [
   { title: "Transformar", text: "Convertir la medida en empresa. Formamos una Empresa Energética: una empresa energética estructurada para ser financiable." },
 ] as const;
 
+const principles = [
+  {
+    title: "Visión",
+    text: "Reconocer nuevas posibilidades incluso cuando los resultados todavía no son evidentes.",
+  },
+  {
+    title: "Convicción",
+    text: "Sostener un propósito fundamentado frente a la incertidumbre.",
+  },
+  {
+    title: "Perseverancia",
+    text: "Transformar esa visión en realidad mediante conocimiento, disciplina y acción.",
+  },
+] as const;
+
 const riskSignals = [
   "ERM",
   "doble materialidad",
@@ -77,13 +92,84 @@ export default function AboutTrinomioPage() {
 
         <OrbitalDivider />
 
+        <section
+          className="institutional-section relative overflow-hidden bg-trinomio-navy-elevated px-5 py-24 sm:px-8 lg:py-32"
+          id="filosofia"
+        >
+          <div className="relative mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Nuestra filosofía"
+              title="La convicción de transformar la incertidumbre en oportunidades"
+              description="En Trinomio creemos que las grandes transformaciones comienzan mucho antes de que sus resultados sean visibles. Nacen de la capacidad de mirar más allá de lo conocido, comprender los cambios que están ocurriendo y perseverar en la construcción de un futuro diferente."
+            />
+            <p className="mt-8 max-w-3xl text-base leading-7 text-[#E2E6E9]/90 sm:text-lg">
+              Nuestra filosofía se fundamenta en tres principios:
+            </p>
+            <dl className="mt-8 grid gap-8 border-t border-white/12 pt-10 lg:grid-cols-3">
+              {principles.map((principle) => (
+                <div key={principle.title}>
+                  <dt className="text-2xl font-semibold text-white">
+                    {principle.title}
+                  </dt>
+                  <dd className="mt-3 text-base leading-7 text-[#E2E6E9]/90">
+                    {principle.text}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <blockquote className="mt-16 max-w-4xl border-l border-trinomio-green/55 pl-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-trinomio-green">
+                Nos guía un principio
+              </p>
+              <p className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                «La incertidumbre pone a prueba nuestras convicciones; la
+                perseverancia transforma nuestra visión en realidad».
+              </p>
+            </blockquote>
+            <aside className="mt-16 max-w-3xl border-t border-white/10 pt-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#E2E6E9]/55">
+                Nuestra inspiración
+              </p>
+              <p className="mt-3 text-sm leading-6 text-[#E2E6E9]/65">
+                Nuestra filosofía encuentra inspiración en una reflexión sobre
+                el Salmo 22, que recorre el camino del desamparo a la confianza:
+                la capacidad de sostener la serenidad y el propósito frente a la
+                incertidumbre, y perseverar aun cuando el camino todavía no
+                revela sus resultados.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <OrbitalDivider />
+
         <section className="institutional-section relative overflow-hidden bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32">
           <div className="relative mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Nuestra Tesis"
               title="Energía → Empresa ← Capital"
-              description="Trinomio opera donde funciones energéticas y disciplina de capital se traducen mediante la Capa Empresa. La energía crea oportunidades productivas; el capital impone requisitos; la empresa convierte excedente operativo en activos bancables."
+              description="Sabemos que la transición hacia una nueva economía exige mucho más que tecnología o capital. Requiere comprender cómo interactúan los sistemas energéticos, las empresas y los mercados financieros, y cómo esa integración puede generar valor económico sostenible."
             />
+            <div className="mt-5 max-w-3xl space-y-5 text-base leading-7 text-[#E2E6E9]/90 sm:text-lg">
+              <p>
+                Por eso creamos Trinomio Energy Finance: un espacio de
+                conocimiento, innovación y estructuración financiera dedicado a
+                conectar tres dimensiones fundamentales: la energía, la empresa
+                y el capital.
+              </p>
+              <p>
+                Trabajamos para descubrir el valor que aún no es evidente,
+                desarrollar modelos de negocio capaces de capturarlo y movilizar
+                el capital necesario para transformarlo en infraestructura
+                productiva y perdurable.
+              </p>
+              <p>
+                Trinomio opera donde funciones energéticas y disciplina de
+                capital se traducen mediante la Capa Empresa. La energía crea
+                oportunidades productivas; el capital impone requisitos; la
+                empresa convierte excedente operativo en activos bancables.
+              </p>
+            </div>
             <FlowDoctrine />
             <DiagramNavigation links={frameworkLinks.doctrine} />
           </div>
@@ -121,6 +207,7 @@ export default function AboutTrinomioPage() {
             <SectionHeading
               eyebrow="Cómo Trabajamos"
               title="Tres capacidades para conectar realidad energética, arquitectura corporativa y lógica de capital."
+              description="Nuestra disciplina: «Antes de invertir, comprender. Antes de comprender, saber mirar. Y cuando se mira con claridad, transformar»."
             />
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
               {labs.map((lab, index) => (
