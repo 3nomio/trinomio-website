@@ -29,6 +29,20 @@ import { SectionHeading } from "@/components/SectionHeading";
 export type EfiLocale = "en" | "es";
 
 type Card = { title: string; text: string };
+type IcebergLabels = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  waterline: string;
+  tip: readonly { label: string; title: string; text: string }[];
+  obstacleLabel: string;
+  cureLabel: string;
+  below: readonly { title: string; text: string; cure: string }[];
+  base: readonly Card[];
+  closing: string;
+  articleLabel: string;
+  articleHref: string;
+};
 
 type EfiContent = {
   homeHref: string;
@@ -67,6 +81,7 @@ type EfiContent = {
   how: {
     eyebrow: string;
     title: string;
+    intro: string;
     steps: readonly Card[];
     engine: EngineLabels;
     note: string;
@@ -79,6 +94,7 @@ type EfiContent = {
     obligationsLabel: string;
     obligations: readonly Card[];
   };
+  iceberg: IcebergLabels;
   rules: {
     eyebrow: string;
     title: string;
@@ -250,18 +266,20 @@ const content: Record<EfiLocale, EfiContent> = {
     how: {
       eyebrow: "How it works",
       title: "Sense. Size. Transform.",
+      intro:
+        "EFI lets us put what we think we know to the test. We turn assumptions about energy, regulation and capital into scenarios that can be evaluated, to understand when an opportunity creates value, who can capture it, what conditions it needs to last and how it can be financed. Every evaluation and every observed result strengthens the next investment decision.",
       steps: [
         {
           title: "Sense",
-          text: "We read your last five years of financial statements and operating data, plant by plant.",
+          text: "We read your last five years of financial statements and operating data, plant by plant, to discover where and when value lies.",
         },
         {
           title: "Size",
-          text: "The engine simulates your fleet hour by hour, values each plant, and projects ten years of cash under climate, technology and regulatory scenarios.",
+          text: "The engine simulates your fleet hour by hour, values each plant, projects ten years of cash under climate, technology and regulatory scenarios, and separates the value each investment creates as an asset.",
         },
         {
           title: "Transform",
-          text: "We turn the results into a rebalancing plan and the financing to carry it out.",
+          text: "We turn the results into a rebalancing plan and transfer each asset to the capital best placed to finance it.",
         },
       ],
       engine: {
@@ -307,29 +325,85 @@ const content: Record<EfiLocale, EfiContent> = {
         },
       ],
     },
+    iceberg: {
+      eyebrow: "What you don't see",
+      title: "Three actions in plain sight. Underneath, the reasons they are needed.",
+      intro:
+        "Like an iceberg, what EFI does shows in three actions. Below the surface sits what explains why they are needed: the obstacles that keep a good project from reaching capital, even when the money exists.",
+      waterline: "Below the surface",
+      tip: [
+        {
+          label: "Sense",
+          title: "Discover where value lies",
+          text: "We find where and when an asset creates real value, and check that the value holds at the real price of energy.",
+        },
+        {
+          label: "Size",
+          title: "Separate it as an asset",
+          text: "We isolate that value from day-to-day operations and package it in a standard format a bank can read.",
+        },
+        {
+          label: "Transform",
+          title: "Transfer it to capital",
+          text: "We hand it to whoever is best placed to hold it: first a bank, later bond or fund investors.",
+        },
+      ],
+      obstacleLabel: "The obstacle",
+      cureLabel: "How it is solved:",
+      below: [
+        {
+          title: "A bank does not read kilowatt-hours.",
+          text: "What cannot be read cannot be valued.",
+          cure: "we translate physics into cash flow and give one clear threshold: the energy price up to which the project still pays.",
+        },
+        {
+          title: "Small projects cost too much to study.",
+          text: "Analysing a small loan costs almost as much as a large one.",
+          cure: "a common format and grouping projects together make them cheap to assess.",
+        },
+        {
+          title: "Unchecked risks scare lenders, and banks fill up.",
+          text: "A prudent lender assumes the worst, and every bank has a limit.",
+          cure: "we review environmental and social risks before anyone asks, and move the portfolio on to bonds or funds so the bank can lend again.",
+        },
+      ],
+      base: [
+        {
+          title: "Before anything starts: a gate",
+          text: "A project first passes the yes-or-no tests (it truly saves energy, it is environmentally and socially acceptable, it meets the taxonomy and the law in force) before time is spent valuing it.",
+        },
+        {
+          title: "From start to finish: a measurement thread",
+          text: "What we measure at the start travels with the asset to the investor, who expects tracking and a credible report of energy saved, money and emissions avoided.",
+        },
+      ],
+      closing: "Money alone fixes none of these obstacles. Translation, standard packaging and early risk review do.",
+      articleLabel: "Read the article: Eligible Is Not Bankable",
+      articleHref: "/en/insights/eligible-is-not-bankable",
+    },
     rules: {
       eyebrow: "Ready for the new rules",
-      title: "One company, three possible rulebooks. EFI runs all three.",
+      title: "One company, several possible rulebooks. EFI tests each one.",
       regimes: [
         {
           title: "Ley 10086 (today's base case)",
-          text: "A single national price, regulated tariffs and, now, a pool for grid services.",
+          text: "The law in force: a single national price, regulated tariffs and, now, a pool for grid services. Every plan is built first on these rules.",
         },
         {
-          title: "Bill 23.414 (a national electricity market)",
-          text: "Retailers, aggregators and large consumers buying wholesale, which makes room for value by place and time.",
+          title: "Scenario: an open electricity market",
+          text: "Retailers, aggregators and large consumers buying wholesale, which makes room for value by place and time. Bill 23.414 proposed this path; the Legislative Assembly archived it in October 2026, but the option may return.",
         },
         {
-          title: "Bill 25.781 (a strengthened central plan)",
-          text: "A stronger system operator inside ICE and larger limits for private plants.",
+          title: "Scenario: stronger central planning within ICE",
+          text: "Proposals now under discussion, such as Bill 25.781, point to stronger coordination of the system inside ICE. EFI models this path as a scenario until a text is approved.",
         },
       ],
       adaptation: {
         title: "The value of adaptation",
         regimes: [
           { name: "Ley 10086", note: "today's law" },
-          { name: "Bill 23.414", note: "national market" },
-          { name: "Bill 25.781", note: "central plan" },
+          { name: "Open market", note: "scenario" },
+          { name: "Central plan", note: "scenario" },
         ],
         stay: "Company value if it stays as it is",
         rebalance: "Company value if it rebalances",
@@ -515,18 +589,20 @@ const content: Record<EfiLocale, EfiContent> = {
     how: {
       eyebrow: "Cómo funciona",
       title: "Sentir. Dimensionar. Transformar.",
+      intro:
+        "EFI permite poner a prueba lo que creemos saber. Convertimos supuestos sobre energía, regulación y capital en escenarios evaluables para comprender cuándo una oportunidad crea valor, quién puede capturarlo, qué condiciones necesita para sostenerse y cómo puede financiarse. Cada evaluación y cada resultado observado fortalecen la siguiente decisión de inversión.",
       steps: [
         {
           title: "Sentir",
-          text: "Leemos sus últimos cinco años de estados financieros y datos operativos, planta por planta.",
+          text: "Leemos sus últimos cinco años de estados financieros y datos operativos, planta por planta, para descubrir dónde y cuándo hay valor.",
         },
         {
           title: "Dimensionar",
-          text: "El motor simula su parque hora por hora, valora cada planta y proyecta diez años de caja bajo escenarios climáticos, tecnológicos y regulatorios.",
+          text: "El motor simula su parque hora por hora, valora cada planta, proyecta diez años de caja bajo escenarios climáticos, tecnológicos y regulatorios y separa el valor de cada inversión como un activo.",
         },
         {
           title: "Transformar",
-          text: "Convertimos los resultados en un plan de rebalanceo y en el financiamiento para ejecutarlo.",
+          text: "Convertimos los resultados en un plan de rebalanceo y transferimos cada activo al capital que mejor puede financiarlo.",
         },
       ],
       engine: {
@@ -572,29 +648,85 @@ const content: Record<EfiLocale, EfiContent> = {
         },
       ],
     },
+    iceberg: {
+      eyebrow: "Lo que no se ve",
+      title: "Tres acciones a la vista. Debajo, las razones por las que hacen falta.",
+      intro:
+        "Como en un iceberg, lo que EFI hace se ve en tres acciones. Bajo la superficie está lo que explica por qué hacen falta: los obstáculos que impiden que un buen proyecto llegue al capital, aunque el dinero exista.",
+      waterline: "Bajo la superficie",
+      tip: [
+        {
+          label: "Sentir",
+          title: "Descubrir dónde hay valor",
+          text: "Encontramos dónde y cuándo un activo crea valor real, y comprobamos que ese valor resiste el precio real de la energía.",
+        },
+        {
+          label: "Dimensionar",
+          title: "Separarlo como un activo",
+          text: "Aislamos ese valor de la operación diaria y lo empaquetamos en un formato estándar que un banco puede leer.",
+        },
+        {
+          label: "Transformar",
+          title: "Transferirlo al capital",
+          text: "Lo entregamos a quien mejor puede mantenerlo: primero un banco; después, inversionistas de bonos o de fondos.",
+        },
+      ],
+      obstacleLabel: "El obstáculo",
+      cureLabel: "Cómo se resuelve:",
+      below: [
+        {
+          title: "Un banco no lee kilovatios-hora.",
+          text: "Lo que no se puede leer no se puede valorar.",
+          cure: "traducimos la física en flujo de caja y entregamos un umbral claro: el precio de la energía hasta el cual el proyecto todavía paga.",
+        },
+        {
+          title: "Los proyectos pequeños cuestan demasiado de estudiar.",
+          text: "Analizar un crédito pequeño cuesta casi lo mismo que uno grande.",
+          cure: "un formato común y la agrupación de proyectos los vuelven baratos de evaluar.",
+        },
+        {
+          title: "Los riesgos sin revisar asustan, y los bancos se llenan.",
+          text: "Un prestamista prudente supone lo peor, y cada banco tiene un límite.",
+          cure: "revisamos los riesgos ambientales y sociales antes de que alguien pregunte, y trasladamos la cartera a bonos o fondos para que el banco vuelva a prestar.",
+        },
+      ],
+      base: [
+        {
+          title: "Antes de empezar: una puerta",
+          text: "Un proyecto pasa primero las pruebas de sí o no (ahorra energía de verdad, es aceptable ambiental y socialmente, cumple la taxonomía y la ley vigente) antes de invertir tiempo en valorarlo.",
+        },
+        {
+          title: "De principio a fin: un hilo de medición",
+          text: "Lo que medimos al inicio acompaña al activo hasta el inversionista, que exige seguimiento y un reporte creíble de energía ahorrada, dinero y emisiones evitadas.",
+        },
+      ],
+      closing: "El dinero, por sí solo, no resuelve ninguno de estos obstáculos. Los resuelven la traducción, el empaque estándar y la revisión temprana del riesgo.",
+      articleLabel: "Lea el artículo: Elegible no es financiable",
+      articleHref: "/es/insights/elegible-no-es-financiable",
+    },
     rules: {
       eyebrow: "Preparada para las nuevas reglas",
-      title: "Una empresa, tres reglamentos posibles. EFI corre los tres.",
+      title: "Una empresa, varias reglas posibles. EFI evalúa cada una.",
       regimes: [
         {
           title: "Ley 10.086 (el caso base actual)",
-          text: "Un precio nacional único, tarifas reguladas y, ahora, un fondo común para los servicios a la red.",
+          text: "La ley vigente: un precio nacional único, tarifas reguladas y, ahora, un fondo común para los servicios a la red. Todo plan se construye primero sobre estas reglas.",
         },
         {
-          title: "Expediente 23.414 (un mercado eléctrico nacional)",
-          text: "Comercializadores, agregadores y grandes consumidores comprando en el mercado mayorista, lo que abre espacio al valor por lugar y por momento.",
+          title: "Escenario: un mercado eléctrico abierto",
+          text: "Comercializadores, agregadores y grandes consumidores comprando en el mercado mayorista, lo que abre espacio al valor por lugar y por momento. El expediente 23.414 proponía esta vía; la Asamblea Legislativa lo archivó en octubre de 2026, pero la opción puede volver.",
         },
         {
-          title: "Expediente 25.781 (una planificación central fortalecida)",
-          text: "Un operador del sistema más fuerte dentro del ICE y límites mayores para las plantas privadas.",
+          title: "Escenario: una planificación central reforzada en el ICE",
+          text: "Propuestas hoy en discusión, como el expediente 25.781, apuntan a una coordinación más fuerte del sistema dentro del ICE. EFI modela esta vía como escenario mientras no se apruebe un texto.",
         },
       ],
       adaptation: {
         title: "El valor de la adaptación",
         regimes: [
           { name: "Ley 10.086", note: "ley vigente" },
-          { name: "Exp. 23.414", note: "mercado nacional" },
-          { name: "Exp. 25.781", note: "plan central" },
+          { name: "Mercado abierto", note: "escenario" },
+          { name: "Plan central", note: "escenario" },
         ],
         stay: "Valor de la empresa si se queda como está",
         rebalance: "Valor de la empresa si se rebalancea",
@@ -645,6 +777,86 @@ function NumberedCards({ items, columns = "lg:grid-cols-3" }: { items: readonly 
         </article>
       ))}
     </div>
+  );
+}
+
+function IcebergSection({ labels }: { labels: IcebergLabels }) {
+  return (
+    <section className="institutional-section scroll-mt-24 bg-trinomio-navy-deep text-white" id="iceberg">
+      <div className="bg-trinomio-navy px-5 pt-24 sm:px-8 lg:pt-32">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading eyebrow={labels.eyebrow} title={labels.title} />
+          <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/92">{labels.intro}</p>
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {labels.tip.map((item, index) => (
+              <article className="flow-card border p-6" key={item.title}>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-trinomio-cyan">
+                  0{index + 1} · {item.label}
+                </p>
+                <h3 className="mt-5 text-xl font-semibold leading-snug text-white">{item.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/86">{item.text}</p>
+              </article>
+            ))}
+          </div>
+          <div className="relative mt-8 h-28" aria-hidden="true">
+            <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none" viewBox="0 0 1344 112">
+              <defs>
+                <linearGradient id="iceberg-water" x1="0" x2="1">
+                  <stop offset="0" stopColor="#17d7ff" stopOpacity="0" />
+                  <stop offset="0.5" stopColor="#17d7ff" />
+                  <stop offset="1" stopColor="#3fe083" stopOpacity="0.2" />
+                </linearGradient>
+                <linearGradient id="iceberg-mass" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stopColor="#8eefff" stopOpacity="0.5" />
+                  <stop offset="1" stopColor="#8eefff" stopOpacity="0.04" />
+                </linearGradient>
+              </defs>
+              <polygon fill="#ffffff" opacity="0.85" points="652,28 680,20 700,58 640,58" />
+              <polygon fill="url(#iceberg-mass)" points="640,58 700,58 740,86 760,112 600,112 612,86" />
+              <path
+                d="M0 58 Q 84 46 168 58 T 336 58 T 504 58 T 672 58 T 840 58 T 1008 58 T 1176 58 T 1344 58"
+                fill="none"
+                stroke="url(#iceberg-water)"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+          <p className="-mt-20 mb-14 text-right text-xs uppercase tracking-[0.24em] text-trinomio-cyan">{labels.waterline}</p>
+        </div>
+      </div>
+      <div className="bg-[linear-gradient(180deg,#05203f,var(--navy-deep))] px-5 pb-24 pt-12 sm:px-8 lg:pb-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-5 md:grid-cols-3">
+            {labels.below.map((item) => (
+              <article className="border border-trinomio-cyan/20 bg-[#031126]/60 p-6" key={item.title}>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-trinomio-cyan-soft/80">{labels.obstacleLabel}</p>
+                <h3 className="mt-5 text-xl font-semibold leading-snug text-white">{item.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[#E2E6E9]/86">{item.text}</p>
+                <p className="mt-4 border-t border-white/10 pt-4 text-sm leading-6 text-[#E2E6E9]/92">
+                  <span className="font-semibold text-trinomio-green">{labels.cureLabel}</span> {item.cure}
+                </p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-5 grid gap-5 md:grid-cols-2">
+            {labels.base.map((item) => (
+              <div className="border border-dashed border-trinomio-green/40 p-6" key={item.title}>
+                <h4 className="text-base font-semibold text-trinomio-green">{item.title}</h4>
+                <p className="mt-3 text-sm leading-6 text-[#E2E6E9]/86">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="accent-callout mt-10 border p-5 text-base leading-7 text-white">
+            <p>{labels.closing}</p>
+            {labels.articleHref ? (
+              <a className="mt-2 inline-block text-sm text-trinomio-cyan hover:underline" href={labels.articleHref}>
+                {labels.articleLabel} →
+              </a>
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -749,11 +961,17 @@ export function EfiSolution({ locale }: { locale: EfiLocale }) {
       <section className="institutional-section scroll-mt-24 bg-trinomio-navy px-5 py-24 sm:px-8 lg:py-32" id="how-it-works">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow={t.how.eyebrow} title={t.how.title} />
+          <p className="mt-8 max-w-4xl text-lg leading-8 text-[#E2E6E9]/92">{t.how.intro}</p>
           <NumberedCards items={t.how.steps} />
           <EngineDiagram labels={t.how.engine} />
           <p className="accent-callout mt-6 border p-5 text-sm leading-6 text-[#E2E6E9]/92">{t.how.note}</p>
         </div>
       </section>
+
+      <OrbitalDivider />
+
+      {/* 6b. Iceberg: what EFI does, and why each step is needed */}
+      <IcebergSection labels={t.iceberg} />
 
       <OrbitalDivider />
 

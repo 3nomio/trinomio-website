@@ -66,7 +66,7 @@ const costaRicaSignals = [
       "Principal cauce actual del cambio tecnológico. Permite estructurar recursos energéticos distribuidos como punto de partida operativo, y ARESEP avanza con rapidez en su implementación.",
   },
   {
-    signal: "Expedientes 23.414 y 25.781",
+    signal: "Reforma del sistema (exp. 25.781 y otras propuestas)",
     role: "Opcionalidad de reforma",
     reading:
       "No deben modelarse como ingreso base. La opcionalidad se preserva mediante cláusulas de pivote, gobierno de EE y una arquitectura preparada para adaptarse a la ruta que defina la Asamblea Legislativa.",
@@ -148,8 +148,9 @@ export default function TransitionPage() {
               deben organizarse en empresas, contratos, Project Finance, FICR y
               flujos legibles para el capital. La Ley 10.086 ya habilita
               recursos energéticos distribuidos, y ARESEP avanza con rapidez en
-              su implementación. Los expedientes 23.414 y 25.781 discuten la
-              próxima arquitectura del sistema. Entre lo que ya rige y lo que se
+              su implementación. La Asamblea Legislativa sigue discutiendo la
+              próxima arquitectura del sistema, tras archivar en octubre de 2026
+              el expediente 23.414. Entre lo que ya rige y lo que se
               discute existe la brecha de arquitectura financiera que Trinomio
               estructura.
             </p>
@@ -182,7 +183,7 @@ export default function TransitionPage() {
                 {
                   eyebrow: "La brecha",
                   title: "Capital que no puede entrar directamente.",
-                  text: "La Ley 10.086 habilita recursos energéticos distribuidos. Los expedientes 23.414 y 25.781 discuten nuevas formas de participación y organización del sistema. Entre lo que ya rige y lo que se discute existe la brecha de arquitectura financiera que convierte potencial energético en activos bancables.",
+                  text: "La Ley 10.086 habilita recursos energéticos distribuidos. Tras el archivo del expediente 23.414 en octubre de 2026, la Asamblea Legislativa sigue discutiendo nuevas formas de participación y organización del sistema. Entre lo que ya rige y lo que se discute existe la brecha de arquitectura financiera que convierte potencial energético en activos bancables.",
                 },
               ].map((item, index) => (
                 <article

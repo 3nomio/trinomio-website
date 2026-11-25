@@ -239,7 +239,7 @@ export default function AboutTrinomioPage() {
             <SectionHeading
               eyebrow="Riesgo y Adaptación"
               title="El Régimen de Transición no es solo cumplimiento."
-              description="Exp. 23414 no es el evento final. Es una señal de presión: Costa Rica necesita más energía, más flexibilidad, más inversión y una arquitectura que proteja solidaridad mientras escala."
+              description="El archivo del Exp. 23.414 en octubre de 2026 no cierra la discusión. Es una señal de presión: Costa Rica necesita más energía, más flexibilidad, más inversión y una arquitectura que proteja solidaridad mientras escala."
             />
             <div className="grid gap-4 sm:grid-cols-2">
               {riskSignals.map((item) => (

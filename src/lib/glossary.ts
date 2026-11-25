@@ -568,7 +568,7 @@ export const glossaryTerms = [
     slug: "expediente-23414",
     category: "Regulación y Diseño de Mercado",
     definition:
-      "Expediente legislativo costarricense relevante para la modernización del mercado eléctrico, los recursos distribuidos y el diseño institucional de rutas de transición.",
+      "Proyecto de Ley de Armonización del Sistema Eléctrico Nacional, que proponía un mercado eléctrico nacional y un ente coordinador, ECOSEN. Fue archivado el 19 de octubre de 2026, al no alcanzar en segundo debate los 38 votos que requería. Sigue siendo una referencia para el diseño de un mercado abierto.",
     trinomioLens:
       "Trinomio lo trata como señal de cambio de régimen, no solo como referencia legal. La modernización requiere contratos, instituciones de financiamiento, compresión de riesgo y arquitectura bancable antes de debilitar operadores públicos, cooperativas, comparadores, comunidades o inversionistas.",
     aliases: ["Expediente 23.414", "23.414"],
@@ -580,7 +580,7 @@ export const glossaryTerms = [
     definition:
       "Proyecto de Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional. Mantiene al operador del sistema dentro de la estructura actual, con desconcentración técnica, y propone instrumentos de eficiencia, seguridad energética y respuesta de la demanda.",
     trinomioLens:
-      "Trinomio lo lee junto con el expediente 23.414 como una de dos rutas posibles, sin tomar partido. Cualquiera que sea la arquitectura final, la oportunidad exige empresas capaces de medir, verificar y contratar servicios energéticos nuevos.",
+      "Tras el archivo del expediente 23.414, es una de las propuestas en discusión; Trinomio la lee como un escenario, sin tomar partido. Cualquiera que sea la arquitectura final, la oportunidad exige empresas capaces de medir, verificar y contratar servicios energéticos nuevos.",
     aliases: ["Expediente 25.781", "25.781"],
   },
   {

@@ -9,18 +9,18 @@ const frameworkCopy = {
     description:
       "Costa Rica no parte de cero. Un marco de varias leyes energéticas ya está vigente, y la Ley 10.086 es hoy el principal cauce del cambio tecnológico: habilita recursos energéticos distribuidos, y ARESEP avanza con rapidez en su implementación. La reforma del reglamento AR-RT-POASEN, vigente desde junio de 2026, ya incorpora recursos distribuidos, almacenamiento y agregadores.",
     debate:
-      "Al mismo tiempo, la Asamblea Legislativa discute dos proyectos de ley que proponen rutas distintas. La Asamblea decidirá qué arquitectura adopta el país, y es probable que tome elementos de ambos.",
+      "En octubre de 2026, la Asamblea Legislativa archivó el expediente 23.414, que proponía un mercado eléctrico nacional, al no alcanzar los 38 votos que requería. La discusión sobre la arquitectura del sistema sigue abierta: el expediente 25.781 y la nueva reforma anunciada por el Gobierno proponen rutas que fortalecen al ICE, y es probable que la arquitectura final tome elementos de varias propuestas.",
     routes: [
       {
-        bill: "Expediente 23.414",
+        bill: "Expediente 23.414 (archivado en octubre de 2026)",
         name: "Ley de Armonización del Sistema Eléctrico Nacional",
         summary:
-          "Propone un Mercado Eléctrico Nacional y un ente coordinador, ECOSEN, con funciones de operación del sistema y del mercado. Contempla agentes que podrían agregar demanda, además de contratos y transacciones de ocasión sujetos a reglas y regulación.",
+          "Proponía un Mercado Eléctrico Nacional y un ente coordinador, ECOSEN, con funciones de operación del sistema y del mercado. Contemplaba agentes que podrían agregar demanda, además de contratos y transacciones de ocasión sujetos a reglas y regulación. Sigue siendo la referencia de cómo podría funcionar un mercado abierto.",
         source:
           "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2025/10/23414_Dictamen_TEXTO_ACTUALIZADO.pdf",
       },
       {
-        bill: "Expediente 25.781",
+        bill: "Expediente 25.781 (presentado en septiembre de 2026)",
         name: "Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional",
         summary:
           "Mantiene al DOCSE como operador del sistema dentro del ICE, con desconcentración técnica, y propone instrumentos de eficiencia y seguridad energética. Contempla programas voluntarios de respuesta de la demanda cuyas reducciones verificables podrían recibir compensaciones aprobadas por ARESEP.",
@@ -29,9 +29,9 @@ const frameworkCopy = {
       },
     ],
     sourceLabel: "Consultar el texto legislativo →",
-    routesTitle: "Dos rutas, una misma pregunta",
+    routesTitle: "Varias rutas, una misma pregunta",
     routesText:
-      "No tomamos partido por uno de ellos. El cambio tecnológico y el cambio climático ya están creando valor que la estructura anterior no sabe reconocer. Cualquiera que sea la ruta, la pregunta será la misma: ¿cómo pasa una capacidad física nueva a convertirse en un servicio que alguien puede solicitar, medir y pagar?",
+      "No tomamos partido por ninguna ruta. El cambio tecnológico y el cambio climático ya están creando valor que la estructura anterior no sabe reconocer. Cualquiera que sea la ruta, la pregunta será la misma: ¿cómo pasa una capacidad física nueva a convertirse en un servicio que alguien puede solicitar, medir y pagar?",
     signalTitle: "De la señal a la posición",
     signalText:
       "En cada lugar y momento, el sistema revela una señal: cuánta energía se necesita, cuánto vale, qué tan cargada está la red y cuánta energía hay disponible o almacenada. Cada recurso interpreta esa señal dentro de sus propias restricciones técnicas, contractuales y regulatorias, y elige una posición: generar, cargar, descargar, comprar, vender, recortar o flexibilizar su consumo.",
@@ -51,7 +51,7 @@ const frameworkCopy = {
       "La tecnología, incluida la inteligencia artificial aplicada a la energía, mejora esa decisión más rápido de lo que cambian las reglas. Las capacidades estarán listas antes de que la regulación las reconozca; la vasija debe estarlo también. La relación entre señal y posición es la misma bajo cualquier ruta legislativa: lo que cambia es quién toma la decisión, sea un prosumidor, un agregador, una empresa distribuidora o un futuro operador de la red de distribución.",
     vesselText:
       "Nuestra tarea es preparar la vasija: empresas que actúan hoy con los derechos que la Ley 10.086 y su regulación ya reconocen, y que tienen los contratos, los datos, la medición y el gobierno necesarios para adaptarse cuando las nuevas reglas lleguen.",
-    note: "Ambos expedientes son propuestas sujetas a trámite y posibles cambios. Textos consultados en septiembre de 2026.",
+    note: "El expediente 23.414 fue archivado el 19 de octubre de 2026. El expediente 25.781 es una propuesta sujeta a trámite y posibles cambios. Textos consultados en septiembre de 2026; estado actualizado en octubre de 2026.",
   },
   en: {
     eyebrow: "Regulatory framework",
@@ -59,18 +59,18 @@ const frameworkCopy = {
     description:
       "Costa Rica is not starting from zero. A framework of several energy laws is already in force, and Law No. 10086 is today the main channel for technological change: it enables distributed energy resources, and ARESEP, the regulator, is moving quickly to implement it. The reform of the AR-RT-POASEN regulation, in force since June 2026, already incorporates distributed resources, storage and aggregators.",
     debate:
-      "At the same time, the Legislative Assembly is debating two bills that propose different routes. The Assembly will decide which architecture the country adopts, and it is likely to take elements from both.",
+      "In October 2026, the Legislative Assembly archived Bill No. 23414, which proposed a national electricity market, after it fell short of the 38 votes it required. The debate on the system's architecture remains open: Bill No. 25781 and the new reform announced by the Government propose routes that strengthen ICE, and the final architecture is likely to take elements from several proposals.",
     routes: [
       {
-        bill: "Bill No. 23414",
+        bill: "Bill No. 23414 (archived in October 2026)",
         name: "National Electricity System Harmonisation Act (Ley de Armonización del Sistema Eléctrico Nacional)",
         summary:
-          "Proposes a National Electricity Market and a coordinating body, ECOSEN, with system- and market-operation functions. It provides for agents that could aggregate demand, as well as contracts and spot transactions subject to rules and regulation.",
+          "Proposed a National Electricity Market and a coordinating body, ECOSEN, with system- and market-operation functions. It provided for agents that could aggregate demand, as well as contracts and spot transactions subject to rules and regulation. It remains the reference for how an open market could work.",
         source:
           "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2025/10/23414_Dictamen_TEXTO_ACTUALIZADO.pdf",
       },
       {
-        bill: "Bill No. 25781",
+        bill: "Bill No. 25781 (filed in September 2026)",
         name: "Energy Security and National Electricity System Modernisation Act (Ley de Seguridad Energética y Modernización del Sistema Eléctrico Nacional)",
         summary:
           "Keeps DOCSE as system operator within ICE, with technical deconcentration, and proposes energy-efficiency and energy-security instruments. It provides for voluntary demand-response programmes whose verifiable reductions could receive compensation approved by ARESEP.",
@@ -79,9 +79,9 @@ const frameworkCopy = {
       },
     ],
     sourceLabel: "Read the legislative text (in Spanish) →",
-    routesTitle: "Two routes, one question",
+    routesTitle: "Several routes, one question",
     routesText:
-      "We do not take sides. Technological change and climate change are already creating value that the previous structure cannot recognise. Whatever the route, the question will be the same: how does a new physical capability become a service that someone can request, measure and pay for?",
+      "We do not take sides on any route. Technological change and climate change are already creating value that the previous structure cannot recognise. Whatever the route, the question will be the same: how does a new physical capability become a service that someone can request, measure and pay for?",
     signalTitle: "From signal to position",
     signalText:
       "At every place and moment, the system reveals a signal: how much energy is needed, what it is worth, how loaded the grid is and how much energy is available or stored. Each resource reads that signal within its own technical, contractual and regulatory constraints, and chooses a position: generate, charge, discharge, buy, sell, curtail or flex its consumption.",
@@ -98,10 +98,10 @@ const frameworkCopy = {
       },
     ],
     aiText:
-      "Technology, including artificial intelligence applied to energy, improves that decision faster than the rules change. The capabilities will be ready before regulation recognises them; the vessel must be ready too. The relation between signal and position is the same under either legislative route: what changes is who makes the decision, whether a prosumer, an aggregator, a distribution company or a future distribution-system operator.",
+      "Technology, including artificial intelligence applied to energy, improves that decision faster than the rules change. The capabilities will be ready before regulation recognises them; the vessel must be ready too. The relation between signal and position is the same under any legislative route: what changes is who makes the decision, whether a prosumer, an aggregator, a distribution company or a future distribution-system operator.",
     vesselText:
       "Our task is to prepare the vessel: enterprises that act today with the rights that Law No. 10086 and its regulation already recognise, and that have the contracts, data, measurement and governance needed to adapt when the new rules arrive.",
-    note: "Both bills are proposals still going through the legislative process and may change. Texts consulted in September 2026.",
+    note: "Bill No. 23414 was archived on 19 October 2026. Bill No. 25781 is a proposal still going through the legislative process and may change. Texts consulted in September 2026; status updated in October 2026.",
   },
 } as const;
 
