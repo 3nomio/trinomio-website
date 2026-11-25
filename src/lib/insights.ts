@@ -10,6 +10,7 @@ export type Insight = {
   coverImage: string;
   coverImageAlt: string;
   coverAspectRatio: "16:9" | "3:2";
+  shareImage?: string;
   slug: string;
   content: string;
   readingTime: number;
@@ -91,6 +92,7 @@ function parseInsight(fileName: string): Insight {
     coverImage: requiredField(frontmatter, "coverImage", fileName),
     coverImageAlt: frontmatter["coverImageAlt"] ?? `Portada del insight: ${frontmatter.title}`,
     coverAspectRatio: frontmatter["coverAspectRatio"] === "3:2" ? "3:2" : "16:9",
+    shareImage: frontmatter["shareImage"],
     slug: requiredField(frontmatter, "slug", fileName),
     content,
     readingTime: estimateReadingTime(content),
@@ -146,4 +148,19 @@ export function getInsightCategories() {
   return Array.from(
     new Set(getSpanishInsights().map((insight) => insight.category)),
   );
+}
+
+const siteUrl = "https://www.3nomio.com";
+
+/**
+ * Absolute URL of the image social networks show when an insight is shared.
+ * Uses `shareImage` from the frontmatter, else the cover if it is not an SVG
+ * (LinkedIn and most networks do not render SVG previews).
+ */
+export function shareImageUrl(insight: Insight) {
+  const image =
+    insight.shareImage ??
+    (insight.coverImage.endsWith(".svg") ? undefined : insight.coverImage);
+
+  return image ? `${siteUrl}${image}` : undefined;
 }

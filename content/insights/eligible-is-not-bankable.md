@@ -7,6 +7,7 @@ category: "Energy Finance"
 locale: "en"
 author: "Oscar Luis Chaves B."
 coverImage: "/insights/eligible-not-bankable-cover.svg"
+shareImage: "/insights/eligible-not-bankable-cover.png"
 coverImageAlt: "Funnel from many industrial projects to capital, with the missing middle step highlighted"
 ---
 

@@ -7,6 +7,7 @@ category: "Finanzas Sostenibles"
 locale: "es"
 author: "Oscar Luis Chaves B."
 coverImage: "/insights/elegible-no-financiable-cover.svg"
+shareImage: "/insights/elegible-no-financiable-cover.png"
 coverImageAlt: "Embudo desde muchos proyectos industriales hacia el capital, con el paso intermedio faltante resaltado"
 ---
 

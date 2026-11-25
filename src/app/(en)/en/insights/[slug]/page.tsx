@@ -1,5 +1,5 @@
 import { EnglishInsightArticlePage } from "@/components/EnglishInsightArticlePage";
-import { getAllInsights } from "@/lib/insights";
+import { getAllInsights, shareImageUrl } from "@/lib/insights";
 import type { Metadata } from "next";
 
 type PageProps = {
@@ -22,6 +22,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${insight.title} | Trinomio`,
     description: insight.excerpt,
+    openGraph: {
+      title: insight.title,
+      description: insight.excerpt,
+      type: "article",
+      images: shareImageUrl(insight),
+    },
   };
 }
 

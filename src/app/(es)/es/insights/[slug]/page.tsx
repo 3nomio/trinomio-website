@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { InsightArticlePage } from "@/components/InsightArticlePage";
-import { getAllInsights, getInsightBySlug } from "@/lib/insights";
+import { getAllInsights, getInsightBySlug, shareImageUrl } from "@/lib/insights";
 
 type PageProps = {
   params: Promise<{
@@ -33,6 +33,7 @@ export async function generateMetadata({
       title: insight.title,
       description: insight.excerpt,
       type: "article",
+      images: shareImageUrl(insight),
     },
   };
 }
