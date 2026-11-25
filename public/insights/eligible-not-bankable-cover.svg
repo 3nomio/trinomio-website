@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Eligible is not bankable</title>
+  <desc id="desc">Funnel from many industrial projects to capital, with the missing middle step highlighted.</desc>
+  <defs>
+    <radialGradient id="field" cx="48%" cy="42%" r="74%">
+      <stop offset="0%" stop-color="#082449"/>
+      <stop offset="56%" stop-color="#041427"/>
+      <stop offset="100%" stop-color="#020b17"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#field)"/>
+  <g opacity="0.14" stroke="#17d7ff" stroke-width="1">
+    <path d="M0 180h1600M0 330h1600M0 480h1600M0 630h1600M0 780h1600"/>
+    <path d="M200 0v900M400 0v900M600 0v900M800 0v900M1000 0v900M1200 0v900M1400 0v900"/>
+  </g>
+  <path d="M230 300 L560 410 L560 490 L230 600 Z" fill="#17d7ff" fill-opacity="0.10" stroke="#17d7ff" stroke-width="2"/>
+  <g fill="#17d7ff" opacity="0.85">
+    <circle cx="290" cy="360" r="7"/><circle cx="340" cy="420" r="7"/><circle cx="300" cy="470" r="7"/>
+    <circle cx="380" cy="380" r="7"/><circle cx="420" cy="450" r="7"/><circle cx="350" cy="530" r="7"/>
+    <circle cx="470" cy="420" r="7"/><circle cx="500" cy="470" r="7"/><circle cx="290" cy="560" r="7"/>
+  </g>
+  <rect x="640" y="410" width="320" height="80" rx="10" fill="#071f3b" stroke="#3fe083" stroke-width="3" stroke-dasharray="14 10"/>
+  <path d="M560 450 H640 M960 450 H1040" stroke="#3fe083" stroke-width="3" opacity="0.7"/>
+  <path d="M1040 410 L1370 300 L1370 600 L1040 490 Z" fill="#1468ff" fill-opacity="0.12" stroke="#609dff" stroke-width="2"/>
+  <g fill="#609dff" opacity="0.8">
+    <rect x="1180" y="390" width="120" height="22" rx="4"/>
+    <rect x="1180" y="428" width="120" height="22" rx="4"/>
+    <rect x="1180" y="466" width="120" height="22" rx="4"/>
+  </g>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="7" text-anchor="middle">
+    <text x="800" y="200" font-size="38" opacity="0.88">ELIGIBLE IS NOT BANKABLE</text>
+    <text x="395" y="680" font-size="20" opacity="0.6">DISCOVERY</text>
+    <text x="800" y="680" font-size="20" fill="#3fe083" opacity="0.9">SEPARATION</text>
+    <text x="1205" y="680" font-size="20" opacity="0.6">TRANSFER</text>
+  </g>
+</svg>
